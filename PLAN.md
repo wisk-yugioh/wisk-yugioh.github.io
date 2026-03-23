@@ -1,4 +1,4 @@
-# SloGoatsss — Site Rework Plan
+# Wisk Yu-Gi-Oh! — Site Rework Plan
 
 ## Project
 Slovenian Yu-Gi-Oh! Goat Format community site. Built with Jekyll, hosted on GitHub Pages.

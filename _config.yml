@@ -1,10 +1,10 @@
-title: SloGoatsss
+title: Wisk Yu-Gi-Oh!
 description: Slovenska Yu-Gi-Oh! Goat Format skupnost
 url: "https://wisk-yugioh.github.io"
 baseurl: ""
 lang: sl
 
-author: SloGoatsss
+author: Alen Bizjak
 
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title

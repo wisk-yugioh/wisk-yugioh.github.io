@@ -1,7 +1,7 @@
 # GitHub Copilot Instructions
 
 ## Overview
-This is the **SloGoatsss Yu-Gi-Oh! Goat Format** Slovenian community website, built with **Jekyll** and hosted on **GitHub Pages**.
+This is the **Wisk Yu-Gi-Oh!** Slovenian community website, built with **Jekyll** and hosted on **GitHub Pages**.
 
 ## Key Files to Read at Session Start
 When starting a new work session on this repo, always read these files first:

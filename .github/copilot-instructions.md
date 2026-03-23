@@ -2,7 +2,7 @@
 
 ## Project
 
-**SloGoatsss** — Slovenian Yu-Gi-Oh! Goat Format community site. Built with Jekyll, hosted on GitHub Pages. Site language is Slovenian (`lang: sl`), some posts are in English.
+**Wisk Yu-Gi-Oh!** — Slovenian Yu-Gi-Oh! Goat Format community site. Built with Jekyll, hosted on GitHub Pages. Site language is Slovenian (`lang: sl`), some posts are in English.
 
 ## Session Start
 
