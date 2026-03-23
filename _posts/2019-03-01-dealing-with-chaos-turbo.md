@@ -2,7 +2,7 @@
 layout: post
 title: "Dealing with Chaos Turbo"
 date: 2019-03-01
-author: siwski
+author: "Alen Bizjak"
 categories: [articles, english]
 ---
 # Dealing with Chaos Turbo

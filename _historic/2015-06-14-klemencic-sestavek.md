@@ -2,7 +2,7 @@
 layout: post
 title: "Goat Control – Kako je Deck Sestavljen"
 date: 2015-06-14
-author: "Klemencič"
+author: "Jernej Klemenčič"
 categories: [arhiv]
 ---
 Bok!Ker

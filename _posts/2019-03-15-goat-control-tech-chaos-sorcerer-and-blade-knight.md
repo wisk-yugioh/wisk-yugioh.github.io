@@ -2,7 +2,7 @@
 layout: post
 title: "Goat Control Tech - Chaos Sorcerer and Blade Knight"
 date: 2019-03-15
-author: siwski
+author: "Alen Bizjak"
 categories: [articles, english]
 ---
 # Tech Choices in Goat Control? Chaos Sorcerer and Blade Knight

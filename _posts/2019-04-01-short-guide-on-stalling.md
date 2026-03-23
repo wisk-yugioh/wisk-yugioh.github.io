@@ -2,7 +2,7 @@
 layout: post
 title: "Short Guide on Stalling"
 date: 2019-04-01
-author: siwski
+author: "Alen Bizjak"
 categories: [articles, english]
 ---
 # Short guide on stalling

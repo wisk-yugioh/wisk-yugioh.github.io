@@ -2,7 +2,7 @@
 layout: post
 title: "Welcome to Purgatory"
 date: 2015-09-07
-author: "Klemencič"
+author: "Jernej Klemenčič"
 categories: [arhiv]
 ---
 Welcome

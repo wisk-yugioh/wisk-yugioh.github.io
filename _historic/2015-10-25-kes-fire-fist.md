@@ -2,7 +2,7 @@
 layout: post
 title: "Top 4 z Fire Fisti, 10 Formatov Pozneje"
 date: 2015-10-25
-author: "Kes"
+author: "Mark Keš"
 categories: [arhiv]
 ---
 Top 4 z (Resonator)
