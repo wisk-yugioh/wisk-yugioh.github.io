@@ -89,7 +89,7 @@ Post images go in `assets/images/posts/` and are referenced as `/assets/images/p
 
 ## Key Conventions
 
-- **Internal links**: always relative paths (e.g. `/blog/2019/...`), never `https://slogoatsss.github.io/...`
+- **Internal links**: always relative paths (e.g. `/blog/2019/...`), never `https://wisk-yugioh.github.io/...`
 - **External links**: all `target="_blank"` links must include `rel="noopener"`
 - **Google Analytics**: add ID to `_config.yml` as `google_analytics: G-XXXXXXX` — the include is wired conditionally in both layouts
 - **jQuery 3.3.1**: loaded in `<head>` of `old-default.html`; required by `old/lestvica/index.html`

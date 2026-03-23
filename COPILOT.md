@@ -33,7 +33,7 @@ The new dark blog has two content sections under a hub at `/`:
 - **Navigation** is data-driven via `_data/navigation.yml` — do not hardcode nav links in layouts
 - **Layout**: header and footer are always visible (fixed viewport); only the main content area scrolls. This applies to ALL new-site pages unless explicitly stated otherwise.
 - **Google Analytics** ID goes in `_config.yml` as `google_analytics:` — the include is wired conditionally
-- **Internal links** must use relative paths (e.g. `/blog/2019/...`), never `https://slogoatsss.github.io/...`
+- **Internal links** must use relative paths (e.g. `/blog/2019/...`), never `https://wisk-yugioh.github.io/...`
 - All `target="_blank"` links must have `rel="noopener"`
 - **jQuery 3.3.1** is loaded in `<head>` of `default.html` — required by `lestvica/index.html`
 - The `not_published/` directory contains source `.docx` files and is excluded from Jekyll build
