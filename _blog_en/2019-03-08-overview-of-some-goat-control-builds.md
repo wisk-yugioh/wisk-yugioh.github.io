@@ -3,6 +3,7 @@ layout: post
 title: "Overview of Some Goat Control Builds"
 date: 2019-03-08
 author: "Alen Bizjak"
+lang: en
 categories: [articles, english]
 ---
 # OVERVIEW OF SOME GOAT CONTROL BUILDS

@@ -3,6 +3,7 @@ layout: post
 title: "My Thoughts and Advice about Standard Goat Control"
 date: 2019-04-08
 author: "Alen Bizjak"
+lang: en
 categories: [articles, english]
 ---
 # My thoughts and advice about standard (detox) Goat Control in the current metagame

@@ -77,6 +77,8 @@ layout: post
 title: "Post Title"
 date: YYYY-MM-DD
 author: "Author Name"   # required — shown on index and post page
+description: "One sentence summary"  # recommended — used for SEO meta description
+lang: en                # add for English posts (default is sl)
 categories: [category]  # optional; see categories below
 ---
 ```

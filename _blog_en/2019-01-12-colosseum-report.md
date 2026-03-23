@@ -3,6 +3,7 @@ layout: post
 title: COLOSSEUM REPORT
 date: 2019-01-12
 author: "Alen Bizjak"
+lang: en
 ---
 
 ## LUXURY GAMING – 2018 – COLOSSEUM GOAT FORMAT TOURNAMENT REPORT

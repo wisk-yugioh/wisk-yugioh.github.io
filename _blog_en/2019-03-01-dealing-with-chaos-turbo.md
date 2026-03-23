@@ -3,6 +3,7 @@ layout: post
 title: "Dealing with Chaos Turbo"
 date: 2019-03-01
 author: "Alen Bizjak"
+lang: en
 categories: [articles, english]
 ---
 # Dealing with Chaos Turbo
