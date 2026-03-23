@@ -45,6 +45,7 @@ html.new-site {
     justify-content: space-between;
     height: 3.5rem;
     flex-shrink: 0;
+    position: relative;
 
     .site-title {
       font-size: 1.2rem;
@@ -64,6 +65,74 @@ html.new-site {
       transition: color 0.15s;
 
       &:hover { color: $dark-text; text-decoration: none; }
+    }
+  }
+
+  // ── Hamburger (mobile nav toggle) ───────────────────────
+  .nav-toggle { display: none; }
+
+  .hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1.125rem;
+    cursor: pointer;
+    padding: 0;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $dark-muted;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+  }
+
+  // When checked: animate hamburger → X
+  .nav-toggle:checked ~ .site-header .hamburger-btn span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .nav-toggle:checked ~ .site-header .hamburger-btn span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle:checked ~ .site-header .hamburger-btn span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  // Mobile nav dropdown
+  .mobile-nav {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .hamburger-btn { display: flex; }
+
+    .site-header nav { display: none; }
+
+    .mobile-nav {
+      background-color: $dark-surface;
+      border-bottom: 1px solid $dark-border;
+      flex-shrink: 0;
+      flex-direction: column;
+      display: none; // hidden by default; shown via checkbox
+
+      a {
+        color: $dark-muted;
+        text-decoration: none;
+        font-size: 0.95rem;
+        padding: 0.85rem 2rem;
+        border-top: 1px solid $dark-border;
+        display: block;
+        transition: background-color 0.15s, color 0.15s;
+
+        &:hover { color: $dark-text; background-color: $dark-border; }
+      }
+    }
+
+    .nav-toggle:checked ~ .mobile-nav {
+      display: flex;
     }
   }
 
@@ -285,8 +354,8 @@ html.new-site {
     .site-header {
       padding: 0 1rem;
       .site-title { font-size: 1rem; }
-      nav a { margin-left: 1rem; font-size: 0.8rem; }
     }
+    .mobile-nav a { padding: 0.85rem 1rem; }
     .site-main-inner { padding: 1.5rem 1rem 3rem; }
     .post-header h1 { font-size: 1.5rem; }
     .post-list li { flex-wrap: wrap; gap: 0.4rem; }

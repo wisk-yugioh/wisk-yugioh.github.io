@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body class="new-site">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
     <header class="site-header">
       <a class="site-title" href="/">{{ site.title }}</a>
       <nav>
@@ -16,7 +17,18 @@
         <a href="{{ item.url }}">{{ item.title }}</a>
         {% endfor %}
       </nav>
+      <label for="nav-toggle" class="hamburger-btn" aria-label="Meni">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </header>
+
+    <nav class="mobile-nav">
+      {% for item in site.data.navigation %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
 
     <main class="site-main">
       <div class="site-main-inner">
