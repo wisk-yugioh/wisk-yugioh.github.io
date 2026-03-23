@@ -1,0 +1,21 @@
+<input
+  type="search"
+  id="post-search"
+  class="post-search"
+  placeholder="Iskanje po naslovu ali avtorju…"
+  aria-label="Iskanje">
+
+<script>
+  (function() {
+    var input = document.getElementById('post-search');
+    var items = document.querySelectorAll('.post-list li');
+    input.addEventListener('input', function() {
+      var q = this.value.trim().toLowerCase();
+      items.forEach(function(li) {
+        var title  = (li.querySelector('.post-link')     || {textContent:''}).textContent.toLowerCase();
+        var author = (li.querySelector('.post-category') || {textContent:''}).textContent.toLowerCase();
+        li.style.display = (!q || title.indexOf(q) !== -1 || author.indexOf(q) !== -1) ? '' : 'none';
+      });
+    });
+  })();
+</script>

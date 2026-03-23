@@ -151,6 +151,25 @@ html.new-site {
     box-sizing: border-box;
   }
 
+  // ── Search input ────────────────────────────────────────
+  .post-search {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: $dark-surface;
+    border: 1px solid $dark-border;
+    border-radius: 6px;
+    color: $dark-text;
+    font-size: 0.95rem;
+    padding: 0.55rem 0.9rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    transition: border-color 0.15s;
+
+    &::placeholder { color: $dark-muted; }
+    &:focus { border-color: $dark-accent; }
+  }
+
   // ── Post list (index page) ───────────────────────────────
   .post-list {
     list-style: none;
