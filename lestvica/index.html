@@ -1,0 +1,67 @@
+---
+layout: default
+title: Lestvica
+---
+<script type="text/javascript">
+	$("document").ready(function(){
+		$.get('ranking.json',function(data){
+			fill(data);
+		},'json');
+	});
+	var fill=function(players){
+		var rdytofill=[];
+		console.log(players);
+		for(var i=0;i<players.length;i++){
+			var playerdata={"ime":players[i].ime,"priimek":players[i].priimek,"zmage":players[i].zmage,"porazi":players[i].porazi,"drawi":players[i].drawi,"st":players[i].st,"tocke":3*parseInt(players[i].zmage)+parseInt(players[i].drawi)};
+			rdytofill.push(playerdata);
+		}
+		rdytofill.sort(function(a,b){
+			if(b.tocke-a.tocke==0){
+				return a.ime>b.ime?1:(a.ime<b.ime?-1:0);
+			} else{
+				return b.tocke-a.tocke;
+			}
+		});
+		console.log(rdytofill);
+		for(var i in rdytofill){
+			var winrate=parseFloat(rdytofill[i].zmage*100.0/(rdytofill[i].zmage+rdytofill[i].porazi)).toFixed(2);
+			var average=parseFloat(rdytofill[i].tocke/rdytofill[i].st).toFixed(1);
+			$("#tabela").append("<tr><td>"+rdytofill[i].ime.concat(" ",rdytofill[i].priimek)+"</td><td>"+rdytofill[i].tocke+"</td><td>"+rdytofill[i].zmage+"</td><td>"+rdytofill[i].porazi+"</td><td>"+rdytofill[i].drawi+"</td><td>"+rdytofill[i].st+"</td><td>"+average+"</td><td>"+winrate+"</td></tr>");
+		}
+	};
+	/*include $*/
+</script>
+<style>
+	table{
+		text-align: center;
+		font-family: arial, sans-serif;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th{
+		background-color: #FFB6C1;
+		border: 1px solid black;
+		border-collapse: collapse;
+		padding: 2px;
+	}
+	td{
+		background-color: #FFE4B5;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+</style>
+<div class="blurb">
+	<h1>Lestvica igralcev lige 2018/19</h1>
+	<table id="tabela" style="width: 80%, float: center">
+		<tr>
+			<th><h3>Ime in priimek</h3></th>
+			<th><h3>Točke</h3></th>
+			<th><h3>Zmage</h3></th>
+			<th><h3>Porazi</h3></th>
+			<th><h3>Izenačenja</h3></th>
+			<th><h3>Število turnirjev</h3></th>
+			<th><h3>Povprečje točk/turnir</h3></th>
+			<th><h3>Razmerje zmag/poraz</h3></th>
+		</tr>
+	</table>
+</div><!-- /.blurb -->

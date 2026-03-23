@@ -1,0 +1,5 @@
+name: SLO GOATSSS
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+future: true
+theme: jekyll-theme-modernist
