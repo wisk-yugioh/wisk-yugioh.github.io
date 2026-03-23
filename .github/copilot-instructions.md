@@ -60,6 +60,12 @@ SCSS entry point is `assets/css/main.scss`, which imports:
 
 Navigation is data-driven via `_data/navigation.yml` — never hardcode nav links in `default.html`.
 
+## Layout Behaviour
+
+All new-site pages use a **fixed viewport layout**: header and footer are always visible; only `.site-main` scrolls. This is the default and must be preserved on all new sections unless explicitly decided otherwise.
+
+Implementation: `body.new-site` is `height: 100vh; overflow: hidden; display: flex; flex-direction: column`. `.site-main` has `flex: 1; overflow-y: auto`. Header/footer have `flex-shrink: 0`.
+
 ## Post Conventions
 
 File naming: `_posts/YYYY-MM-DD-slug.md`

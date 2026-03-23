@@ -16,8 +16,7 @@ $content-width: 720px;
 
 // Reset old-site html/body rules that bleed into the new site
 html.new-site {
-  height: auto;
-  min-height: 100%;
+  height: 100%;
   background-image: none;
   background-color: $dark-bg;
 }
@@ -31,9 +30,10 @@ html.new-site {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   // ── Header ──────────────────────────────────────────────
   .site-header {
@@ -44,6 +44,7 @@ html.new-site {
     align-items: center;
     justify-content: space-between;
     height: 3.5rem;
+    flex-shrink: 0;
 
     .site-title {
       font-size: 1.2rem;
@@ -69,9 +70,12 @@ html.new-site {
   // ── Main content ────────────────────────────────────────
   .site-main {
     flex: 1;
+    overflow-y: auto;
     max-width: $content-width;
+    width: 100%;
     margin: 0 auto;
     padding: 2.5rem 1.5rem 4rem;
+    box-sizing: border-box;
   }
 
   // ── Post list (index page) ───────────────────────────────
@@ -264,6 +268,7 @@ html.new-site {
     text-align: center;
     font-size: 0.8rem;
     color: $dark-muted;
+    flex-shrink: 0;
 
     a { color: $dark-muted; text-decoration: none; margin: 0 0.75rem; &:hover { color: $dark-text; } }
   }

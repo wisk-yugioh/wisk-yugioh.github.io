@@ -31,6 +31,7 @@ The new dark blog has two content sections under a hub at `/`:
 - **SCSS** in `_sass/main.scss`, entry point at `assets/css/main.scss`
 - **Assets**: JS in `assets/js/`, images in `assets/images/`, post images in `assets/images/posts/`
 - **Navigation** is data-driven via `_data/navigation.yml` — do not hardcode nav links in layouts
+- **Layout**: header and footer are always visible (fixed viewport); only the main content area scrolls. This applies to ALL new-site pages unless explicitly stated otherwise.
 - **Google Analytics** ID goes in `_config.yml` as `google_analytics:` — the include is wired conditionally
 - **Internal links** must use relative paths (e.g. `/blog/2019/...`), never `https://slogoatsss.github.io/...`
 - All `target="_blank"` links must have `rel="noopener"`
