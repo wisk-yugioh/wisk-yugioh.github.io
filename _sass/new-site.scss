@@ -14,6 +14,14 @@ $font-sans: 'Helvetica Neue', 'Arial', sans-serif;
 $font-mono: 'Courier New', monospace;
 $content-width: 720px;
 
+// Reset old-site html/body rules that bleed into the new site
+html.new-site {
+  height: auto;
+  min-height: 100%;
+  background-image: none;
+  background-color: $dark-bg;
+}
+
 .new-site {
   background-color: $dark-bg;
   color: $dark-text;
