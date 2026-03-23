@@ -1,0 +1,56 @@
+---
+layout: post
+title: "Goat Control Tech - Chaos Sorcerer and Blade Knight"
+date: 2019-03-15
+author: siwski
+categories: [articles, english]
+---
+# Tech Choices in Goat Control? Chaos Sorcerer and Blade Knight
+
+
+ 
+
+
+Hello,
+
+
+This article is inspired by a recent development of metagame and discussion on goatformat.com – with so many decks not named Goat Control getting refined and seemingly catching up to Goat Control, some players are trying to innovate Goat Control as well – I was once there myself, and it is really fun! Anyway, the discussion was about 1 teched Chaos Sorcerer and Blade Knight was mentioned as well. I will not address the arguments that were briefly given in support of those choices, but I will just write an overview of why I think these cards should not be included in the Goat Control deck at all.
+
+
+Starting with Chaos Sorcerer.
+
+
+I guess the most simple, straight forward and seemingly logical reason to put Chaos Sorcerer in Goat Control deck is that Chaos Sorcerer is a good stand alone card that can answer opposing Chaos Sorcerers and Aggro decks. The problem with this is fundamental – why are we playing the one Airknight Parshath then? For every reason we play 1 CS over 1 AKP we can also remove the 2nd AKP for 2nd CS. This leads to cascading effect: now we want to support the 2 CS's better, followed with finding better ways to support our supporting engines better, etc -> why aren't we playing Chaos Control?
+
+
+The argument for not playing 1 CS instead of 1 AKP is therefore a coherency argument. The strengths of both decks (Goat and Chaos Control) differ in both Main deck and Side deck and by mixing the two you just get a worse GC / CC build overall (since it does not take the full advantage of either of the two decks). Some concrete examples: Say you're running 1 CS instead of 1 AKP in standard Goat deck. Cards that are meant to support or work well with AKP become more awkward; namely Morphing Jar and both revivals. By no means is this a horrible problem that will make you lose every single game ever, but it is a subtle coherency problem that can and will negatively effect your winrate in the long run. Another problem could be LIGHT / DARK ratio in some post-side configurations, yet another problem is the dynamic of the deck itself – are we planning our plays with an eventual AKP or CS in mind?
+
+
+All things considered, tech choice CS in GC deck is exactly that – a tech choice, which often means a suboptimal card choice whose main advantage is often just a surprise factor or an edge in some really specific metagames – for example vs Aggro heavy envionment (but then again, I would just run Chaos Control in the first place if I wanted to be extra prepared vs Aggro).
+
+
+Moving on to Blade Knight.
+
+
+As you can imagine, the story with Blade Knight is similar to the CS one – Blade Knight is not a horrible card that will single-handedly make you lose games just because you decided to run one, but I would argue that the negative sinergy he brings is not worth the occasional +1 you will get by killing their Flip.
+
+
+Goat Control's gameplan is to win the long game by breaking trough with at least one of their many threats, most notable being Tsuku loop with TER or Flip or Airknight pushes. Notice that both of these strategies need some kind of field presence, and the whole deck is constructed with them in mind – this is why part of the reason why we are playing 2 AKP, 2 Scapegoats, 2 Saku… In other words, if Blade Knight's effect is live, our deck is not running as intended.
+
+
+Scapegoats alone are a huge »problem« for Blade Knight, as we may often find ourselves with a stray Goat token and now our freshly drawn Blade Knight is nothing but a 1600 vanilla that dies to Tsukuyomi. Compared to DDWL (we will assume for the sake of the argument that Blade Knight competes with DDWL for the Main Deck slot) , Blade Knight also cannot be consistently set in order to bait NoC, is a weakness vs Chaos matchups (because it cannot be set), and cannot out bigger threats such as opposing CS or BLS.
+
+
+The last nail in the coffin for Blade Knight is the fact that it will be a 1600 monster most of the time, never reaping the benefits of additional attack boost because Goat Control rarely has a small hand, unless you're in a topdecking game with both players with 1 or 2 cards in play where luck becomes more important factor, but this is hardly a good argument for Blade Knight's inclusion.
+
+
+I hope that it is clear that the point of this article was not to list thousand of examples and scenarios in which one card is better than the other – there are plenty of those – but to understand why I think these cards should not be played based on the theory of the deck alone.
+
+
+ 
+
+
+Until next time,
+
+
+siwski

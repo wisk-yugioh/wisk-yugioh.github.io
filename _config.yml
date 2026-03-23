@@ -7,7 +7,7 @@ lang: sl
 author: SloGoatsss
 
 markdown: kramdown
-permalink: /old/blog/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title
 future: true
 
 plugins:

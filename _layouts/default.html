@@ -8,9 +8,24 @@
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body class="new-site">
-    <main>
+    <header class="site-header">
+      <a class="site-title" href="/">{{ site.title }}</a>
+      <nav>
+        <a href="/">Blog</a>
+        <a href="/old/">Stara stran</a>
+      </nav>
+    </header>
+
+    <main class="site-main">
       {{ content }}
     </main>
+
+    <footer class="site-footer">
+      <a href="mailto:slogoatsss@gmail.com">&#9993; slogoatsss@gmail.com</a>
+      <a href="https://www.facebook.com/slogoatsss/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/channel/UCAKUK9MYS4TfznStFvWmiIQ" target="_blank" rel="noopener">YouTube</a>
+    </footer>
+
     {% if site.google_analytics %}
     {% include analytics.html %}
     {% endif %}

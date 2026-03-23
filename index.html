@@ -1,11 +1,16 @@
 ---
 layout: default
-title: SloGoatsss
+title: Blog
 ---
-<div style="min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family: 'Helvetica', 'Arial', sans-serif; text-align:center; padding: 2rem;">
-  <h1>SloGoatsss</h1>
-  <p>Slovenska Yu-Gi-Oh! Goat Format skupnost</p>
-  <p><em>Nova spletna stran je v pripravi.</em></p>
-  <hr style="width:100%; max-width:400px; margin: 2rem auto;">
-  <p><a href="/old/">Stara spletna stran &rarr;</a></p>
-</div>
+<p class="post-list-heading">Vse objave</p>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+    {% if post.categories %}
+    <span class="post-category">{{ post.categories | join: ", " }}</span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

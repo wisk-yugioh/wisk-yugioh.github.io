@@ -79,3 +79,24 @@ _Goal: refactor existing code using good Jekyll practices and modern standards. 
 ### New site root
 - New `index.html` at `/` — blank new site with "Stara spletna stran →" link to `/old/`
 - `old/index.html` — old site entry page with original homepage content + "← Nazaj" link
+
+---
+
+## Stage 3 — New Dark Blog Site
+
+### Design
+- New `_sass/new-site.scss`: dark mode styles scoped to `.new-site` body class — `#111827` bg, `#f9fafb` text, `#f97316` orange accent; styles for header, post list, post page, footer, responsive breakpoints
+- `assets/css/main.scss`: added `@import "new-site"` alongside old site styles
+
+### Layouts & Pages
+- `_layouts/default.html`: full dark blog layout with `.site-header` (site title + Blog/Stara stran nav), `.site-main`, `.site-footer`
+- `_layouts/post.html`: updated to `layout: default`; added `<article>` structure with `.post-header` (title, date, author, categories) and `.post-content`; "← Vse objave" back link
+- `index.html`: replaced blank placeholder with full blog post list (date + title + category), dark-styled
+
+### Config
+- `_config.yml` permalink reverted to `/blog/:year/:month/:day/:title`
+
+### Content Migration
+- **6 English articles** (`old/articles/art1-6.html`) → converted to `_posts/*.md` with HTML→Markdown conversion (stripped calibre classes); front matter: `author: siwski`, `categories: [articles, english]`; dates: 2019-03-01 through 2019-04-08
+- **14 archived Slovenian articles** (`old/arhiv/clankiInReportaze/`) → extracted body from LibreOffice HTML, converted to `_posts/*.md`; front matter with accurate author/date from LibreOffice metadata + PLAN.md table; `categories: [arhiv]`; dates: 2013-2017
+- Total posts: 49 (was 29 original + 6 English + 14 archived)
