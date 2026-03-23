@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Blog (SLO)
+title: Blog (ENG)
 ---
-<p class="post-list-heading">Vse objave (slovensko)</p>
+<p class="post-list-heading">Articles (English)</p>
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% assign eng_sorted = site.blog_en | sort: 'date' | reverse %}
+  {% for post in eng_sorted %}
   <li>
     <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>

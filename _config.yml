@@ -17,6 +17,9 @@ collections:
   sezona:
     output: true
     permalink: /sezona/:year/:month/:day/:title
+  blog_en:
+    output: true
+    permalink: /blog-en/:year/:month/:day/:title
 
 plugins:
   - jekyll-seo-tag
