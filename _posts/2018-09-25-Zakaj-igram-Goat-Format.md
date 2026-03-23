@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ZAKAJ IGRAM GOAT FORMAT
+title: "Zakaj Igram Goat Format"
 date: 2018-09-25
 author: "Jaka Fortunat"
 ---

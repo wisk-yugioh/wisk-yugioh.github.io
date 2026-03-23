@@ -1,6 +1,6 @@
 ---
 layout: post
-title: COVERAGE – 15. 12. 2018 
+title: "Coverage – 15. 12. 2018"
 date: 2018-12-22
 ---
 Četrti SloGoatsss turnir – 15. 12. 2018 – coverage

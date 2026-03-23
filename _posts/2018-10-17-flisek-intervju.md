@@ -1,6 +1,6 @@
 ---
 layout: post
-title: INTERVJU MIHA FLISEK
+title: "Intervju – Miha Flisek"
 date: 2018-10-17
 author: "Alen Bizjak"
 ---

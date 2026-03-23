@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KAKO IGRATI PROTI MONARCHOM
+title: "Kako Igrati proti Monarchom"
 date: 2019-01-28
 author: "Alen Bizjak"
 ---

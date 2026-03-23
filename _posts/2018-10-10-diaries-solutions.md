@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DIARIES OF A MONARCH MADMAN - IN SEARCH OF SOLUTIONS
+title: "Diaries of a Monarch Madman – In Search of Solutions"
 date: 2018-10-10
 author: "Nik Vidmar"
 ---

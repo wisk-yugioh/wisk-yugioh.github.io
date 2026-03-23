@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IZ METE V GOATE
+title: "Iz Mete v Goate"
 date: 2018-09-18
 author: "Alen Bizjak"
 ---

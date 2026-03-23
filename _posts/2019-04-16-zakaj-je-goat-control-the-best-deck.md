@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ZAKAJ JE GOAT CONTROL THE BEST DECK
+title: "Zakaj je Goat Control the Best Deck"
 date: 2019-04-16
 author: "Alen Bizjak"
 ---

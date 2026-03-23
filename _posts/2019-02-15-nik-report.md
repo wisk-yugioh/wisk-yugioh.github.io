@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DIARIES OF A MONARCH MADMAN - MANJŠI REPORT IN PREDSTAVITEV DECKA
+title: "Diaries of a Monarch Madman – Manjši Report in Predstavitev Decka"
 date: 2019-02-15
 author: "Nik Vidmar"
 ---

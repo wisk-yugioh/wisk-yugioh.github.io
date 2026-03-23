@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SIDANJE V GOAT FORMATU
+title: "Sidanje v Goat Formatu"
 date: 2018-11-02
 author: "Alen Bizjak"
 ---

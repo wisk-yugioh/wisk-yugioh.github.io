@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LUXURY TOURNAMENT REPORT
+title: "Luxury Tournament Report"
 date: 2019-04-26
 author: "Alen Bizjak"
 lang: en

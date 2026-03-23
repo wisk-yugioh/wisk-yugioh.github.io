@@ -1,6 +1,6 @@
 ---
 layout: post
-title: INTERVJU JAKA FORTUNAT
+title: "Intervju – Jaka Fortunat"
 date: 2019-03-06
 author: "Alen Bizjak"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: POGOSTE NAPAKE
+title: "Pogoste Napake"
 date: 2018-10-13
 author: "Alen Bizjak"
 ---

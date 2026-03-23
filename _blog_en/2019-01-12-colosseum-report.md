@@ -1,6 +1,6 @@
 ---
 layout: post
-title: COLOSSEUM REPORT
+title: "Colosseum Report"
 date: 2019-01-12
 author: "Alen Bizjak"
 lang: en

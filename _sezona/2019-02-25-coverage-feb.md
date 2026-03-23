@@ -1,6 +1,6 @@
 ---
 layout: post
-title: COVERAGE - 23. 02. 2019
+title: "Coverage – 23. 2. 2019"
 date: 2019-02-25
 ---
 

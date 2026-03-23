@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BURN V GOAT FORMATU
+title: "Burn v Goat Formatu"
 date: 2018-12-03
 author: "Jaka Fortunat"
 ---
