@@ -2,6 +2,7 @@
 layout: post
 title: GOAT FORMAT NI BAVBAV
 date: 2019-09-10
+author: "Tine Lovišček"
 ---
 
 **GOAT FORMAT NI BAVBAV**

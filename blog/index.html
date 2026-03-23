@@ -8,8 +8,8 @@ title: Blog
   <li>
     <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-    {% if post.categories %}
-    <span class="post-category">{{ post.categories | join: ", " }}</span>
+    {% if post.author %}
+    <span class="post-category">{{ post.author }}</span>
     {% endif %}
   </li>
   {% endfor %}

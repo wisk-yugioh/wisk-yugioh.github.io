@@ -2,6 +2,7 @@
 layout: post
 title: SEŽIGANJE KOZJIH PODOBIC
 date: 2018-12-12
+author: "Tine Lovišček"
 ---
 
 **SEŽIGANJE KOZJIH PODOBIC**

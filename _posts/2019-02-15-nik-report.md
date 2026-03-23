@@ -2,6 +2,7 @@
 layout: post
 title: DIARIES OF A MONARCH MADMAN - MANJŠI REPORT IN PREDSTAVITEV DECKA
 date: 2019-02-15
+author: "Nik Vidmar"
 ---
 Slogoatsss side event Vič 19.1.2019
 

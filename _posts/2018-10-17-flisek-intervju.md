@@ -2,6 +2,7 @@
 layout: post
 title: INTERVJU MIHA FLISEK
 date: 2018-10-17
+author: "Alen Bizjak"
 ---
 
 **Na kratko se predstavi.**

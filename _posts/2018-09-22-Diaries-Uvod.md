@@ -2,6 +2,7 @@
 layout: post
 title: DIARIES OF A MONARCH MADMAN - INTRODUCTION
 date: 2018-09-22
+author: "Nik Vidmar"
 ---
 **DIARIES OF A MONARCH MADMAN**
 

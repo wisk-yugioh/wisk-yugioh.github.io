@@ -2,6 +2,7 @@
 layout: post
 title: INTERVJU JAKA FORTUNAT
 date: 2019-03-06
+author: "Alen Bizjak"
 ---
 <span id="anchor"></span>**Na kratko se predstavi.**
 

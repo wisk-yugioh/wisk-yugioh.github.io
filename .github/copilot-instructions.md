@@ -70,7 +70,7 @@ Frontmatter fields:
 layout: post
 title: "Post Title"
 date: YYYY-MM-DD
-author: "Author Name"   # optional
+author: "Author Name"   # required — shown on index and post page
 categories: [category]  # optional; see categories below
 ---
 ```

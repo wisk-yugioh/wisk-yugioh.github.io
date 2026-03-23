@@ -2,6 +2,7 @@
 layout: post
 title: PURE GOAT CONTROL VS CHAOS CONTROL
 date: 2018-11-22
+author: "Alen Bizjak"
 ---
 **GOAT CONTROL VS CHAOS CONTROL**
 

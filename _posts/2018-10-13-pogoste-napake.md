@@ -2,6 +2,7 @@
 layout: post
 title: POGOSTE NAPAKE
 date: 2018-10-13
+author: "Alen Bizjak"
 ---
 
 POGOSTE NAPAKE

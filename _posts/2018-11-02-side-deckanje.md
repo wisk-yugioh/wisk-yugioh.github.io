@@ -2,6 +2,7 @@
 layout: post
 title: SIDANJE V GOAT FORMATU
 date: 2018-11-02
+author: "Alen Bizjak"
 ---
 SIDANJE V GOAT FORMATU
 
