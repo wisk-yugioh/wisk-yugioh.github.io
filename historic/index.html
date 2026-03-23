@@ -1,0 +1,21 @@
+---
+layout: default
+title: Arhiv
+---
+<p class="post-list-heading">Arhiv člankov</p>
+{% if site.historic.size > 0 %}
+<ul class="post-list">
+  {% assign historic_sorted = site.historic | sort: 'date' | reverse %}
+  {% for article in historic_sorted %}
+  <li>
+    <span class="post-meta">{{ article.date | date: "%Y-%m-%d" }}</span>
+    <a class="post-link" href="{{ article.url }}">{{ article.title }}</a>
+    {% if article.author %}
+    <span class="post-category">{{ article.author }}</span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="hub-intro">Vsebina se seli. Kmalu bo tukaj dostopnih veliko starih člankov slovenskega Yu-Gi-Oh! skupnosti.</p>
+{% endif %}

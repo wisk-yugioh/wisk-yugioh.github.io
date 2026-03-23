@@ -9,6 +9,23 @@ When starting a new work session on this repo, always read these files first:
 - **`CHANGELOG.md`** — full history of completed work, stage by stage
 - **`TODOS.md`** — current active todo list (mirrors SQL todos table during a session)
 
+## Site Sections
+
+The new dark blog has two content sections under a hub at `/`:
+
+| Section | Directory | URL prefix |
+|---|---|---|
+| Modern blog | `_posts/` | `/blog/` |
+| Historic blog | `_historic/` | `/historic/` |
+
+**Moving an article between sections**: just `mv` the `.md` file between `_posts/` and `_historic/`. No frontmatter changes needed — `layout: post` works in both.
+
+**Adding a third section** — 4 steps:
+1. Add collection to `_config.yml` (copy the `historic:` block, change the name/permalink)
+2. Create `_<name>/` directory
+3. Create `<name>/index.html` (copy `historic/index.html`, replace `site.historic` → `site.<name>`)
+4. Add entry to `_data/navigation.yml`
+
 ## Project Conventions
 - **Jekyll** site: layouts in `_layouts/`, includes in `_includes/`, data in `_data/`
 - **SCSS** in `_sass/main.scss`, entry point at `assets/css/main.scss`

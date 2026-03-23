@@ -10,6 +10,11 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 future: true
 
+collections:
+  historic:
+    output: true
+    permalink: /historic/:year/:month/:day/:title
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

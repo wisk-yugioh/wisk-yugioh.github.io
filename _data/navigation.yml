@@ -1,2 +1,6 @@
-- title: Domov
-  url: /
+- title: Blog
+  url: /blog/
+- title: Arhiv
+  url: /historic/
+- title: Stara stran
+  url: /old/
