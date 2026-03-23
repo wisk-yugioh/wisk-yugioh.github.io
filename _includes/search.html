@@ -8,8 +8,8 @@
 <script>
   (function() {
     var input = document.getElementById('post-search');
-    var items = document.querySelectorAll('.post-list li');
     input.addEventListener('input', function() {
+      var items = document.querySelectorAll('.post-list li');
       var q = this.value.trim().toLowerCase();
       items.forEach(function(li) {
         var title  = (li.querySelector('.post-link')     || {textContent:''}).textContent.toLowerCase();
