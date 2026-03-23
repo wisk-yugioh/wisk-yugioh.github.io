@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Goat Control – Kako je Deck Sestavljen"
+title: "Hrvaško državno 2015 Report"
 date: 2015-06-14
 author: "Jernej Klemenčič"
 categories: [arhiv]
