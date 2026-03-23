@@ -1,67 +1,43 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link rel="icon" href="/izposojevalnica/kozica.jpg">
-			<script src="jquery-3.3.1.min.js"></script>
-<script>
-function myFunction() {
-    document.getElementById("id02").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+<html lang="{{ site.lang | default: 'sl' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    {% seo %}
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" href="/izposojevalnica/kozica.jpg">
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <button class="dropbtn" aria-label="Meni">&#9776;</button>
+      <nav>
+        <ul id="id02">
+          {% for item in site.data.navigation %}
+          <li><a class="two" href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-		</head>
-		<body>
-		<header>
-		<button onclick="myFunction()" class="dropbtn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png" width="25" height="20" alt="Menu" ></button>
-			<nav>
-	    		<ul id="id02">
-	        		<li><a class="two" href="/">Domov</a></li>
-	        		<li><a class="two" href="/blog">Blog</a></li>
-				<li><a class="two" href="/eventi">Eventi</a></li>
-				<li><a class="two" href="/profili">Profili igralcev</a></li>
-				<li><a class="two" href="/deckliste">Deckliste</a></li>
-				<li><a class="two" href="/lestvica">Lestvica lige 2018/19</a></li>
-				<li><a class="two" href="/izposojevalnica">Izposojevalnica</a></li>
-				<li><a class="two" href="/arhiv">Arhiv</a></li>
-				<li><a class="two" href="/articles">Articles (ENG)</a></li>
-	    		</ul>
-			</nav>
-		</header>
-		<div id="container">
-		
-		<div id= "body">
-			
-			{{ content }}
-			
-		</div><!-- /.body -->
-		</div><!-- /.container -->		
-		<div id="footer">
-		<ul>
-			<li><img src="https://applebase.net/wp-content/uploads/2017/06/gmail-logo.jpg" width="25" height="20" alt="gmail" ></li>
-			<li>&nbsp <a href="mailto:slogoatsss@gmail.com">slogoatsss@gmail.com</a></li>
-			<li> &nbsp &nbsp &nbsp &nbsp &nbsp <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Facebook_Home_logo_old.svg/1024px-Facebook_Home_logo_old.svg.png" alt="fb" width="20" height="20"></li>
-			<li> &nbsp <a href="https://www.facebook.com/slogoatsss/" target="_blank">SloGoatsss Facebook stran</a></li>
-			<li> &nbsp &nbsp &nbsp &nbsp &nbsp <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/YouTube_logo_%282013-2015%29.png" alt="yt" width="20" height="20"></li>
-			<li> &nbsp <a href="https://www.youtube.com/channel/UCAKUK9MYS4TfznStFvWmiIQ" target="_blank">SloGoatsss Youtube kanal</a></li>
-		</ul>
-		</div><!-- /.footer -->
+    <div id="container">
+      <div id="body">
+        {{ content }}
+      </div><!-- /.body -->
+    </div><!-- /.container -->
 
+    <div id="footer">
+      <ul>
+        <li><a href="mailto:slogoatsss@gmail.com">&#9993; slogoatsss@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/slogoatsss/" target="_blank" rel="noopener">&#128100; SloGoatsss Facebook stran</a></li>
+        <li><a href="https://www.youtube.com/channel/UCAKUK9MYS4TfznStFvWmiIQ" target="_blank" rel="noopener">&#9654; SloGoatsss Youtube kanal</a></li>
+      </ul>
+    </div><!-- /.footer -->
 
-		</body>
-		
-	</html>
+    <script src="/assets/js/dropdown.js"></script>
+    {% if site.google_analytics %}
+    {% include analytics.html %}
+    {% endif %}
+  </body>
+</html>

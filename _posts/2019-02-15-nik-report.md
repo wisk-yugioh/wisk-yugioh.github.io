@@ -21,7 +21,7 @@ Poleg tega, da so Monarchi my all time favourite monsters jim Goat format ravnod
 
 
 Za vse, ki deckliste še niste videli jo prilagam tukaj: 
-<img src="https://raw.githubusercontent.com/slogoatsss/slogoatsss.github.io/master/_posts/pics/nik%20report%20decklist.png" alt="GOATs" id="autosizeImage">
+<img src="/assets/images/posts/nik report decklist.png" alt="GOATs" id="autosizeImage">
 
 
 Build, ki ga imenujem Aggro Monarch, je verjetno my all time favourite Goat deck. Deck se poslužuje veliko tako imenovanega »flip hate-a« v obliki Blade Knightov, Soul Exchangov, NoC-ov, Zaborga etc. In pri tem dela nasprotnikove NoC-e kar se da mrtve. Strategija, ki se jo deck poslužuje, je preprost beatdown. Ideja, ki dela moj deck drugačen od ostalih, je uporaba 2 Blade Knightov, ki služita tudi kakor zakladnica LIGHT attribute pošasti za priklic Black Luster Soldier – Envoy of The Beginning, ki skupaj z Soul Exchange predstavlja še več nevarnosti za nasprotnikove flip pošasti. Deck je zgrajen tako, da je njegov primarni cilj premagati Goat Control, zato proti njim niti ne sidam razen v redkih primerih.
@@ -30,7 +30,7 @@ Build, ki ga imenujem Aggro Monarch, je verjetno my all time favourite Goat deck
 Za razliko od ostalih Monarch playerjev sem se odločil, da bom igral tudi 2x Asura Priest. Razlog za igranje nje ni le njen uporaben effect, da lahko z eno potezo uničim vse nasprotnikove tokene ter da je med tem tudi LIGHT attribute ampak tudi zaradi tega ker je Spirit in se ob EP vrne v roko. Razlog zakaj je ta effect včasih zelo uporaben je nasprotnikov Snatch Steal, v mojem primeru tudi Blade Knight, ki potrebuje biti edina pošast na polju da doseže višek svoje moči. Asura je imuna tudi na Thousand-Eyes Restricta. Breaker The Magical Warrior, Twin- Headed Behemoth in Sangan so verjetno očitna izbira in jih zato ne bi preveč omenjal. Rad bi še izpostavil karto Abyss Soldier, ki je bila tudi zadnji finishing touch k decku, katera ni samo odličen out na nasprotnikovega TER-a, ampak je tudi odličen beatstick in v več primerih kakor bi si kdo mislil odličen »reciklažer« Premature Buriala in včasih celo Call Of The Haunted-a. Navsezadnje pa še ena izmed najbolj ikoničnih pošasti v decku in to je Big Shield Gardna, ki novejšim igralcem, ki še niso igrali proti Monarchom predstavlja ogromne težave.
 
 
-<img src="https://raw.githubusercontent.com/slogoatsss/slogoatsss.github.io/master/_posts/pics/nik%20report%201.png" alt="GOATs" id="autosizeImage">
+<img src="/assets/images/posts/nik report 1.png" alt="GOATs" id="autosizeImage">
 Tako nekako zgleda tudi zgodovina izbiranja prave vrste Monarch decka in seveda njihovo testiranje. Prvi deck izpred dveh let je, kakor je razvidno na sliki, imel kar nekaj problemov. Pot je počasi vodila še do Phoenix of Nephthys ter vse do Thunder Dragonov 
 
 
@@ -46,10 +46,10 @@ Deck je zgrajen tako, da je njegov primarni cilj igranje proti Goat Controlom, k
 
 Side Deck, ki ga uporabljam na Slogoatsss je sestavljen v večini za igranje proti dvem Burn playerjem, ter Chaos variacijam z Kycoom in seveda, zaradi strahu, če se kdo pokaže s FTK deckom so tukaj še Scapegoat, Threatening Roar in Neko Mane King. 
 
-Testanje samega decka je trajalo kar precej časa in tukaj se lahko zahvalim tudi G. Alenu Bizjak, ki je z veseljem testal več variacij Goat deckov proti Monarchom. S tem sem tudi sam prejel in depth znanje o igranju proti različnim deckom in kar je najslabše, Alena postavil na vrh lestvice ljudi, ki znajo igrati odlično proti Monarch deckom :( (na srečo nisva bila še nikoli pairana na turnirju) , o tem je napisal celo članek, dostopen na spodnji povezavi https://slogoatsss.github.io/blog/2019/01/28/Kako-igrati-proti-Monarchom
+Testanje samega decka je trajalo kar precej časa in tukaj se lahko zahvalim tudi G. Alenu Bizjak, ki je z veseljem testal več variacij Goat deckov proti Monarchom. S tem sem tudi sam prejel in depth znanje o igranju proti različnim deckom in kar je najslabše, Alena postavil na vrh lestvice ljudi, ki znajo igrati odlično proti Monarch deckom :( (na srečo nisva bila še nikoli pairana na turnirju) , o tem je napisal celo članek, dostopen na spodnji povezavi /blog/2019/01/28/Kako-igrati-proti-Monarchom
 
 
-<img src="https://raw.githubusercontent.com/slogoatsss/slogoatsss.github.io/master/_posts/pics/nik%20report%202.jpg" alt="GOATs" id="autosizeImage">
+<img src="/assets/images/posts/nik report 2.jpg" alt="GOATs" id="autosizeImage">
 (When you NoC and he flips Big Shield Gardna)
 
 
@@ -91,5 +91,5 @@ https://www.youtube.com/user/TheDarkSideApproach/videos
 
 
 Do naslednjič ;) 
-<img src="https://raw.githubusercontent.com/slogoatsss/slogoatsss.github.io/master/_posts/pics/nik%20report%203.jpg" alt="GOATs" id="autosizeImage">
+<img src="/assets/images/posts/nik report 3.jpg" alt="GOATs" id="autosizeImage">
 (One Thicc Monarch Boi vs Control Freaks)

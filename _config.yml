@@ -1,5 +1,25 @@
-name: SLO GOATSSS
+title: SloGoatsss
+description: Slovenska Yu-Gi-Oh! Goat Format skupnost
+url: "https://slogoatsss.github.io"
+baseurl: ""
+lang: sl
+
+author: SloGoatsss
+
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 future: true
-theme: jekyll-theme-modernist
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - not_published
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - PLAN.md
+  - CHANGELOG.md
+  - TODOS.md
+  - COPILOT.md

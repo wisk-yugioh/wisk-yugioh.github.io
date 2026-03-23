@@ -5,7 +5,7 @@ date: 2019-04-16
 ---
 KRATEK ARGUMENT ZAKAJ JE GOAT CONTROL THE BEST DECK
 
-Tale člančič je povzetek in priredba pogovora iz skupinskega fb chata med mano, Miho Fliskom in Urh Kovačičem. Chat je bil namenjen diskusiji decka in strategije, s katerima smo udarili na Colosseum turnir in ga prepričljivo tudi odnesli (report turnirja najdete na povezavi: <https://slogoatsss.github.io/blog/2019/01/12/colosseum-report>), večkrat pa smo se znašli tudi sredi globjih razprav o samih fundamentih Goat Formata in Goat Control decka.
+Tale člančič je povzetek in priredba pogovora iz skupinskega fb chata med mano, Miho Fliskom in Urh Kovačičem. Chat je bil namenjen diskusiji decka in strategije, s katerima smo udarili na Colosseum turnir in ga prepričljivo tudi odnesli (report turnirja najdete na povezavi: </blog/2019/01/12/colosseum-report>), večkrat pa smo se znašli tudi sredi globjih razprav o samih fundamentih Goat Formata in Goat Control decka.
 Rad bi z vsemi delil Urhovo argumentiranje, zakaj je Goat Control najboljši deck formata, saj je njegovo razmišljanje zadelo pravo bistvo decka, bistvo, ki ga morda večina ljudi sploh ne vidi ali dojame. Čeprav sem se sam zavedal večine stvari, ki jih je Urh takrat povedal, pa se sam nikoli ne bi znal tako dobro izraziti.
 
 …
