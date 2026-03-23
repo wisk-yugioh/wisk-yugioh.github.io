@@ -51,3 +51,31 @@ _Goal: refactor existing code using good Jekyll practices and modern standards. 
 - `_posts/2018-10-17-flisek-intervju.md`: updated image path from raw GitHub URL to `/assets/images/posts/`
 - `_posts/2019-02-15-nik-report.md`: updated 4 image paths from raw GitHub URLs to `/assets/images/posts/`
 - All `_posts/*.md`: replaced all `https://slogoatsss.github.io/blog/...` links with relative `/blog/...` paths
+
+---
+
+## Stage 2 — New Site Architecture
+
+### Deleted
+- `izposojevalnica/` directory removed entirely
+- Removed from `_data/navigation.yml`
+
+### Layout split
+- `_layouts/default.html` → renamed to `_layouts/old-default.html` (old site keeps its look)
+- New `_layouts/default.html` created — minimal blank layout for the new site
+- `_layouts/post.html` and `_layouts/event.html` updated to use `layout: old-default`
+- All 75 old content pages updated: `layout: default` → `layout: old-default`
+
+### Navigation split
+- `_data/navigation.yml` → simplified to new site nav (home only)
+- New `_data/old_navigation.yml` created with all old nav links prefixed with `/old/`
+- `_layouts/old-default.html` updated to use `site.data.old_navigation`
+
+### Content moved under /old/
+- `arhiv/`, `articles/`, `blog/`, `deckliste/`, `eventi/`, `lestvica/`, `liga/`, `profili/`, `uvod/` → all moved under `old/`
+- `_config.yml` permalink changed to `/old/blog/:year/:month/:day/:title`
+- All absolute internal links in old content prefixed with `/old/` (HTML + MD files)
+
+### New site root
+- New `index.html` at `/` — blank new site with "Stara spletna stran →" link to `/old/`
+- `old/index.html` — old site entry page with original homepage content + "← Nazaj" link

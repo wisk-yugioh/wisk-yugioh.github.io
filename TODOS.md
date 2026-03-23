@@ -1,26 +1,25 @@
 # Todos
 
 ## Stage 1 — AS-IS Refactor ✅ ALL DONE
-
-| ID | Title | Status |
-|----|-------|--------|
-| config-gemfile | Create Gemfile | ✅ done |
-| config-yml | Fix _config.yml | ✅ done |
-| assets-structure | Create assets/ directory structure | ✅ done |
-| sass-migration | Convert CSS to SCSS | ✅ done |
-| nav-data | Create _data/navigation.yml | ✅ done |
-| layout-default | Refactor _layouts/default.html | ✅ done |
-| layout-post | Fix _layouts/post.html | ✅ done |
-| includes-analytics | Fix analytics.html include | ✅ done |
-| content-fix-html | Fix invalid HTML in content pages | ✅ done |
-| content-fix-links | Fix hardcoded absolute internal URLs | ✅ done |
-| articles-frontmatter | Audit articles/*.html front matter | ✅ done |
-| posts-pics | Move _posts/pics/ to assets/images/posts/ | ✅ done |
+All 12 todos complete. See CHANGELOG.md.
 
 ---
 
-## Stage 2 — Design / UX
-_Not yet planned. See PLAN.md._
+## Stage 2 — New Site Architecture ✅ ALL DONE
 
-## Stage 3 — Content & Features
+| ID | Title | Status |
+|----|-------|--------|
+| delete-izposojevalnica | Delete izposojevalnica/ | ✅ done |
+| rename-old-layout | Rename default.html → old-default.html | ✅ done |
+| old-nav-data | Create _data/old_navigation.yml | ✅ done |
+| move-content | Move 9 content dirs under old/ | ✅ done |
+| update-permalink | Update permalink to /old/blog/... | ✅ done |
+| update-internal-links | Prefix internal links with /old/ | ✅ done |
+| create-new-layout | New minimal _layouts/default.html | ✅ done |
+| create-new-homepage | New root index.html | ✅ done |
+| create-old-index | old/index.html entry page | ✅ done |
+
+---
+
+## Stage 3 — New Site Build
 _Not yet planned. See PLAN.md._

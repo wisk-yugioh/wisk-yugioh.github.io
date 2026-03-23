@@ -3,39 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     {% seo %}
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="icon" href="/izposojevalnica/kozica.jpg">
-    <script src="/assets/js/jquery-3.3.1.min.js"></script>
   </head>
-  <body>
-    <header>
-      <button class="dropbtn" aria-label="Meni">&#9776;</button>
-      <nav>
-        <ul id="id02">
-          {% for item in site.data.navigation %}
-          <li><a class="two" href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </header>
-
-    <div id="container">
-      <div id="body">
-        {{ content }}
-      </div><!-- /.body -->
-    </div><!-- /.container -->
-
-    <div id="footer">
-      <ul>
-        <li><a href="mailto:slogoatsss@gmail.com">&#9993; slogoatsss@gmail.com</a></li>
-        <li><a href="https://www.facebook.com/slogoatsss/" target="_blank" rel="noopener">&#128100; SloGoatsss Facebook stran</a></li>
-        <li><a href="https://www.youtube.com/channel/UCAKUK9MYS4TfznStFvWmiIQ" target="_blank" rel="noopener">&#9654; SloGoatsss Youtube kanal</a></li>
-      </ul>
-    </div><!-- /.footer -->
-
-    <script src="/assets/js/dropdown.js"></script>
+  <body class="new-site">
+    <main>
+      {{ content }}
+    </main>
     {% if site.google_analytics %}
     {% include analytics.html %}
     {% endif %}
