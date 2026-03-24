@@ -1,5 +1,34 @@
 # Changelog
 
+## Stage 7: Quality-of-Life
+
+### QoL-A: Post page enhancements (`_layouts/post.html`)
+- **A1 Prev/next navigation** — three-column nav bar at bottom of posts: ← Prejšnja/Previous | Nazaj/Back | Naslednja/Next →, scoped to same collection sorted by date
+- **A2 Related posts** — up to 3 posts from same collection sharing a subcategory, shown as "Podobne objave" / "Related posts" section before the nav
+- **A3 Featured image** — if `image:` set in frontmatter, renders as `.post-hero` img below title (OG tag already worked, now visible too)
+
+### QoL-B: Index page enhancements (all 4 section index pages)
+- **B1 Live post count** — `"X rezultatov"` / `"X results"` above list, updates on every filter/search change
+- **B2 Empty-state** — `"Ni rezultatov."` / `"No results."` shown when filters yield nothing
+- **B3 Author hash filter** — author names are clickable links; clicking sets `#author=Name` in URL, filters list to that author; toggles off on second click; restored from URL hash on page load; composes with subcategory + search filters
+
+### QoL-C: Hub + infrastructure
+- **C1 Hub post counts** — each hub card shows total post count (`{{ site.clanki | size }} objav`, etc.) via pure Liquid
+- **C2 Social links data-driven** — footer in `default.html` now loops over `_data/social.yml`; YouTube entry moved there; add new links without touching HTML
+- **C3 About page** — `/about/` page created (`about/index.html`); "O nas" added to `_data/navigation.yml`
+- **C4 RSS feed** — `jekyll-feed` added to `Gemfile` and `_config.yml` plugins
+
+### QoL-D: Typography & styling (`_sass/new-site.scss`)
+- **D1 pre/code blocks** — fenced code blocks get surface background, border, padding, overflow-x scroll; inner `code` resets to transparent
+- **D2 hr styling** — `<hr>` in post content styled to match dark theme (muted border, 2rem margin)
+- **D3 Deck list** — `.deck-list` class: two-column monospace compact grid for Yu-Gi-Oh card lists; collapses to one column on mobile
+- **D4 Blockquote upgrade** — background tint (`$dark-surface`), rounded right corner, text is `$dark-text` (no longer muted/italic)
+
+### New SCSS classes added
+`.post-nav-links`, `.related-posts`, `.post-hero`, `.post-count`, `.post-empty`, `.author-filter-link`, `.deck-list`, `.hub-card-count`
+
+---
+
 ## Bug Fixes (post page)
 
 - `_layouts/post.html`: "back" link now uses `page.collection` to navigate to the correct section (`/clanki/`, `/reportaze/`, `/articles/`, `/reports/`) instead of always going to `/`

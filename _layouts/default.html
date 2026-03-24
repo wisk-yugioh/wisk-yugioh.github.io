@@ -37,7 +37,9 @@
     </main>
 
     <footer class="site-footer">
-      <a href="https://www.youtube.com/channel/UCAKUK9MYS4TfznStFvWmiIQ" target="_blank" rel="noopener">YouTube</a>
+      {% for link in site.data.social %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+      {% endfor %}
     </footer>
 
     {% if site.google_analytics %}

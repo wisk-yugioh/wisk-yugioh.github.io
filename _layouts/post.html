@@ -4,6 +4,7 @@ layout: default
 <article>
   <header class="post-header">
     <h1>{{ page.title }}</h1>
+    {% if page.image %}<img class="post-hero" src="{{ page.image }}" alt="{{ page.title }}">{% endif %}
     <p class="post-meta">
       {{ page.date | date: "%d. %B %Y" }}
       {% if page.author %} &middot; {{ page.author }}{% endif %}
@@ -13,9 +14,73 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
+  {% assign related = "" | split: "" %}
+  {% assign col_all = site[page.collection] | sort: 'date' | reverse %}
+  {% for p in col_all %}
+    {% if p.url != page.url and related.size < 3 %}
+      {% assign shared = false %}
+      {% for sub in page.subcategories %}
+        {% if p.subcategories contains sub %}
+          {% assign shared = true %}
+        {% endif %}
+      {% endfor %}
+      {% if shared %}
+        {% assign related = related | push: p %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if related.size > 0 %}
+  <aside class="related-posts">
+    <h3>{% if page.lang == "en" %}Related posts{% else %}Podobne objave{% endif %}</h3>
+    <ul>
+      {% for p in related %}
+      <li>
+        <a href="{{ p.url }}">{{ p.title }}</a>
+        <span class="post-meta">{{ p.date | date: "%Y-%m-%d" }}{% if p.author %} &middot; {{ p.author }}{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
   <nav class="post-nav">
-    {% assign back_url = "/" | append: page.collection | append: "/" %}
-    <a href="{{ back_url }}">&larr; {% if page.lang == "en" %}Back{% else %}Nazaj{% endif %}</a>
+    {% assign col_sorted = site[page.collection] | sort: 'date' %}
+    {% assign prev_post = nil %}
+    {% assign next_post = nil %}
+    {% for p in col_sorted %}
+      {% if p.url == page.url %}
+        {% assign curr_idx = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+    {% for p in col_sorted %}
+      {% assign fi = forloop.index0 %}
+      {% if fi == curr_idx and fi > 0 %}
+        {% assign prev_idx = fi | minus: 1 %}
+      {% endif %}
+      {% if fi == curr_idx %}
+        {% assign next_idx = fi | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% for p in col_sorted %}
+      {% assign fi = forloop.index0 %}
+      {% if fi == prev_idx %}{% assign prev_post = p %}{% endif %}
+      {% if fi == next_idx %}{% assign next_post = p %}{% endif %}
+    {% endfor %}
+    <div class="post-nav-links">
+      <div class="post-nav-prev">
+        {% if prev_post %}
+        <a href="{{ prev_post.url }}">&larr; {% if page.lang == "en" %}Previous{% else %}Prejšnja{% endif %}: {{ prev_post.title }}</a>
+        {% endif %}
+      </div>
+      <div class="post-nav-center">
+        {% assign back_url = "/" | append: page.collection | append: "/" %}
+        <a href="{{ back_url }}">{% if page.lang == "en" %}Back{% else %}Nazaj{% endif %}</a>
+      </div>
+      <div class="post-nav-next">
+        {% if next_post %}
+        <a href="{{ next_post.url }}">{% if page.lang == "en" %}Next{% else %}Naslednja{% endif %}: {{ next_post.title }} &rarr;</a>
+        {% endif %}
+      </div>
+    </div>
   </nav>
 </article>
 

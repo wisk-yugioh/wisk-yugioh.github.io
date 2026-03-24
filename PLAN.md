@@ -9,6 +9,7 @@ Slovenian Yu-Gi-Oh! Goat Format community site. Built with Jekyll, hosted on Git
 ## Stage 2: New Site Architecture ✅ COMPLETE
 ## Stage 3: Dark Blog ✅ COMPLETE
 ## Stage 6: Subcategory Filtering ✅ COMPLETE
+## Bugs (post page): Back link, subcategory display, EN search ✅ COMPLETE
 See CHANGELOG.md for full details on all completed stages.
 
 ### Current state
@@ -21,135 +22,159 @@ See CHANGELOG.md for full details on all completed stages.
 /assets/            ← shared CSS/JS/images
 ```
 
-All posts have `subcategories: [goat|advanced]`. Sections show subcategory filter buttons
-(first auto-selected), with search composing on top.
+---
+
+## Stage 7: Quality-of-Life ✅ COMPLETE
+
+- **A1** Prev/next post navigation (same collection, date-sorted)
+- **A2** Related posts (up to 3, same collection + subcategory)
+- **A3** Featured image support (`image:` frontmatter)
+- **B1** Live post count on index pages
+- **B2** Empty-state message when filters yield nothing
+- **B3** Author hash filter (click author → `#author=Name`, composes with subcategory + search)
+- **C1** Hub cards with post counts (pure Liquid)
+- **C2** Social links via `_data/social.yml`
+- **C3** About/Kontakt page (`/about/`, added to nav)
+- **C4** RSS feed (`jekyll-feed`)
+- **D1** `pre`/code block styling
+- **D2** `hr` styling
+- **D3** `.deck-list` class for Yu-Gi-Oh card lists
+- **D4** Blockquote upgrade (background tint, no italic)
 
 ---
 
-## Stage 4: Extended Features — NEXT
+## Stage 7: Quality-of-Life ← NEXT
 
-Ideas tracked below, grouped by priority.
+Grouped into 4 work streams that can be tackled independently.
+
+---
+
+### QoL-A: Post page enhancements
+_All changes to `_layouts/post.html` and `_sass/new-site.scss`_
+
+**A1. Prev / next post navigation**
+At the bottom of each post, show links to the previous and next post within the same
+collection, sorted by date. Pure Liquid — walk `site.[collection]` sorted by date,
+find current post by URL, then pick neighbours.
+
+```liquid
+{% assign col = site[page.collection] | sort: 'date' %}
+{% for p in col %}
+  {% if p.url == page.url %}
+    {% assign idx = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+```
+Display in `.post-nav` alongside the existing "Back" link:
+`← Prejšnja | Naslednja →` (or Previous/Next for EN).
+
+**A2. Related posts (same collection + subcategory)**
+After `.post-content`, before `.post-nav`, show up to 3 posts from the same
+collection that share at least one subcategory with the current post.
+Pure Liquid, no JS. Labelled "Podobni članki" / "Related posts".
+
+**A3. Featured image display**
+If `page.image` is set in frontmatter, render it as a hero image below the `<h1>`
+and above `.post-meta`. `jekyll-seo-tag` already uses `page.image` for OG tags —
+this just adds the visible `<img>`.
+
+---
+
+### QoL-B: Index page enhancements
+_Changes to all 4 section `index.html` files and the shared JS block_
+
+**B1. Live post count**
+Above the post list, show "X rezultatov" (or "X results" for EN) that updates
+dynamically as the subcategory or search filter changes.
+Implementation: a `<span id="post-count">` updated by `applyFilters()` JS.
+
+**B2. Empty-state message**
+When no posts match the current filter+search, show a friendly message
+("Ni rezultatov." / "No results.") instead of a blank list.
+
+**B3. Author hash-based filter**
+On index pages, make author names clickable: clicking an author appends
+`#author=Name` to the URL and filters the list to that author only.
+On page load, read the hash and pre-apply the filter.
+Composes with the existing subcategory + search filters (three-way AND).
+
+---
+
+### QoL-C: Hub + site infrastructure
+_Small wins with good maintainability payoff_
+
+**C1. Hub cards with post counts**
+Each hub card on `index.html` shows the total number of posts in that section.
+Pure Liquid: `{{ site.clanki | size }}`.
+
+**C2. Social links via `_data/social.yml`**
+Move the hardcoded YouTube link in `default.html` footer to `_data/social.yml`:
+```yaml
+- title: YouTube
+  url: https://www.youtube.com/channel/UCAKUK9MYS4TfznStFvWmiIQ
+  icon: yt  # optional, for future icon support
+```
+Footer loops over entries. Adding a Discord/Facebook link then requires no HTML edit.
+
+**C3. About / Kontakt page (`/about/`)**
+Static page at `about/index.html` (layout: default). Content:
+- Short intro to the Wisk community
+- Who runs it, how to submit an article
+- Links to YouTube and other social
+
+**C4. RSS feed**
+Add `jekyll-feed` to `Gemfile` and `_config.yml` `plugins:`. GitHub Pages supports
+it natively. Configure per-collection feeds if needed.
+
+---
+
+### QoL-D: Typography & styling
+_All in `_sass/new-site.scss`; no layout or content changes_
+
+**D1. `pre` / code block styling**
+Currently only inline `code` is styled. Multi-line fenced code blocks (`pre > code`)
+need: block padding, scrollable overflow-x, slightly larger font, border.
+
+**D2. `hr` styling**
+Markdown `---` in post content renders as plain browser `<hr>`. Style it to match
+the dark theme (subtle border, margin).
+
+**D3. Deck list styling**
+Yu-Gi-Oh articles often contain card lists. A `.deck-list` CSS class on a `<ul>`
+renders it as a compact two-column grid with monospace font — easy to scan.
+Authors apply it via:
+```markdown
+{:.deck-list}
+- Monster (20): Card Name ×3, ...
+```
+
+**D4. Blockquote / pull-quote upgrade**
+Current blockquote has a left accent border + italic text — functional but plain.
+Upgrade: slightly larger font, background tint (`$dark-surface`), rounded right
+corner, no italic (better for long quoted text).
+
+---
+
+## Content Debt
+
+**135 posts with placeholder date `2013-01-01`**
+- 114 in `_clanki/`, 21 in `_reportaze/`
+- Real dates need to be researched per article (original publish date from the old site)
+- No development work — pure content editing
+
+---
+
+## Nice-to-Have (post-QoL)
+
+- Author pages `/avtor/[slug]/` — requires Jekyll generator plugin
+- Pagination for large collections — `jekyll-paginate-v2`
+- Global search across all 4 sections — Lunr.js
+- Dark/light theme toggle — very low priority
 
 ---
 
 ## Stage 5: Content Migration ← STALLED
 
-### Completed
-- Batch conversion of all `not_published/` documents to markdown (`_converted/`)
-
-### Remaining
-- 135 posts still carry placeholder date `2013-01-01` (114 in _clanki/, 21 in _reportaze/)
-  — real dates need to be researched and corrected per article
-- Handle any remaining manually-needed files (PDFs, ODT)
-
----
-
-## Future Improvements — Ideas & Suggestions
-
-### 🔴 Bugs / Required Fixes — ✅ COMPLETE
-
-~~1. "Back" link on post pages points to hub~~ — fixed: uses `page.collection`
-~~2. Subcategory not shown on post page~~ — fixed: shown in accent colour, replaces categories
-~~3. Search placeholder Slovenian on EN sections~~ — fixed: uses `page.lang` check
-
----
-
-### 🟡 Quality-of-Life Improvements
-
-### 🟡 Quality-of-Life Improvements
-
-**4. Prev / next post navigation**
-Add previous/next links at the bottom of each post, scoped to the same collection
-and subcategory. Jekyll `site.[collection]` can be sorted and indexed.
-
-**5. Hub cards showing post counts**
-Each card on `index.html` could show how many articles exist per section/subcategory
-(e.g., "144 člankov · Goat / Advanced"). Purely Liquid, zero JS.
-
-**6. Post count / empty-state message on index pages**
-When a subcategory is selected, show "X articles" above the list (or "Ni rezultatov"
-when search yields nothing). Helps orientation in large collections.
-
-**7. Author name links**
-On post pages and index lists, clicking an author name could link to a
-`?author=X` query or a dedicated `/avtor/X/` page showing all posts by that author.
-(Simplest: client-side JS filter on the index page using a URL hash.)
-
-**8. RSS / Atom feed**
-Add `jekyll-feed` to Gemfile for each collection. Goat-format enthusiasts may want
-to follow via RSS. GitHub Pages supports `jekyll-feed` natively.
-
-**9. Social / footer links configurable via `_config.yml`**
-Currently only YouTube is hardcoded in footer. Move to `_data/social.yml` so links
-(YouTube, Facebook, Discord, etc.) can be added without touching layout HTML.
-
----
-
-### 🟢 Nice-to-Have / Future Stages
-
-**10. About / Kontakt page**
-A simple `/about/` page introducing the Wisk community, who runs it, and how to
-contribute articles. Could also list all authors.
-
-**11. Author pages**
-Dedicated `/avtor/[slug]/` pages listing all posts by a given author. Most useful
-for prolific authors (Matej Jakob: 65 articles, Alen Bizjak: 13, etc.).
-Requires a custom Jekyll generator plugin or a creative Liquid workaround.
-
-**12. Pagination for large collections**
-`_clanki/` has 144 posts rendered into the DOM on every page load. Consider
-`jekyll-paginate-v2` (supported on GitHub Pages via Actions) or client-side
-virtual scrolling to avoid a heavy initial DOM.
-
-**13. Featured image support in posts**
-Add `image:` frontmatter and display it as a header image in `_layouts/post.html`.
-`jekyll-seo-tag` already uses `page.image` for Open Graph — adding the `<img>` tag
-to the layout is the only missing piece.
-
-**14. Improved post typography**
-`_sass/new-site.scss` `.post-content` could get better defaults: blockquotes styled
-as pull-quotes, table styling, code blocks with monospace + subtle bg, image
-max-width + centering.
-
-**15. Deck profile / card-list format**
-Yu-Gi-Oh articles frequently include deck lists (40-card lists). A custom include
-or CSS class (`.deck-list`) could render these in a structured, scannable way rather
-than plain markdown lists.
-
-**16. Dark/light theme toggle**
-The dark theme is the brand identity, but a toggle stored in `localStorage` could
-be offered for accessibility. Low priority — dark-only is fine for now.
-
-**17. Related posts**
-At the bottom of each post, show 3 posts from the same collection + subcategory.
-Pure Liquid: sample `site.[collection]` filtered by `subcategories`, exclude current.
-
-**18. Search across all sections (global search)**
-A single search page (`/search/`) that searches across all 4 collections at once.
-Could be done with Lunr.js or a simple `site.[collection]` concat in JS.
-
----
-
-## Priority Order (recommended)
-
-| # | Item | Effort | Impact |
-|---|------|--------|--------|
-| 1 | Fix "back" link on post pages | XS | High |
-| 2 | Show subcategory on post page | XS | High |
-| 3 | Fix search placeholder for EN sections | XS | Low |
-| 4 | Post count / empty-state on index | S | Medium |
-| 5 | Prev/next post navigation | S | Medium |
-| 6 | Social links via `_data/social.yml` | S | Low |
-| 7 | Featured image support | S | Medium |
-| 8 | Improved post typography | M | High |
-| 9 | About page | M | Medium |
-| 10 | RSS feed | S | Low |
-| 11 | Author filtering (hash-based) | M | Medium |
-| 12 | Hub cards with counts | XS | Low |
-| 13 | Deck list styling | M | Medium |
-| 14 | Related posts | M | Low |
-| 15 | Author pages | L | Low |
-| 16 | Pagination | L | Low |
-| 17 | Global search | L | Medium |
-| 18 | Date corrections (135 posts) | XL | High |
+135 posts with placeholder dates need real dates researched and corrected.
+`_converted/` batch conversion work is complete.
 
