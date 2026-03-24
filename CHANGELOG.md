@@ -2,6 +2,22 @@
 
 ## Stages 1–4 ✅ COMPLETE
 
+---
+
+## Stage 5 — Content Migration (in progress)
+
+### not_published/ → Markdown Batch Conversion
+- Wrote `scripts/convert-not-published.mjs` — Node.js script using the `mammoth` npm package
+- Converted 174 docx/.DOC files from `not_published/` to Jekyll-ready markdown in `_converted/`
+- Images extracted per-document to `assets/images/posts/[slug]/` with inline `![]()` references
+- Frontmatter auto-generated: `layout: post`, `title`, `author`, `date: 2026-03-24` (placeholder), `categories: [arhiv]`
+- Garbled 8.3 filenames (`YU*.DOC`): title extracted from document content; author set to "Neznan"
+- Reportaža files: smart author detection (scans backwards for person-name segment)
+- Slug deduplication: collisions resolved with `-2`, `-3` suffixes
+- 4 files logged as `needs-manual`: 3 PDFs + 1 ODT
+- `_converted/CONVERSION_LOG.md` written with full per-file status table
+- `_converted/` and `scripts/` added to `exclude:` in `_config.yml`
+
 ### Stage 1 — AS-IS Jekyll Refactor
 Converted a working-but-messy site into proper Jekyll: valid HTML, SCSS, data-driven nav, asset structure, GA4 analytics include, Gemfile, cleaned all posts.
 

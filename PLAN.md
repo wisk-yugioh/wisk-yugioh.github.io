@@ -33,5 +33,13 @@ _To be planned. Ideas:_
 - About page
 - Improved post typography and images
 
-## Stage 5: Content Migration
-_To be planned._
+## Stage 5: Content Migration ← IN PROGRESS
+
+### Completed
+- Batch conversion of all `not_published/` documents to markdown (`_converted/`)
+- See `_converted/CONVERSION_LOG.md` for status of all 178 files
+
+### Next steps
+- Review converted files in `_converted/`, fix dates and authors where needed
+- Move reviewed articles to `_historic/` (for older archived content) or `_posts/` (for newer)
+- Handle the 4 `needs-manual` files (3 PDFs, 1 ODT) manually

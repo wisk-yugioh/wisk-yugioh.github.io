@@ -28,6 +28,8 @@ plugins:
 
 exclude:
   - not_published
+  - _converted
+  - scripts
   - Gemfile
   - Gemfile.lock
   - README.md
