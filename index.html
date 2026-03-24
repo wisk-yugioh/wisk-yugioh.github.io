@@ -5,12 +5,16 @@ title: Wisk Yu-Gi-Oh!
 <p class="hub-intro">Wisk Yu-Gi-Oh! — blog, articles and more.</p>
 <div class="hub-sections">
   {% for s in site.data.sections %}
+  {% if s.divider %}
+  <div class="hub-divider"></div>
+  {% else %}
   <a class="hub-card" href="/{{ s.key }}/">
     <span class="hub-card-title">{{ s.title }}</span>
     <span class="hub-card-desc">{{ s.desc }}</span>
     <span class="hub-card-count">{{ site[s.key] | size }} {{ s.count_label }}</span>
     <span class="hub-card-arrow">{{ s.cta }} &rarr;</span>
   </a>
+  {% endif %}
   {% endfor %}
 </div>
 

@@ -1,14 +1,15 @@
+- title: Objave
+  url: /objave/
 - title: Članki
   url: /clanki/
 - title: Reportaže
   url: /reportaze/
+- divider: true
+- title: Announcements
+  url: /announcements/
 - title: Articles
   url: /articles/
 - title: Reports
   url: /reports/
-- title: Objave
-  url: /objave/
-- title: Announcements
-  url: /announcements/
 - title: O nas
   url: /about/

@@ -65,6 +65,15 @@ html.new-site {
 
       &:hover { color: $dark-text; text-decoration: none; }
     }
+
+    .nav-divider {
+      display: inline-block;
+      width: 1px;
+      height: 1rem;
+      background: $dark-border;
+      margin-left: 1.5rem;
+      vertical-align: middle;
+    }
   }
 
   // ── Hamburger (mobile nav toggle) ───────────────────────
@@ -127,6 +136,8 @@ html.new-site {
 
         &:hover { color: $dark-text; background-color: $dark-border; }
       }
+
+      .nav-divider { display: none; }
     }
 
     .nav-toggle:checked ~ .mobile-nav {
@@ -512,6 +523,13 @@ html.new-site {
       font-size: 0.85rem;
       color: $dark-accent;
     }
+  }
+
+  .hub-divider {
+    grid-column: 1 / -1;
+    border: none;
+    border-top: 1px solid $dark-border;
+    margin: 0.5rem 0;
   }
 
   // ── Footer ──────────────────────────────────────────────
