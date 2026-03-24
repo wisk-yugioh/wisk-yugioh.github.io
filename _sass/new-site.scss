@@ -249,6 +249,28 @@ html.new-site {
     }
   }
 
+  .post-count {
+    font-size: 0.8rem;
+    color: $dark-muted;
+    margin-bottom: 0.75rem;
+    font-family: $font-mono;
+    min-height: 1.2em;
+  }
+
+  .post-empty {
+    color: $dark-muted;
+    font-size: 0.9rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .author-filter-link {
+    color: inherit;
+    text-decoration: none;
+    &:hover { color: $dark-accent; text-decoration: underline; }
+    &.active { color: $dark-accent; }
+  }
+
   // ── Individual post ─────────────────────────────────────
   .post-header {
     background-color: transparent;
@@ -301,13 +323,32 @@ html.new-site {
 
     blockquote {
       border-left: 3px solid $dark-accent;
+      border-radius: 0 4px 4px 0;
+      background: $dark-surface;
       margin: 1.5rem 0;
-      padding: 0.5rem 1.25rem;
-      color: $dark-muted;
-      font-style: italic;
+      padding: 0.75rem 1.25rem;
+      color: $dark-text;
+
+      p { margin-bottom: 0; color: $dark-text; }
     }
 
     code { font-family: $font-mono; background: $dark-surface; padding: 0.1em 0.4em; border-radius: 3px; font-size: 0.9em; }
+
+    pre {
+      background: $dark-surface;
+      border: 1px solid $dark-border;
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+
+      code {
+        background: none;
+        padding: 0;
+        font-size: 0.88rem;
+        border-radius: 0;
+      }
+    }
 
     img { max-width: 100%; height: auto; border-radius: 4px; margin: 1rem 0; }
 
@@ -320,6 +361,12 @@ html.new-site {
       th { background: $dark-surface; border: 1px solid $dark-border; padding: 0.6rem 0.8rem; }
       td { border: 1px solid $dark-border; padding: 0.6rem 0.8rem; }
     }
+
+    hr {
+      border: none;
+      border-top: 1px solid $dark-border;
+      margin: 2rem 0;
+    }
   }
 
   .post-nav {
@@ -327,11 +374,93 @@ html.new-site {
     padding-top: 1.5rem;
     border-top: 1px solid $dark-border;
 
+    .post-nav-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .post-nav-prev { flex: 1; text-align: left; }
+    .post-nav-center { flex: 0 0 auto; text-align: center; }
+    .post-nav-next { flex: 1; text-align: right; }
+
     a {
       color: $dark-link;
       text-decoration: none;
       font-size: 0.9rem;
+      line-height: 1.4;
+      display: inline-block;
       &:hover { color: $dark-accent; }
+    }
+  }
+
+  .related-posts {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $dark-border;
+
+    h3 {
+      font-size: 1rem;
+      color: $dark-muted;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      margin-bottom: 0.75rem;
+    }
+
+    a {
+      color: $dark-link;
+      text-decoration: none;
+      font-size: 0.95rem;
+      &:hover { color: $dark-accent; }
+    }
+
+    .post-meta {
+      font-size: 0.78rem;
+      color: $dark-muted;
+      font-family: $font-mono;
+    }
+  }
+
+  .post-hero {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  // ── Deck list (Yu-Gi-Oh card lists) ─────────────────────
+  .deck-list {
+    columns: 2;
+    column-gap: 2rem;
+    font-family: $font-mono;
+    font-size: 0.82rem;
+    color: $dark-muted;
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    li {
+      break-inside: avoid;
+      margin-bottom: 0.2rem;
+    }
+
+    @media (max-width: 600px) {
+      columns: 1;
     }
   }
 
@@ -377,6 +506,13 @@ html.new-site {
       margin: 0;
     }
 
+    .hub-card-count {
+      font-size: 0.78rem;
+      color: $dark-muted;
+      font-family: $font-mono;
+      margin-bottom: 0.5rem;
+    }
+
     .hub-card-arrow {
       display: inline-block;
       margin-top: 1.25rem;
@@ -411,5 +547,7 @@ html.new-site {
     .post-header h1 { font-size: 1.5rem; }
     .post-list li { flex-wrap: wrap; gap: 0.4rem; }
     .post-list .post-category { display: none; }
+    .post-nav-links { flex-direction: column; gap: 0.5rem; }
+    .post-nav-next { text-align: left; }
   }
 }
