@@ -10,12 +10,10 @@ Slovenian Yu-Gi-Oh! Goat Format community site. Built with Jekyll, hosted on Git
 ## Stage 3: Dark Blog ✅ COMPLETE
 See CHANGELOG.md for full details on all completed stages.
 
-### Current state (after Stage 3)
+### Current state (after Stage 3 + old site removal)
 ```
 /                  ← new dark blog (49 posts total)
 /blog/...          ← individual blog posts (new dark layout)
-/old/              ← old site entry (orange nav, unchanged)
-/old/blog/...      ← old blog nav links now forward to /blog/
 /assets/           ← shared CSS/JS/images
 ```
 

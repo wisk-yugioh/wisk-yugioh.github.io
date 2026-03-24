@@ -15,14 +15,9 @@ Use the SQL `todos` table for in-session tracking. After completing work, update
 
 ## Architecture
 
-The site has three coexisting layers:
+The site uses a single layout (`default.html`) with nav data from `_data/navigation.yml`.
 
-| Layer | URL prefix | Layout | Nav data |
-|---|---|---|---|
-| New dark blog | `/` | `default.html` | `_data/navigation.yml` |
-| Old orange site | `/old/` | `old-default.html` | `_data/old_navigation.yml` |
-
-The new dark blog is itself split into two sections:
+The dark blog is split into sections:
 
 | Section | URL | Source | Jekyll |
 |---|---|---|---|
@@ -52,11 +47,10 @@ The new dark blog is itself split into two sections:
 - No frontmatter changes needed — `layout: post` works in both collections.
 - Example: to move a post to historic, `mv _posts/2013-07-06-fortunat-evilswarm.md _historic/`
 
-New site styles are scoped entirely under the `.new-site` body class (set in both `<html>` and `<body>` in `default.html`) to prevent conflicts with the old site's styles in `_sass/main.scss`.
+All site styles live in `_sass/new-site.scss`, scoped entirely under the `.new-site` body class (set in both `<html>` and `<body>` in `default.html`).
 
 SCSS entry point is `assets/css/main.scss`, which imports:
-- `_sass/main.scss` — old site styles
-- `_sass/new-site.scss` — new dark blog styles (scoped to `.new-site`)
+- `_sass/new-site.scss` — dark blog styles (scoped to `.new-site`)
 
 Navigation is data-driven via `_data/navigation.yml` — never hardcode nav links in `default.html`.
 
@@ -93,8 +87,7 @@ Post images go in `assets/images/posts/` and are referenced as `/assets/images/p
 
 - **Internal links**: always relative paths (e.g. `/blog/2019/...`), never `https://wisk-yugioh.github.io/...`
 - **External links**: all `target="_blank"` links must include `rel="noopener"`
-- **Google Analytics**: add ID to `_config.yml` as `google_analytics: G-XXXXXXX` — the include is wired conditionally in both layouts
-- **jQuery 3.3.1**: loaded in `<head>` of `old-default.html`; required by `old/lestvica/index.html`
+- **Google Analytics**: add ID to `_config.yml` as `google_analytics: G-XXXXXXX` — the include is wired conditionally in `default.html`
 - **`not_published/`**: excluded from Jekyll build; source `.docx` files follow naming `Yu-Gi-Oh! - Članek - [Author] - [Title].docx` — do not move or rename
 - New SCSS variables for the dark theme are in `_sass/new-site.scss` (e.g. `$dark-accent: #f97316`)
 - **`future: true`** in `_config.yml` — some posts carry future dates and must still build; do not remove this setting

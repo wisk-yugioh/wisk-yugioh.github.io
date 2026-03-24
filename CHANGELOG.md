@@ -4,6 +4,18 @@
 
 ---
 
+## Old Site Removal
+
+- Deleted `old/` directory and all its contents (~130 files — old orange site)
+- Deleted `_layouts/old-default.html` and `_layouts/event.html`
+- Deleted `_data/old_navigation.yml`
+- Deleted `_sass/main.scss` (old orange theme styles)
+- Removed `@import "main"` from `assets/css/main.scss`
+- Removed "Stara stran → /old/" entry from `_data/navigation.yml`
+- Updated `.github/copilot-instructions.md`, `PLAN.md` to reflect single-layer architecture
+
+---
+
 ## Stage 5 — Content Migration (in progress)
 
 ### not_published/ → Markdown Batch Conversion
