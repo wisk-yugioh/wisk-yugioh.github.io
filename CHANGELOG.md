@@ -9,8 +9,7 @@
   - `_reports/` (2 files): all → `goat`
 - Updated all 4 section index pages (`clanki/`, `reportaze/`, `articles/`, `reports/`) with dynamic subcategory filter buttons
   - Liquid collects unique subcategories from each collection and renders buttons automatically
-  - Default state: all posts hidden; clicking a button shows only that subcategory's posts
-  - Active button highlighted; clicking again deselects (hides all)
+  - Default state: first subcategory (alphabetically) auto-selected on load; clicking again deselects (hides all)
   - Search box composes with subcategory filter (AND logic)
   - Fully extensible: new subcategory in any post's frontmatter auto-creates a new button
 - Stripped standalone search JS from `_includes/search.html`; search logic now lives in each index page script (composing with subcategory filter)

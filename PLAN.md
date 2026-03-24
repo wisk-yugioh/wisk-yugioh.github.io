@@ -41,7 +41,7 @@ All ~227 posts have `lang: sl` or `lang: en` and `categories: [article]` or `cat
 
 - Added `subcategories: [goat|advanced]` to all 201 posts
 - Dynamic subcategory filter buttons on all 4 section index pages
-- Default: posts hidden until subcategory selected; search + subcat compose
+- First subcategory (alphabetically) auto-selected on load; search + subcat compose
 - See CHANGELOG.md for full details
 
 ---

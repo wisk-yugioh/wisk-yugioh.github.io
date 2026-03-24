@@ -70,5 +70,10 @@ title: Reports (EN)
   if (searchInput) {
     searchInput.addEventListener('input', applyFilters);
   }
+
+  // Auto-select the first subcategory button on load
+  if (btns.length > 0) {
+    btns[0].click();
+  }
 })();
 </script>
