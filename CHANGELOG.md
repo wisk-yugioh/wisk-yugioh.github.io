@@ -1,5 +1,45 @@
 # Changelog
 
+## Refactoring Pass
+
+### T1 — Section index pages → shared include + external JS
+- Created `_includes/section-index.html` parameterised with `collection` and `lang` (default `sl`); handles subcat buttons, search input, post list, empty state, result count
+- Moved 82-line filter/search IIFE to `assets/js/section-filter.js`; `RESULTS_LABEL` now read from `data-results-label` attribute on `#post-list` instead of hardcoded per page
+- Reduced `clanki/index.html`, `reportaze/index.html`, `articles/index.html`, `reports/index.html` from ~118 lines each to 6 lines each (~450 lines of duplicated Liquid + 328 lines of duplicated JS eliminated)
+
+### T2 — Simplify `_layouts/post.html`
+- Assigned i18n strings (`t_related`, `t_prev`, `t_back`, `t_next`) once at top based on `page.lang`; removed 4 inline `page.lang == "en"` ternaries
+- Unified `col_all` and `col_sorted` into single `col_sorted` variable at top of template (was two separate `sort: 'date'` calls)
+- Collapsed 3-loop nav pattern into 1 loop to find `curr_idx` + bracket index access for `prev_post` / `next_post`; eliminated 2 full for-loops (~15 lines)
+- Removed dead `{% assign prev_post = nil %}` / `{% assign next_post = nil %}`; inlined `back_url` as `/{{ page.collection }}/` directly in `<a href>`
+- Broke 160-char subcategory one-liner into readable multi-line block
+
+### T3 — Hub page → `_data/sections.yml`
+- Created `_data/sections.yml` with `key`, `title`, `desc`, `count_label`, `cta` fields for all 4 sections
+- `index.html` now loops over `site.data.sections`; reduced from 27 content lines to 10
+- Changed `<p class="hub-card-title">` / `<p class="hub-card-desc">` to `<span>` (block-level `<p>` inside `<a>` is invalid HTML5); added `display: block` to both in SCSS
+
+### T4 — `default.html` nav deduplication
+- Extracted nav loop to `_includes/nav-links.html`; both desktop `<nav>` and `.mobile-nav` now use `{% include nav-links.html %}`
+- Fixed `aria-label="Meni"` hardcoded Slovenian → respects `page.lang` (`Menu` for EN pages)
+
+### T5 — `_config.yml` cleanups
+- Added `defaults:` block setting `layout: post` and `lang:` per collection type (EN for `articles`/`reports`, SL for `clanki`/`reportaze`)
+- Removed `baseurl: ""` (explicit empty string; unnecessary)
+
+### T6 — SCSS: remove redundant declarations
+- Removed `height: 100%` from `html.new-site` (body `height: 100vh` doesn't require it in modern browsers)
+- Removed duplicate `display: none` on `.mobile-nav` inside `@media (max-width: 768px)` (already set unconditionally above)
+- Removed `font-family: $font-sans` from `.post-header h1` and `h1–h4` inside `.post-content` (inherited from `.new-site`)
+- Removed `color: $dark-text` from `.post-header h1`, `h1–h4`, `p`, `blockquote`, and `blockquote p` inside `.post-content` (inherited from `.post-content`)
+- Removed `text-align: left` from `.post-content p` (browser default for LTR)
+
+### T7 — Parameterise `_includes/search.html`
+- `search.html` now accepts `include.placeholder` and `include.label` parameters with Slovenian defaults
+- Removed hardcoded `page.lang == 'en'` check; called from `section-index.html` with correct strings for each language
+
+---
+
 ## Stage 7: Quality-of-Life
 
 ### QoL-A: Post page enhancements (`_layouts/post.html`)

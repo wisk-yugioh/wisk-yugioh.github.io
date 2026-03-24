@@ -1,0 +1,45 @@
+{% assign _lang = include.lang | default: "sl" %}
+{% if _lang == "en" %}
+  {% assign _empty = "No results." %}
+  {% assign _results = "results" %}
+  {% assign _search_placeholder = "Search by title or author…" %}
+  {% assign _search_label = "Search" %}
+{% else %}
+  {% assign _empty = "Ni rezultatov." %}
+  {% assign _results = "rezultatov" %}
+  {% assign _search_placeholder = "Iskanje po naslovu ali avtorju…" %}
+  {% assign _search_label = "Iskanje" %}
+{% endif %}
+{% assign posts_sorted = site[include.collection] | sort: 'date' | reverse %}
+{% assign all_subcats = "" | split: "" %}
+{% for post in posts_sorted %}
+  {% if post.subcategories %}
+    {% assign all_subcats = all_subcats | concat: post.subcategories %}
+  {% endif %}
+{% endfor %}
+{% assign unique_subcats = all_subcats | uniq | sort %}
+
+<div class="subcat-filter">
+  {% for subcat in unique_subcats %}
+  <button class="subcat-btn" data-subcat="{{ subcat }}">{{ subcat | capitalize }}</button>
+  {% endfor %}
+</div>
+
+{% include search.html placeholder=_search_placeholder label=_search_label %}
+
+<p class="post-count" id="post-count"></p>
+<p class="post-empty" id="post-empty" style="display:none">{{ _empty }}</p>
+
+<ul class="post-list" id="post-list" data-results-label="{{ _results }}">
+  {% for post in posts_sorted %}
+  <li data-subcats="{{ post.subcategories | join: ' ' }}" style="display:none">
+    <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+    {% if post.author %}
+    <span class="post-category"><a class="author-filter-link" href="#author={{ post.author | url_encode }}" data-author="{{ post.author }}">{{ post.author }}</a></span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<script src="/assets/js/section-filter.js"></script>

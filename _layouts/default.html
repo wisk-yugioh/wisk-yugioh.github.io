@@ -13,11 +13,9 @@
     <header class="site-header">
       <a class="site-title" href="/">{{ site.title }}</a>
       <nav>
-        {% for item in site.data.navigation %}
-        <a href="{{ item.url }}">{{ item.title }}</a>
-        {% endfor %}
+        {% include nav-links.html %}
       </nav>
-      <label for="nav-toggle" class="hamburger-btn" aria-label="Meni">
+      <label for="nav-toggle" class="hamburger-btn" aria-label="{% if page.lang == 'en' %}Menu{% else %}Meni{% endif %}">
         <span></span>
         <span></span>
         <span></span>
@@ -25,9 +23,7 @@
     </header>
 
     <nav class="mobile-nav">
-      {% for item in site.data.navigation %}
-      <a href="{{ item.url }}">{{ item.title }}</a>
-      {% endfor %}
+      {% include nav-links.html %}
     </nav>
 
     <main class="site-main">

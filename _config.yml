@@ -2,7 +2,6 @@ title: Wisk Yu-Gi-Oh!
 description: Wisk Yu-Gi-Oh! Blog, articles and more
 image: /assets/images/og-image.jpg
 url: "https://wisk-yugioh.github.io"
-baseurl: ""
 lang: sl
 
 author: Alen Bizjak
@@ -23,6 +22,28 @@ collections:
   reports:
     output: true
     permalink: /reports/:year/:month/:day/:title
+
+defaults:
+  - scope:
+      type: clanki
+    values:
+      layout: post
+      lang: sl
+  - scope:
+      type: reportaze
+    values:
+      layout: post
+      lang: sl
+  - scope:
+      type: articles
+    values:
+      layout: post
+      lang: en
+  - scope:
+      type: reports
+    values:
+      layout: post
+      lang: en
 
 plugins:
   - jekyll-seo-tag
