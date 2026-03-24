@@ -11,5 +11,6 @@
   url: /articles/
 - title: Reports
   url: /reports/
+- divider: true
 - title: O nas
   url: /about/
