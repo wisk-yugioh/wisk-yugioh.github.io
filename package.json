@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "mammoth": "^1.12.0"
+    "adm-zip": "^0.5.16",
+    "mammoth": "^1.12.0",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^5.5.207",
+    "xmldom": "^0.6.0"
   }
 }
