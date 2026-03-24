@@ -22,6 +22,12 @@ collections:
   reports:
     output: true
     permalink: /reports/:year/:month/:day/:title
+  objave:
+    output: true
+    permalink: /objave/:year/:month/:day/:title
+  announcements:
+    output: true
+    permalink: /announcements/:year/:month/:day/:title
 
 defaults:
   - scope:
@@ -41,6 +47,16 @@ defaults:
       lang: en
   - scope:
       type: reports
+    values:
+      layout: post
+      lang: en
+  - scope:
+      type: objave
+    values:
+      layout: post
+      lang: sl
+  - scope:
+      type: announcements
     values:
       layout: post
       lang: en

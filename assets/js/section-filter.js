@@ -18,7 +18,7 @@
       var author = (li.querySelector('.post-category') || {textContent:''}).textContent.toLowerCase();
       var textMatch = !q || title.indexOf(q) !== -1 || author.indexOf(q) !== -1;
       var authorMatch = !activeAuthor || author === activeAuthor.toLowerCase();
-      var show = subcatMatch && textMatch && authorMatch;
+      var show = (btns.length === 0 || subcatMatch) && textMatch && authorMatch;
       li.style.display = show ? '' : 'none';
       if (show) visible++;
     });
