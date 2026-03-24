@@ -1,5 +1,15 @@
 # Changelog
 
+## Bug Fixes (post page)
+
+- `_layouts/post.html`: "back" link now uses `page.collection` to navigate to the correct section (`/clanki/`, `/reportaze/`, `/articles/`, `/reports/`) instead of always going to `/`
+- `_layouts/post.html`: removed `categories:` from post meta; replaced with `subcategories:` displayed in accent colour (`$dark-accent`)
+- `_layouts/post.html`: back link text is `"Nazaj"` for SLO posts and `"Back"` for EN posts (`page.lang == 'en'`)
+- `_includes/search.html`: search placeholder and aria-label are now in English on EN section pages (`page.lang == 'en'`)
+- `_sass/new-site.scss`: added `.post-subcategory` style (accent colour, capitalize) within `.post-header .post-meta`
+
+---
+
 ## Subcategory Filtering Rework
 
 - Added `subcategories: [goat]` or `subcategories: [advanced]` frontmatter to all 201 posts across 4 collections

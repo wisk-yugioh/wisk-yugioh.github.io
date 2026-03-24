@@ -268,6 +268,11 @@ html.new-site {
       color: $dark-muted;
       font-size: 0.85rem;
       font-family: $font-mono;
+
+      .post-subcategory {
+        color: $dark-accent;
+        text-transform: capitalize;
+      }
     }
   }
 

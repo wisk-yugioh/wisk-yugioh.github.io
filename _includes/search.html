@@ -2,5 +2,5 @@
   type="search"
   id="post-search"
   class="post-search"
-  placeholder="Iskanje po naslovu ali avtorju…"
-  aria-label="Iskanje">
+  placeholder="{% if page.lang == 'en' %}Search by title or author…{% else %}Iskanje po naslovu ali avtorju…{% endif %}"
+  aria-label="{% if page.lang == 'en' %}Search{% else %}Iskanje{% endif %}">
