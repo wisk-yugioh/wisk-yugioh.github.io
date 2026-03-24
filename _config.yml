@@ -73,7 +73,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - PLAN.md
-  - CHANGELOG.md
-  - TODOS.md
   - COPILOT.md
+  - DOCUMENTATION.md
