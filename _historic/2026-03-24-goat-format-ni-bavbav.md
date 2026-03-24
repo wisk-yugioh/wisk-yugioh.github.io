@@ -3,7 +3,8 @@ layout: post
 title: "Goat Format ni Bavbav"
 date: 2026-03-24
 author: "Tine Lovišček"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 GOAT FORMAT NI BAVBAV

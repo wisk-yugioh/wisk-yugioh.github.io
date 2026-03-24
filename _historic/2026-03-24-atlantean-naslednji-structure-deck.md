@@ -3,7 +3,8 @@ layout: post
 title: "Atlantean - naslednji structure deck"
 date: 2026-03-24
 author: "Jan Kokotec"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __1\. Uvod__

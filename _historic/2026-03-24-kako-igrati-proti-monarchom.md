@@ -3,7 +3,8 @@ layout: post
 title: "Kako Igrati proti Monarchom"
 date: 2026-03-24
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 KAKO IGRATI PROTI MONARCHOM

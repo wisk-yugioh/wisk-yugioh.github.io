@@ -3,7 +3,8 @@ layout: post
 title: "Fire Kingi"
 date: 2026-03-24
 author: "Erik Tralješič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Živjo\!

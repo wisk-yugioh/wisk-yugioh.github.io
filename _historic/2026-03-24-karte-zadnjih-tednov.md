@@ -3,7 +3,8 @@ layout: post
 title: "Karte zadnjih tednov"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdrav\!

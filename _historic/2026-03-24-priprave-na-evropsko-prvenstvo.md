@@ -3,7 +3,8 @@ layout: post
 title: "Priprave na evropsko prvenstvo"
 date: 2026-03-24
 author: "Rožle Rostohar"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Priprave na Evropsko prvenstvo

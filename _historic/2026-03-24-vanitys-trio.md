@@ -3,7 +3,8 @@ layout: post
 title: "Vanity's trio"
 date: 2026-03-24
 author: "Drago Godnjov"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Oj\!

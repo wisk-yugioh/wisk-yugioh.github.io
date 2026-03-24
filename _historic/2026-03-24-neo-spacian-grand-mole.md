@@ -3,7 +3,8 @@ layout: post
 title: "Neo Spacian Grand Mole"
 date: 2026-03-24
 author: "Andy Jamšek"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 OPIS KARTE: Neo Spacian Grand Mole

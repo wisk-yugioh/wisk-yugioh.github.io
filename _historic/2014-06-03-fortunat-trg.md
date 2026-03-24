@@ -3,7 +3,8 @@ layout: post
 title: "Yu-Gi-Oh! Trg"
 date: 2014-06-03
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 Bliža se nam vrhunec
 sezone 2013/2014, veliko je testanja, nihče nima časa spisati

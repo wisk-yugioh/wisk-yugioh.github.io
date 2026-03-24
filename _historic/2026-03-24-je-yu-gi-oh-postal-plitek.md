@@ -3,7 +3,8 @@ layout: post
 title: "Je Yu-Gi-Oh! Postal plitek"
 date: 2026-03-24
 author: "Matija Saksida"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Je Yu\-Gi\-Oh\! Postal plitek?

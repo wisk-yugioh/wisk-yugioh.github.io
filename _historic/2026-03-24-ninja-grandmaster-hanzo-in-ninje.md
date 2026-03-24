@@ -3,7 +3,8 @@ layout: post
 title: "Ninja Grandmaster Hanzo in Ninje"
 date: 2026-03-24
 author: "Dejan Brodnjak"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\!

@@ -3,7 +3,8 @@ layout: post
 title: "Jaka Fortunat vs. Alain Ly"
 date: 2026-03-24
 author: "11. Runda"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Link:

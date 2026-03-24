@@ -3,7 +3,8 @@ layout: post
 title: "Bonton za mizo"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Bonton za mizo__

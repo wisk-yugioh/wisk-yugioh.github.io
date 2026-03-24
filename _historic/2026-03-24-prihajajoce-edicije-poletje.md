@@ -3,7 +3,8 @@ layout: post
 title: "Prihajajoče edicije - poletje"
 date: 2026-03-24
 author: "Matej Lavrinšek"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni vsi skupaj\!  

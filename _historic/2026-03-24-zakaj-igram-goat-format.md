@@ -3,7 +3,8 @@ layout: post
 title: "Zakaj Igram Goat Format"
 date: 2026-03-24
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\! Moje ime je Jaka Fortunat in bom za Goat blog napisal krajši članek o tem, zakaj igram Goate\.

@@ -3,7 +3,8 @@ layout: post
 title: "Priprave na Turnir"
 date: 2026-03-24
 author: "Mitja Kač"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Uradno smo vstopili v zadnji teden pred začetkom regionals sezone, ki se v naših koncih prične z mesecem septembrom\. Ker si nas je večina skozi poletje vzela dopust v upanju, da nas razveseli nova lista prepovedanih kart, a se ta še ni zgodila, bo za tiste ki začnemo sezono že ta vikend \(1\.9\) v Zagrebu na njihovem tradicionalnem Summer Cupu \(Regionals z večjimi nagradami, imajo Winter, Spring in Summer turnir\), in je pravi balzam za tekmovalno okolje\(vedno privabi 60 ali več ljudi\)\.

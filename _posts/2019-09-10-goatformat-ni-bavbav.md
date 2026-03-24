@@ -3,6 +3,8 @@ layout: post
 title: "Goat Format ni Bavbav"
 date: 2019-09-10
 author: "Tine Lovišček"
+lang: sl
+categories: [article]
 ---
 
 **GOAT FORMAT NI BAVBAV**

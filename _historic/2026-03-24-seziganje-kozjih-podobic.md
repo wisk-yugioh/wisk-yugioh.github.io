@@ -3,7 +3,8 @@ layout: post
 title: "Sežiganje Kozjih Podobic"
 date: 2026-03-24
 author: "Tine Lovišček"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 SEŽIGANJE KOZJIH PODOBIC

@@ -2,6 +2,8 @@
 layout: post
 title: "Coverage – 19. 1. 2019"
 date: 2019-01-20
+lang: sl
+categories: [report]
 ---
 Peti SloGoatsss turnir - 19. 1. 2019 - coverage
 

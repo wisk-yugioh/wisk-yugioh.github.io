@@ -3,7 +3,8 @@ layout: post
 title: "Šel sem do prve mize in se usedel, čeprav je bil en duel že mimo sem nadaljeval pri trenutnem stanju."
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Težko pričakovano državnoprvenstvo je končno prišlo\. Zelo sem se ga veselil, saj sem si mislil da imam tokrat res lepo priložnost s svojim kupčkom naskočiti top mize\. Vse je bilo kul na turnirjih pred državnim, ko sem testal deck\. A na odločilni dan je šlo vse narobe\. Prvo rundo dobim moćnega nasprotnika, minosa\. Izkaže se da ne ve kako mimo mojega kupčka in vse kaže da ne bom imel težav z njim\. Narobe\! Marko je igral Obeliska Mučitelja in z njim ubil mojega Heralda kljub močni obrambi\. Mislim…zakaj bi kdo igral obeliska še vedno ne vem, verjetno mu paše v deck ker dosti krat ima potrebne 3 monstre za tributat\. Marko me premaga pa čeprav mu pri tem pomaga veliko sreče in pa moji iz rundo v rundo slabši handi in pa nesreča nasplošno\. V mislih imam Tethys, za katero sem 2x u draw phaseu potegnil non fairy karto\. Igram pa 30 fairyjev\. Pač…izugubil sem prvo rundo\. Mislim si, itak se lahko še poberem\. Riiiight\. Drugo rundo dobim nekega klinca, ki niti ni uporabljal ovitkov, zmagam in gremo na tretjo rundo\. Nasprotnik je bil nek meni nepoznan random, ki je po ilegalusovi ugotovitvi podoben Pauliu Bleekerju iz filma Juno, kar smo tudi dokazali za pravilno ugotovitev\. Premagal me je\. Prva runda, igrava, bolj tako tako, malo se branim jaz, malo on\. Topdecka DADa in ima seveda točno 3 darke, jaz pa nimam heralda in nimam fairyjev\. Zgubim\. Game 2, zmagam, dominiram, nič mi ne more\. Game 3\. Držim ga za goltanec\. Njegov kupček uporablja veliko kart, ki jim pravimo 1 za 1 menjave\. Seveda pa jih moram negejtat s heraldom, sicer izgubim kontrolo nad duelom\. In tako mi iztroši vse fairyje in popolnoma nemočen topdecka edinega Chaos Sorcererja in me pokoča\. A res ni duelista, ki bi me premagal brez srečnih topdeckov??  

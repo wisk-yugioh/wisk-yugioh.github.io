@@ -3,7 +3,8 @@ layout: post
 title: "Noble knighti"
 date: 2026-03-24
 author: "Tadej Zinreih"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Noble knighti

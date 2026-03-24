@@ -3,7 +3,8 @@ layout: post
 title: "Regionals vikend številka ena."
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Čutim ga\. Zagon, moment \(momentum\)\. Sila je\. Ne bom se upiral\. Gremo delat\! Ta delodiš, ta zagon, je kot windupi\. Na navijanje\. Če se sprašujete kaj mi je in zakaj ravno danes, ne vem\. Ampak trenutek bom izkoristil\.

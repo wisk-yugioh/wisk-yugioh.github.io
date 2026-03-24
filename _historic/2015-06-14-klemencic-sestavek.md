@@ -3,7 +3,8 @@ layout: post
 title: "Hrvaško državno 2015 Report"
 date: 2015-06-14
 author: "Jernej Klemenčič"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 Bok!Ker
 je veliko povpraševanja po moji decklisti, ki je na hrvaškem

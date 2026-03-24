@@ -1,8 +1,8 @@
-- title: Blog (SLO)
-  url: /blog/
-- title: Blog (ENG)
-  url: /blog-en/
-- title: 2018/19 Sezona
-  url: /sezona/
-- title: Arhiv
-  url: /historic/
+- title: Članki
+  url: /clanki/
+- title: Reportaže
+  url: /reportaze/
+- title: Articles
+  url: /articles/
+- title: Reports
+  url: /reports/

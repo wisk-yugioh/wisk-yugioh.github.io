@@ -3,7 +3,8 @@ layout: post
 title: "Peti SloGoatsss turnir - coverage"
 date: 2026-03-24
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 __Peti SloGoatsss turnir \- 19\. 1\. 2019 \- coverage__

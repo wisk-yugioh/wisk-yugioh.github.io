@@ -3,6 +3,8 @@ layout: post
 title: "Diaries of a Monarch Madman – Introduction"
 date: 2018-09-22
 author: "Nik Vidmar"
+lang: sl
+categories: [article]
 ---
 **DIARIES OF A MONARCH MADMAN**
 

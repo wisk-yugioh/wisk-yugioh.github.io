@@ -3,7 +3,8 @@ layout: post
 title: "Vid Gruden o OPENu"
 date: 2026-03-24
 author: "Vid Gruden"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Vod Gruden o OPENu

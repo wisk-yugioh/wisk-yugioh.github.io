@@ -3,7 +3,8 @@ layout: post
 title: "Ključ do Uspeha"
 date: 2017-03-24
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 KLJUČ DO USPEHA

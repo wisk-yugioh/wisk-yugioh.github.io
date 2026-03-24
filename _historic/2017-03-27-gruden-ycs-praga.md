@@ -3,7 +3,8 @@ layout: post
 title: "YCS Praga 2017 – Report"
 date: 2017-03-27
 author: "Vid Gruden"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 YCS
 Praga 2017 ali kako skoraj toppat YCS z zgolj 2/11 zmaganimi kockami

@@ -3,7 +3,8 @@ layout: post
 title: "Matej Jakob na hitro o sealedu"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Blog vsebine zadnje čase ustvarjam samo jaz\. Igralci, to je idealna priložnost/možnost, da ste ustvarjalni in se predstavite javnosti\. Če vas skrbi, da vsebina ne bo dovolj strokovna…nič za to, berejo nas tudi mlajši in manj izkušeni\. Če vas morda skrbi slovnična nepravilnost…ja kaj naj rečem…saj berete moje prispevke, ki so tudi…niti\-ne\-najbolj\-pravilni\.

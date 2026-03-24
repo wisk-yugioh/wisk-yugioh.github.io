@@ -3,7 +3,8 @@ layout: post
 title: "REDU Prophecy, nova družina čarovnikov"
 date: 2026-03-24
 author: "Urh Kovačič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Spellbook \- Prophecy

@@ -3,7 +3,8 @@ layout: post
 title: "Constellar vs. Evilswarm"
 date: 2013-07-06
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 Pozdravljena
 obča slovenska Yu-Gi-Oh! publika! Sem Jaka ''Tempest'' Fortunat in

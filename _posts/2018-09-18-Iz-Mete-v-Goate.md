@@ -3,6 +3,8 @@ layout: post
 title: "Iz Mete v Goate"
 date: 2018-09-18
 author: "Alen Bizjak"
+lang: sl
+categories: [article]
 ---
 Iz Mete v Goate
 

@@ -3,7 +3,8 @@ layout: post
 title: "Igra, Čas in Cilji"
 date: 2026-03-24
 author: "Mitja Kač"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pretekli vikend, se je uradno končala sezona Yu\-Gi\-Oh\! \(YGO\) 2017/2018  s sklepnim dejanjem v obliki svetovnega prvenstva, ki se je letos odvijalo na Japonskem v mestu Tokio\. O tej peščici srečnežev pa tokrat ne bo tekla beseda, saj imamo na domačem dvorišču dosti več dela\.

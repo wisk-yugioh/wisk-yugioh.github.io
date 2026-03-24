@@ -3,7 +3,8 @@ layout: post
 title: "Netdeck, Meta, Standard vs. Tech"
 date: 2026-03-24
 author: "Rožle Rostohar"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Netdeck, yugioh meta, standard build vs tech choice  

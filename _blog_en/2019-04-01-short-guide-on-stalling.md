@@ -4,7 +4,7 @@ title: "Short Guide on Stalling"
 date: 2019-04-01
 author: "Alen Bizjak"
 lang: en
-categories: [articles, english]
+categories: [article]
 ---
 # Short guide on stalling
 

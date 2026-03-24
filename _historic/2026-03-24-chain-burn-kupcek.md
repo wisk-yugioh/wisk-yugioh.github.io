@@ -3,7 +3,8 @@ layout: post
 title: "Chain Burn kupček"
 date: 2026-03-24
 author: "Samo Horvat"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\!

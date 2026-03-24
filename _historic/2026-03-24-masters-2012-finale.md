@@ -3,7 +3,8 @@ layout: post
 title: "Masters 2012 finale"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Pozdrav\!

@@ -1,0 +1,18 @@
+---
+layout: default
+title: Reports (EN)
+---
+<p class="post-list-heading">Reports (English)</p>
+{% include search.html %}
+<ul class="post-list">
+  {% assign en_reports = site.blog_en | where_exp: "post", "post.categories contains 'report'" | sort: 'date' | reverse %}
+  {% for post in en_reports %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+    {% if post.author %}
+    <span class="post-category">{{ post.author }}</span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

@@ -3,7 +3,8 @@ layout: post
 title: "GOAT All Day All Night"
 date: 2017-12-28
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 GOAT ALL DAY ALL NIGHT – 28.12.2017

@@ -3,7 +3,8 @@ layout: post
 title: "Matice, zdaj že veliki šravfi."
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Se opravičujem za zatišje na blogu\. Nova zaposlitev zahteva več pozornosti in mi ne uspeva ločevati produktivno in neproduktivno zabitih ur pred ekranom\. Vse so neproduktivne\. Do danes\!

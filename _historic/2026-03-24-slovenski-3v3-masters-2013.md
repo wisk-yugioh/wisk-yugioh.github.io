@@ -3,7 +3,8 @@ layout: post
 title: "Slovenski 3v3 Masters 2013"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Povabljenih je prvih 8 igralcev z največ zbranimi točkami v času od prejšnjega Mastersa \(februar\) do konca poletja \(jesen\)\. Takrat se bo tudi odigral letošnji ekipni Masters, datum bo objavljen pravočasno\.

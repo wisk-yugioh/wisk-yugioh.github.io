@@ -3,7 +3,8 @@ layout: post
 title: "Topaš. Kaj zdaj"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Topaš\. Kaj zdaj?__

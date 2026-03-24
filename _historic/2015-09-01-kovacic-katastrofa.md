@@ -3,7 +3,8 @@ layout: post
 title: "»Katastrofa«"
 date: 2015-09-01
 author: "Urh Kovačič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 # »KATASTROFA«
 

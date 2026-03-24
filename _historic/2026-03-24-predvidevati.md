@@ -3,7 +3,8 @@ layout: post
 title: "Predvidevati"
 date: 2026-03-24
 author: "Mitja Kač"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __predvideti__ predvídeti  \-im dov\. \(í ȋ\) __1\.__ *na osnovi določenih dogodkov, pojavov postati prepričan o uresničitvi česa*

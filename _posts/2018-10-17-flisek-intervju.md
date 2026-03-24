@@ -3,6 +3,8 @@ layout: post
 title: "Intervju – Miha Flisek"
 date: 2018-10-17
 author: "Alen Bizjak"
+lang: sl
+categories: [article]
 ---
 
 **Na kratko se predstavi.**

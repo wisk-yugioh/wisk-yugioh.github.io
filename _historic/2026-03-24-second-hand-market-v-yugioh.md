@@ -3,7 +3,8 @@ layout: post
 title: "Second Hand Market v Yugioh"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\!

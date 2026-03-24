@@ -3,7 +3,8 @@ layout: post
 title: "Priprave na Evropsko Prvenstvo"
 date: 2015-06-30
 author: "Rožle Rostohar"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 Priprave
 na Evropsko prvenstvo

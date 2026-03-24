@@ -3,7 +3,8 @@ layout: post
 title: "Darjan predstavi nove Fire Fist okrepitve."
 date: 2026-03-24
 author: "Darjan Žužul"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\!

@@ -3,7 +3,8 @@ layout: post
 title: "Gorz the Emissary of Darkness"
 date: 2026-03-24
 author: "Marko Bela"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Gorz the Emissary of Darkness__

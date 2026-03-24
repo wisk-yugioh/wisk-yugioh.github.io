@@ -4,7 +4,7 @@ title: "Dealing with Chaos Turbo"
 date: 2019-03-01
 author: "Alen Bizjak"
 lang: en
-categories: [articles, english]
+categories: [article]
 ---
 # Dealing with Chaos Turbo
 

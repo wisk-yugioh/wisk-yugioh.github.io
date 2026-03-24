@@ -3,7 +3,8 @@ layout: post
 title: "Deep Dark Trap Hole"
 date: 2026-03-24
 author: "Žiga Tomšič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdrav igralci\! Sem Žiga "goyo guardian" Tomšič in kot večina igralcev bom poskusil narediti nekaj v dobro slovenske yugioh scene\. Nekaj, podobnemu card reviewu:

@@ -3,7 +3,8 @@ layout: post
 title: "YCS Gent Report"
 date: 2019-09-22
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 YCS GENT REPORT – 21.9.2019 – 22.9.2019

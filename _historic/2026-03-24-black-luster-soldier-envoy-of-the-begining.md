@@ -3,7 +3,8 @@ layout: post
 title: "Black Luster Soldier - Envoy of the Begining"
 date: 2026-03-24
 author: "Tadej Zinreih"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Bojevnik Črnega Sijaja – Poslanec Začetka

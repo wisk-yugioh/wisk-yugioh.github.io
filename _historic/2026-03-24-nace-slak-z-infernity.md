@@ -3,7 +3,8 @@ layout: post
 title: "Nace Slak z Infernity"
 date: 2026-03-24
 author: "Nace Slak"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\!

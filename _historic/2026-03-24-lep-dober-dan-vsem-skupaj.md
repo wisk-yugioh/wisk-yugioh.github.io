@@ -3,7 +3,8 @@ layout: post
 title: "Lep dober dan vsem skupaj!"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Lep dober dan vsem skupaj\!

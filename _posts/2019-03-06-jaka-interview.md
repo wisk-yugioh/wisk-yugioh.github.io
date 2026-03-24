@@ -3,6 +3,8 @@ layout: post
 title: "Intervju – Jaka Fortunat"
 date: 2019-03-06
 author: "Alen Bizjak"
+lang: sl
+categories: [article]
 ---
 <span id="anchor"></span>**Na kratko se predstavi.**
 

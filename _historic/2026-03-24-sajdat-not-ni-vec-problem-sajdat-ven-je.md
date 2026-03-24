@@ -3,7 +3,8 @@ layout: post
 title: "Sajdat not ni več problem, sajdat ven je."
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Oj\!

@@ -3,7 +3,8 @@ layout: post
 title: "Na Yugioh Championship Series!"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Na Yugioh Championship Series\!

@@ -3,7 +3,8 @@ layout: post
 title: "Najhitreje na višji nivo"
 date: 2026-03-24
 author: "Urh Kovačič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Najhitreje na višji nivo  

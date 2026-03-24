@@ -3,7 +3,8 @@ layout: post
 title: "LUXURY GAMING – 2018 – COLOSSEUM GOAT FORMAT TOURNAMENT REPORT"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 LUXURY GAMING – 2018 – COLOSSEUM GOAT FORMAT TOURNAMENT REPORT

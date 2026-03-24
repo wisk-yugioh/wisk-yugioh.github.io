@@ -3,7 +3,8 @@ layout: post
 title: "TJB Locals Tour"
 date: 2026-03-24
 author: "Mitja Kač"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Zadnji vikend leta 2021 sem se odločil preživeti v toplejši klimi, zato sem se odpravil v goste k dobremu prijatelju Alenu v Pulo\. Žal ga je pokosila korona in sva si lahko samo pomahala skozi okno\.\.\. Recimo temu tako, da se je najin obračun na njegovem domačem terenu, odločil za zeleno mizo\.

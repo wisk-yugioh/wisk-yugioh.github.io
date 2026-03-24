@@ -3,7 +3,8 @@ layout: post
 title: "Dan Turnirja"
 date: 2026-03-24
 author: "Mitja Kač"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Igranje katere koli igre je podobno teku, maratonu, če smo bolj specifični\. Pri tej obliki teka je značilno, da si tekač pravilno razporedi tempo in tako preteče celotno dolžino, ter zmaga\. Ker je skrivnost igranja kart na turnirju v malenkostih, bi z vami delil nekaj le teh, ki ne samo da so preizkušene, ampak tudi delujejo in vam bodo na dolgi rok pomagale do boljših rezultatov\.

@@ -3,7 +3,8 @@ layout: post
 title: "Zakaj je Goat Control The Best Deck"
 date: 2026-03-24
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 KRATEK ARGUMENT ZAKAJ JE GOAT CONTROL THE BEST DECK

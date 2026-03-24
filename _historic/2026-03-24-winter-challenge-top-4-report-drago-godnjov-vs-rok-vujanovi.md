@@ -3,7 +3,8 @@ layout: post
 title: "Winter Challenge Top 4 report, Drago Godnjov vs. Rok Vujanović"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Winter Challenge Top 4 report, Drago Godnjov vs\. Rok Vujanović

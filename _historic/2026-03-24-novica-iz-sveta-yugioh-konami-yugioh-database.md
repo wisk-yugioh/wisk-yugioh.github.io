@@ -3,7 +3,8 @@ layout: post
 title: "Novica iz sveta Yugioh - Konami Yugioh Database"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\!

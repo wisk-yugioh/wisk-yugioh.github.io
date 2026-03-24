@@ -3,7 +3,8 @@ layout: post
 title: "Prvič na turnir - Priročnik za uspešen začetek"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 PRVIČ NA TURNIR: Priročnik za uspešen začetek  

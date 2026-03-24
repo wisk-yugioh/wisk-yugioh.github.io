@@ -3,7 +3,8 @@ layout: post
 title: "Pure Goat Control vs Chaos Control"
 date: 2026-03-24
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 GOAT CONTROL VS CHAOS CONTROL

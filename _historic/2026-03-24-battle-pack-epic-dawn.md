@@ -3,7 +3,8 @@ layout: post
 title: "Battle Pack - Epic Dawn"
 date: 2026-03-24
 author: "Simon Blažič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Battle Pack: Epic Dawn__

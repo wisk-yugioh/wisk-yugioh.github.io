@@ -3,7 +3,8 @@ layout: post
 title: "Yu-Gi-Oh! Trg"
 date: 2026-03-24
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Bliža se nam vrhunec sezone 2013/2014, veliko je testanja, nihče nima časa spisati kakšen članek za nekajminutno popestritev maturitetnih dni/izpitnega obdobja\. Ponovno sem z vami Jaka ''Tempest'' Fortunat, tokrat s člankom o različnih temah\. V bistvu gre za skupek povezanih tem, ki so mi padle na pamet med ''pripravami'' na državno prvenstvo\.

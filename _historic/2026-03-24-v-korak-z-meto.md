@@ -3,7 +3,8 @@ layout: post
 title: "V korak z Meto"
 date: 2026-03-24
 author: "Drago Godnjov"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __V korak z Meto__

@@ -3,7 +3,8 @@ layout: post
 title: "LUXURY 32-MAN GOAT FORMAT TOURNAMENT REPORT AND SOME OTHER STUFF"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 LUXURY 32\-MAN GOAT FORMAT TOURNAMENT REPORT AND SOME OTHER STUFF

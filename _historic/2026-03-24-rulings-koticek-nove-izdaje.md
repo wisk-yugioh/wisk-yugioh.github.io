@@ -3,7 +3,8 @@ layout: post
 title: "Rulings kotiček - nove izdaje"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Oj\!

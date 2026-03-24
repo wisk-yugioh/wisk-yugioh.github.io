@@ -3,7 +3,8 @@ layout: post
 title: "Odds – part 1 – building the deck"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Odds – part 1 – building the deck__

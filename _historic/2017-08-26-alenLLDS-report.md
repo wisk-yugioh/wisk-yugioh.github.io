@@ -3,7 +3,8 @@ layout: post
 title: "LLDS DD Vič 2017 – Report"
 date: 2017-08-26
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 LLDS DD Vič 26.08.2017
 

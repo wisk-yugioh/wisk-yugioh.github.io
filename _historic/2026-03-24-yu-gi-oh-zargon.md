@@ -3,7 +3,8 @@ layout: post
 title: "Yu-Gi-Oh! Žargon"
 date: 2026-03-24
 author: "Simon Blažič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Yu\-Gi\-Oh\! Žargon__

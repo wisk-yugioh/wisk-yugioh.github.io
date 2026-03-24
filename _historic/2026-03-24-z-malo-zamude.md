@@ -3,7 +3,8 @@ layout: post
 title: "z malo zamude"
 date: 2026-03-24
 author: "SCF"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Uvodna Beseda  

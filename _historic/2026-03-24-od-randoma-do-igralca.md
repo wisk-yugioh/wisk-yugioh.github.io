@@ -3,7 +3,8 @@ layout: post
 title: "Od randoma do igralca"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Draga Jan in Jure iz okolice Ivančne gorice\!

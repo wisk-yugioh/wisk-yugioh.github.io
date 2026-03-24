@@ -3,7 +3,8 @@ layout: post
 title: "Internet in Yugioh z roko v roki"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 NE BODI GA LEN\!  

@@ -4,6 +4,7 @@ title: "Luxury Tournament Report"
 date: 2019-04-26
 author: "Alen Bizjak"
 lang: en
+categories: [report]
 ---
 LUXURY 32-MAN GOAT FORMAT TOURNAMENT REPORT AND SOME OTHER STUFF
 

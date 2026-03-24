@@ -3,7 +3,8 @@ layout: post
 title: "Sidanje v Goat Formatu"
 date: 2026-03-24
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 SIDANJE V GOAT FORMATU

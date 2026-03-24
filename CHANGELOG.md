@@ -4,7 +4,17 @@
 
 ---
 
-## Old Site Removal
+## Category Rework + 4-Section Navigation
+
+- Standardized all ~190 post frontmatters: `lang: sl`/`lang: en` + `categories: [article]` or `categories: [report]`
+- Dropped old categories (`arhiv`, `articles`, `english`) in favour of the two-category system
+- Batch update script: `scripts/update-categories.mjs` (227 files updated)
+- Created 4 new section index pages: `/clanki/`, `/reportaze/`, `/articles/`, `/reports/`
+  - SLO pages use Liquid `concat` to combine across collections (`_posts/` + `_historic/` [+ `_sezona/`]) and filter by category
+- Updated `_data/navigation.yml`: replaced Blog (SLO), Blog (ENG), 2018/19 Sezona, Arhiv with Članki, Reportaže, Articles, Reports
+- Old section pages (`/blog/`, `/blog-en/`, `/sezona/`, `/historic/`) remain on disk but removed from nav
+
+---
 
 - Deleted `old/` directory and all its contents (~130 files — old orange site)
 - Deleted `_layouts/old-default.html` and `_layouts/event.html`

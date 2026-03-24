@@ -3,7 +3,8 @@ layout: post
 title: "Shaddoll no more"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Ne bom niti začenjal o tem kako mi ne uspe napisat članka\. Mi ne, zdaj mi je\.

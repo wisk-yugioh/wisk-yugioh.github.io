@@ -3,7 +3,8 @@ layout: post
 title: "Wind-Up Zenmaines"
 date: 2026-03-24
 author: "Simon Blažič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Wind\-Up Zenmaines__

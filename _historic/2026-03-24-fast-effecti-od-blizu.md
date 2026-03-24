@@ -3,7 +3,8 @@ layout: post
 title: "Fast effecti od blizu"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Fast effecti od blizu__

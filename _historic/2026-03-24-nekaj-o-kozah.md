@@ -3,7 +3,8 @@ layout: post
 title: "Nekaj o Kozah"
 date: 2017-03-24
 author: "Alen Bizjak"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 NEKAJ O KOZAH

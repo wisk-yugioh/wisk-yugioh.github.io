@@ -3,7 +3,8 @@ layout: post
 title: "Krajša Diskusija Ban Liste"
 date: 2014-07-04
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 Pozdravljeni!
 

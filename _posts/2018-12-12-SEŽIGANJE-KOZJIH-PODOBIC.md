@@ -3,6 +3,8 @@ layout: post
 title: "Sežiganje Kozjih Podobic"
 date: 2018-12-12
 author: "Tine Lovišček"
+lang: sl
+categories: [article]
 ---
 
 **SEŽIGANJE KOZJIH PODOBIC**

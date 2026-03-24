@@ -3,7 +3,8 @@ layout: post
 title: "Ni trap kart! … Ni trap kart"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Oj\!

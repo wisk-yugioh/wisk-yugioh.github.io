@@ -3,7 +3,8 @@ layout: post
 title: "Winter Challenge finale, Drago Godnjov vs. Karlo Mrvić"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Winter Challenge finale, Drago Godnjov vs\. Karlo Mrvić

@@ -3,7 +3,8 @@ layout: post
 title: "SloGoatsss"
 date: 2026-03-24
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 __Na kratko se predstavi\.__

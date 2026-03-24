@@ -3,7 +3,8 @@ layout: post
 title: "Nekaj aktualnih pravil."
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Ta sekcija nekako stagnira, ker se bojite vprašati\. Ponudba je bila, da pošljete svoja vprašanja o pravilih \(kakršna koli vprašanja\) na mail [matej@cardtraders\.eu](mailto:matej@cardtraders.eu) in vam odgovorim tukaj\. Teh vprašanj je bilo zelo malo\. Večina jih je bila prek facebooka\.

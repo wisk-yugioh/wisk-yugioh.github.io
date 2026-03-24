@@ -3,7 +3,8 @@ layout: post
 title: "Povzetek Konamijevih blogov o Battle Packu"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\!

@@ -4,7 +4,7 @@ title: "Goat Control Tech - Dekoichi, the Battlechanted Locomotive"
 date: 2019-03-22
 author: "Alen Bizjak"
 lang: en
-categories: [articles, english]
+categories: [article]
 ---
 # Tech Choices in Goat Control – Dekoichi
 

@@ -3,7 +3,8 @@ layout: post
 title: "Iskanje lukenj - skozi tri sete"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Iskanje lukenj – skozi tri sete

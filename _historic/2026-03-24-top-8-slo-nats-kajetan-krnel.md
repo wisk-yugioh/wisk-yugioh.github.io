@@ -3,7 +3,8 @@ layout: post
 title: "Top 8 Slo Nats – Kajetan Krnel"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Top 8 Slo Nats – Kajetan Krnel

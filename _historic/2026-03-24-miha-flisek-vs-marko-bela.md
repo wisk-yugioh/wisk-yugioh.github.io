@@ -3,7 +3,8 @@ layout: post
 title: "Miha Flisek vs. Marko Bela"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Miha Flisek vs\. Marko Bela

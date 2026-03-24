@@ -3,7 +3,8 @@ layout: post
 title: "Med Platonom in Hickokom"
 date: 2026-03-24
 author: "Urh Kovačič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 __Med Platonom in Hickokom__

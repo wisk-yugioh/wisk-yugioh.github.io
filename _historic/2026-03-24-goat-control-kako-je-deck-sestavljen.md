@@ -3,7 +3,8 @@ layout: post
 title: "Goat Control - Kako je Deck Sestavljen"
 date: 2026-03-24
 author: "Matija Saksida"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Goat Control – Kako je deck sestavljen in zakaj tako

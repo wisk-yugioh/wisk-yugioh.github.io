@@ -3,6 +3,8 @@ layout: post
 title: "Kratka Predstavitev Chaosa v Goat Formatu"
 date: 2019-03-14
 author: "Alen Bizjak"
+lang: sl
+categories: [article]
 ---
 KRATKA PREDSTAVITEV CHAOSA V GOAT FORMATU
 

@@ -3,7 +3,8 @@ layout: post
 title: "»Katastrofa«"
 date: 2026-03-24
 author: "Urh Kovačič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 »KATASTROFA«  

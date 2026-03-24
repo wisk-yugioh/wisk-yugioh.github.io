@@ -3,7 +3,8 @@ layout: post
 title: "Slogoatsss side event Vič 19.1.2019"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Slogoatsss side event Vič 19\.1\.2019

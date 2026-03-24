@@ -3,6 +3,8 @@ layout: post
 title: "Diaries of a Monarch Madman – In Search of Solutions"
 date: 2018-10-10
 author: "Nik Vidmar"
+lang: sl
+categories: [article]
 ---
 **DIARIES OF A MONARCH MADMAN:
 IN SEARCH OF SOLUTIONS**

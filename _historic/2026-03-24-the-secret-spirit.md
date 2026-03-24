@@ -3,7 +3,8 @@ layout: post
 title: "The Secret Spirit"
 date: 2026-03-24
 author: "Urh Kovačič"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 The secret spirit

@@ -3,7 +3,8 @@ layout: post
 title: "Igrajva Yugioh!"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Prispevek je posvečen Gravekeeperju in Fire Kingu iz Novega mesta\!

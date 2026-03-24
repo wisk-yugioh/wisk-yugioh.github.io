@@ -3,7 +3,8 @@ layout: post
 title: "SloGoatsss"
 date: 2026-03-24
 author: "Miha Flisek"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Na kratko se predstavi\.

@@ -3,7 +3,8 @@ layout: post
 title: "Regionals 2015 Report"
 date: 2026-03-24
 author: "Gregor Skok"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Od casual igralca, do competitive igralca  

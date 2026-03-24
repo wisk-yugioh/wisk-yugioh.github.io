@@ -3,7 +3,8 @@ layout: post
 title: "Finale Open mini"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Pozdravljeni\!

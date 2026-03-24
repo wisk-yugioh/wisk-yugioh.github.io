@@ -3,7 +3,8 @@ layout: post
 title: "Card Advantage"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Ni vsak teden članka na našem blogu, razlogi \(ali naj rečem izgovori\) ostajajo isti\. Vsake toliko pa nekdo vendarle omeni temo ob kateri bi bilo vredno izgubiti nekaj ur tipkanja \(za vaših nekaj minut branja\)\. Nedavno je to v Yugioh facebook skupini storil igralec, ko je izrazil željo po prispevku na temo »card advantage\-a«\. Takoj sem se določil za izvršitelja te prošnje\.

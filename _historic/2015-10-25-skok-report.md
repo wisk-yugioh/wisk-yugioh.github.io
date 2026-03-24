@@ -3,7 +3,8 @@ layout: post
 title: "Od Casual Igralca do Competitive Igralca"
 date: 2015-10-25
 author: "Gregor Skok"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 Od
 casual igralca, do competitive igralcaPozdravljeniSem

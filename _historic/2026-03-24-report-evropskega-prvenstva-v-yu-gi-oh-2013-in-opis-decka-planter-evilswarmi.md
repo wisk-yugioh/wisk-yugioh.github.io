@@ -3,7 +3,8 @@ layout: post
 title: "Report Evropskega Prvenstva v Yu-Gi-Oh! 2013 in Opis Decka (Planter-Evilswarmi)"
 date: 2026-03-24
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 Pozdravljena obča slovenska Yu\-Gi\-Oh\! publika\! Sem Jaka ''Tempest'' Fortunat in se vam javljam z nekakšnim coveragom evropskega prvenstva in predstavitvijo decka obenem\.

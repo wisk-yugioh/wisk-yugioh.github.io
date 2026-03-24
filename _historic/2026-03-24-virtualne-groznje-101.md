@@ -3,7 +3,8 @@ layout: post
 title: "Virtualne grožnje 1.01"
 date: 2026-03-24
 author: "Matej Jakob"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Oj\!

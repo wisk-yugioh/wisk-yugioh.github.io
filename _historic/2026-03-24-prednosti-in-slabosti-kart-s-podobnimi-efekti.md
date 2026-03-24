@@ -3,7 +3,8 @@ layout: post
 title: "Prednosti in Slabosti Kart s Podobnimi Efekti"
 date: 2026-03-24
 author: "Jaka Fortunat"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Pozdravljeni\!  

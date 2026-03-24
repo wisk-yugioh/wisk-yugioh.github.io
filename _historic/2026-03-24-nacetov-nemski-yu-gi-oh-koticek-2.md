@@ -3,7 +3,8 @@ layout: post
 title: "Nacetov nemški Yu-Gi-Oh! kotiček"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [article]
 ---
 
 Nacetov nemški Yu\-Gi\-Oh\! kotiček  

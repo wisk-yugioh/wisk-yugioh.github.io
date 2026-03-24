@@ -3,7 +3,8 @@ layout: post
 title: "PONOVNI TOP SLOVENSKEGA DRŽAVNEGA 2019 Z NE-TOP-META DECKOM"
 date: 2026-03-24
 author: "Neznan"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 
 __PONOVNI TOP SLOVENSKEGA DRŽAVNEGA 2019 Z NE\-TOP\-META DECKOM__

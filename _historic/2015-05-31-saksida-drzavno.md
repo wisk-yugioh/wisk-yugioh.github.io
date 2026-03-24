@@ -3,7 +3,8 @@ layout: post
 title: "Državno Prvenstvo – Report"
 date: 2015-05-31
 author: "Matija Saksida"
-categories: [arhiv]
+lang: sl
+categories: [report]
 ---
 Pozdravljeni 😊
 To bo moj prvi članek v katerikoli skupini. Zajel bom včerajšnje
