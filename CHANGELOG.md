@@ -54,6 +54,13 @@
 - `_converted/CONVERSION_LOG.md` written with full per-file status table
 - `_converted/` and `scripts/` added to `exclude:` in `_config.yml`
 
+### Duplicate Removal
+- Identified 14 duplicate articles in `_clanki/` where a `2026-03-24` mass-conversion copy existed alongside an original correctly-dated file
+- Deleted all 14 `2026-03-24` duplicates; originals preserved unchanged
+- 5 edge-case files kept (`nacetov-nemski-yu-gi-oh-koticek` ×3, `slogoatsss` ×2): same title but different content, no originals exist
+
+---
+
 ### Stage 1 — AS-IS Jekyll Refactor
 Converted a working-but-messy site into proper Jekyll: valid HTML, SCSS, data-driven nav, asset structure, GA4 analytics include, Gemfile, cleaned all posts.
 
