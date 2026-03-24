@@ -1,6 +1,5 @@
 - title: Objave
   url: /objave/
-  flag: "🇸🇮"
 - title: Članki
   url: /clanki/
 - title: Reportaže
@@ -8,7 +7,6 @@
 - divider: true
 - title: Announcements
   url: /announcements/
-  flag: "🇬🇧"
 - title: Articles
   url: /articles/
 - title: Reports
