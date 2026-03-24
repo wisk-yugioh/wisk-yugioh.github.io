@@ -5,8 +5,8 @@ title: Reports (EN)
 <p class="post-list-heading">Reports (English)</p>
 {% include search.html %}
 <ul class="post-list">
-  {% assign en_reports = site.blog_en | where_exp: "post", "post.categories contains 'report'" | sort: 'date' | reverse %}
-  {% for post in en_reports %}
+  {% assign reports_sorted = site.reports | sort: 'date' | reverse %}
+  {% for post in reports_sorted %}
   <li>
     <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>

@@ -4,7 +4,21 @@
 
 ---
 
-## Category Rework + 4-Section Navigation
+## Collection Restructure
+
+- Moved all 227 posts into 4 dedicated collection directories matching the navigation sections:
+  - `_clanki/` (164 SLO articles) — from `_posts/` + `_historic/`
+  - `_reportaze/` (55 SLO reports) — from `_posts/` + `_sezona/` + `_historic/`
+  - `_articles/` (6 EN articles) — from `_blog_en/`
+  - `_reports/` (2 EN reports) — from `_blog_en/`
+- Updated `_config.yml`: replaced old collections (`historic`, `sezona`, `blog_en`) with 4 new ones; removed global `permalink:` for empty `_posts/`
+- Updated all 4 section index pages to use `site.clanki` / `site.reportaze` / `site.articles` / `site.reports` directly (no more cross-collection concat+filter)
+- Updated `index.html` hub page to link to the 4 new sections
+- Removed old collection dirs (`_posts/`, `_blog_en/`, `_sezona/`, `_historic/`) and old section index dirs (`blog/`, `blog-en/`, `sezona/`, `historic/`)
+- Updated `.github/copilot-instructions.md` to reflect new 4-collection architecture
+- All post URLs now follow collection prefix pattern (e.g. `/clanki/`, `/reportaze/`, `/articles/`, `/reports/`)
+
+---
 
 - Standardized all ~190 post frontmatters: `lang: sl`/`lang: en` + `categories: [article]` or `categories: [report]`
 - Dropped old categories (`arhiv`, `articles`, `english`) in favour of the two-category system

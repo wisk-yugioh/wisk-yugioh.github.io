@@ -8,19 +8,21 @@ lang: sl
 author: Alen Bizjak
 
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
 future: true
 
 collections:
-  historic:
+  clanki:
     output: true
-    permalink: /historic/:year/:month/:day/:title
-  sezona:
+    permalink: /clanki/:year/:month/:day/:title
+  reportaze:
     output: true
-    permalink: /sezona/:year/:month/:day/:title
-  blog_en:
+    permalink: /reportaze/:year/:month/:day/:title
+  articles:
     output: true
-    permalink: /blog-en/:year/:month/:day/:title
+    permalink: /articles/:year/:month/:day/:title
+  reports:
+    output: true
+    permalink: /reports/:year/:month/:day/:title
 
 plugins:
   - jekyll-seo-tag

@@ -5,9 +5,8 @@ title: Reportaže
 <p class="post-list-heading">Reportaže (slovensko)</p>
 {% include search.html %}
 <ul class="post-list">
-  {% assign all_slo = site.posts | concat: site.historic | concat: site.sezona %}
-  {% assign slo_reports = all_slo | where_exp: "post", "post.categories contains 'report'" | sort: 'date' | reverse %}
-  {% for post in slo_reports %}
+  {% assign reportaze_sorted = site.reportaze | sort: 'date' | reverse %}
+  {% for post in reportaze_sorted %}
   <li>
     <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>

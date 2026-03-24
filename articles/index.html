@@ -5,8 +5,8 @@ title: Articles (EN)
 <p class="post-list-heading">Articles (English)</p>
 {% include search.html %}
 <ul class="post-list">
-  {% assign en_articles = site.blog_en | where_exp: "post", "post.categories contains 'article'" | sort: 'date' | reverse %}
-  {% for post in en_articles %}
+  {% assign articles_sorted = site.articles | sort: 'date' | reverse %}
+  {% for post in articles_sorted %}
   <li>
     <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>

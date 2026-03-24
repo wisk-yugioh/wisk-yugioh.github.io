@@ -17,35 +17,40 @@ Use the SQL `todos` table for in-session tracking. After completing work, update
 
 The site uses a single layout (`default.html`) with nav data from `_data/navigation.yml`.
 
-The dark blog is split into sections:
+The site has 4 content sections, each backed by a dedicated Jekyll collection:
 
-| Section | URL | Source | Jekyll |
-|---|---|---|---|
-| Hub | `/` | `index.html` | static page |
-| Modern blog | `/blog/` | `blog/index.html` | `_posts/` (built-in) |
-| Historic blog | `/historic/` | `historic/index.html` | `_historic/` collection |
+| Section | URL prefix | Collection dir | Jekyll variable | Content |
+|---|---|---|---|---|
+| Članki | `/clanki/` | `_clanki/` | `site.clanki` | SLO articles (164) |
+| Reportaže | `/reportaze/` | `_reportaze/` | `site.reportaze` | SLO reports (55) |
+| Articles | `/articles/` | `_articles/` | `site.articles` | EN articles (6) |
+| Reports | `/reports/` | `_reports/` | `site.reports` | EN reports (2) |
 
-**Adding a third section** — 4 steps:
+Plus the hub:
+
+| Page | URL | Source |
+|---|---|---|
+| Hub | `/` | `index.html` — static, links to the 4 sections |
+
+**Adding a new section** — 4 steps:
 1. Add a collection to `_config.yml`:
    ```yaml
    collections:
-     historic:
-       output: true
-       permalink: /historic/:year/:month/:day/:title
-     mysection:           # ← new
+     mysection:
        output: true
        permalink: /mysection/:year/:month/:day/:title
    ```
-2. Create the `_mysection/` directory (add a `.gitkeep` if empty)
-3. Create `mysection/index.html` — copy `historic/index.html`, replace `site.historic` with `site.mysection`
+2. Create `_mysection/` directory
+3. Create `mysection/index.html` — copy any existing section index, replace `site.clanki` with `site.mysection`
 4. Add a nav entry to `_data/navigation.yml`
 
-**Moving an article between sections** — 1 step:
-- Move the `.md` file between directories. Jekyll's collection membership is determined solely by which directory the file lives in:
-  - `_posts/` → appears at `/blog/YYYY/MM/DD/slug` (modern blog)
-  - `_historic/` → appears at `/historic/YYYY/MM/DD/slug` (historic blog)
-- No frontmatter changes needed — `layout: post` works in both collections.
-- Example: to move a post to historic, `mv _posts/2013-07-06-fortunat-evilswarm.md _historic/`
+**Moving a post between sections** — 1 step:
+- Move the `.md` file to the correct collection directory. Also update `categories:` and `lang:` in frontmatter if changing content type or language.
+- Examples:
+  - SLO article: file lives in `_clanki/`
+  - SLO report: file lives in `_reportaze/`
+  - EN article: file lives in `_articles/`
+  - EN report: file lives in `_reports/`
 
 All site styles live in `_sass/new-site.scss`, scoped entirely under the `.new-site` body class (set in both `<html>` and `<body>` in `default.html`).
 
@@ -62,7 +67,7 @@ Implementation: `body.new-site` is `height: 100vh; overflow: hidden; display: fl
 
 ## Post Conventions
 
-File naming: `_posts/YYYY-MM-DD-slug.md`
+File naming: `YYYY-MM-DD-slug.md` — place in the correct collection directory.
 
 Frontmatter fields:
 ```yaml
@@ -72,20 +77,20 @@ title: "Post Title"
 date: YYYY-MM-DD
 author: "Author Name"   # required — shown on index and post page
 description: "One sentence summary"  # recommended — used for SEO meta description
-lang: en                # add for English posts (default is sl)
-categories: [category]  # optional; see categories below
+lang: sl                # sl for Slovenian, en for English
+categories: [article]   # article or report
 ---
 ```
 
-Known categories: `arhiv` (2013–2017 archived Slovenian articles), `articles` + `english` (English articles by siwski), no category (Slovenian tournament coverage 2018–2019).
-
-Permalink pattern: `/blog/:year/:month/:day/:title`
+Permalink pattern (per collection):
+- SLO: `/clanki/:year/:month/:day/:title` or `/reportaze/:year/:month/:day/:title`
+- EN: `/articles/:year/:month/:day/:title` or `/reports/:year/:month/:day/:title`
 
 Post images go in `assets/images/posts/` and are referenced as `/assets/images/posts/filename.jpg`.
 
 ## Key Conventions
 
-- **Internal links**: always relative paths (e.g. `/blog/2019/...`), never `https://wisk-yugioh.github.io/...`
+- **Internal links**: always relative paths (e.g. `/clanki/2019/...`), never `https://wisk-yugioh.github.io/...`
 - **External links**: all `target="_blank"` links must include `rel="noopener"`
 - **Google Analytics**: add ID to `_config.yml` as `google_analytics: G-XXXXXXX` — the include is wired conditionally in `default.html`
 - **`not_published/`**: excluded from Jekyll build; source `.docx` files follow naming `Yu-Gi-Oh! - Članek - [Author] - [Title].docx` — do not move or rename

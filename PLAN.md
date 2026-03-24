@@ -10,22 +10,25 @@ Slovenian Yu-Gi-Oh! Goat Format community site. Built with Jekyll, hosted on Git
 ## Stage 3: Dark Blog ✅ COMPLETE
 See CHANGELOG.md for full details on all completed stages.
 
-### Current state (after Stage 3 + old site removal + category rework)
+### Current state (after Stage 3 + old site removal + category rework + collection restructure)
 ```
-/                  ← new dark blog hub
-/clanki/           ← SLO articles index (from _posts/ + _historic/)
-/reportaze/        ← SLO reports index (from _posts/ + _historic/ + _sezona/)
-/articles/         ← EN articles index (from _blog_en/)
-/reports/          ← EN reports index (from _blog_en/)
-/assets/           ← shared CSS/JS/images
+/                   ← hub page (links to 4 sections)
+/clanki/...         ← SLO articles (164 posts, _clanki/ collection)
+/reportaze/...      ← SLO reports (55 posts, _reportaze/ collection)
+/articles/...       ← EN articles (6 posts, _articles/ collection)
+/reports/...        ← EN reports (2 posts, _reports/ collection)
+/assets/            ← shared CSS/JS/images
 ```
 
-### Post breakdown
-All ~190 posts now have `lang: sl` or `lang: en` and `categories: [article]` or `categories: [report]`.
-- `_posts/` (18): SLO, mostly articles
-- `_blog_en/` (8): EN, mix of articles/reports
-- `_sezona/` (9): SLO, all reports
-- `_historic/` (14 real + ~150 batch): SLO, mix
+### Post structure
+All ~227 posts have `lang: sl` or `lang: en` and `categories: [article]` or `categories: [report]`. Collection membership determines URL prefix.
+
+| Collection | Count | URL prefix |
+|---|---|---|
+| `_clanki/` | 164 | `/clanki/` |
+| `_reportaze/` | 55 | `/reportaze/` |
+| `_articles/` | 6 | `/articles/` |
+| `_reports/` | 2 | `/reports/` |
 
 ### Post breakdown (49 total)
 - 29 original Slovenian blog posts/coverage (2018–2019)

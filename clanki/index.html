@@ -5,9 +5,8 @@ title: Članki
 <p class="post-list-heading">Članki (slovensko)</p>
 {% include search.html %}
 <ul class="post-list">
-  {% assign all_slo = site.posts | concat: site.historic %}
-  {% assign slo_articles = all_slo | where_exp: "post", "post.categories contains 'article'" | sort: 'date' | reverse %}
-  {% for post in slo_articles %}
+  {% assign clanki_sorted = site.clanki | sort: 'date' | reverse %}
+  {% for post in clanki_sorted %}
   <li>
     <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
