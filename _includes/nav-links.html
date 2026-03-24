@@ -1,3 +1,3 @@
 {% for item in site.data.navigation %}
-{% if item.divider %}<span class="nav-divider"></span>{% else %}<a href="{{ item.url }}">{{ item.title }}</a>{% endif %}
+{% if item.divider %}<span class="nav-divider"></span>{% else %}{% if item.flag %}<span class="nav-flag">{{ item.flag }}</span>{% endif %}<a href="{{ item.url }}">{{ item.title }}</a>{% endif %}
 {% endfor %}

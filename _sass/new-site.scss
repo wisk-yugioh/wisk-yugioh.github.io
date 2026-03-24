@@ -74,6 +74,14 @@ html.new-site {
       margin-left: 1.5rem;
       vertical-align: middle;
     }
+
+    .nav-flag {
+      display: inline-block;
+      margin-left: 1.5rem;
+      font-size: 1rem;
+      vertical-align: middle;
+      opacity: 0.75;
+    }
   }
 
   // ── Hamburger (mobile nav toggle) ───────────────────────
@@ -138,6 +146,7 @@ html.new-site {
       }
 
       .nav-divider { display: none; }
+      .nav-flag { display: none; }
     }
 
     .nav-toggle:checked ~ .mobile-nav {
