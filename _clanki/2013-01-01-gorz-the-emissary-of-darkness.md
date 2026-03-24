@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Marko Bela"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 __Gorz the Emissary of Darkness__

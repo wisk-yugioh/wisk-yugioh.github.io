@@ -5,6 +5,7 @@ date: 2019-04-01
 author: "Alen Bizjak"
 lang: en
 categories: [article]
+subcategories: [goat]
 ---
 # Short guide on stalling
 

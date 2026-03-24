@@ -5,6 +5,7 @@ date: 2013-09-22
 author: "Urh Kovačič"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 The
 secret spirit

@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Tadej Zinreih"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Bojevnik Črnega Sijaja – Poslanec Začetka

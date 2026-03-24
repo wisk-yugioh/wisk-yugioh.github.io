@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 __Odds – part 2 – reading the plays  

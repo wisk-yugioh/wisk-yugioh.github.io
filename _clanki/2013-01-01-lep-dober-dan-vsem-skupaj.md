@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Neznan"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Lep dober dan vsem skupaj\!

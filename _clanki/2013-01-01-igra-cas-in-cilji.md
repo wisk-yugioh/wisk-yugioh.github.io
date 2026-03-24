@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Mitja Kač"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Pretekli vikend, se je uradno končala sezona Yu\-Gi\-Oh\! \(YGO\) 2017/2018  s sklepnim dejanjem v obliki svetovnega prvenstva, ki se je letos odvijalo na Japonskem v mestu Tokio\. O tej peščici srečnežev pa tokrat ne bo tekla beseda, saj imamo na domačem dvorišču dosti več dela\.

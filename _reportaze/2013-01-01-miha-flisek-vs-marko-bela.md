@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Neznan"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Miha Flisek vs\. Marko Bela

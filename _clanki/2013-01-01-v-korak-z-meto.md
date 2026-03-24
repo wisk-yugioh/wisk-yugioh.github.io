@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Drago Godnjov"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 __V korak z Meto__

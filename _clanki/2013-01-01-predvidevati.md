@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Mitja Kač"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 __predvideti__ predvídeti  \-im dov\. \(í ȋ\) __1\.__ *na osnovi določenih dogodkov, pojavov postati prepričan o uresničitvi česa*

@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Povabljenih je prvih 8 igralcev z največ zbranimi točkami v času od prejšnjega Mastersa \(februar\) do konca poletja \(jesen\)\. Takrat se bo tudi odigral letošnji ekipni Masters, datum bo objavljen pravočasno\.

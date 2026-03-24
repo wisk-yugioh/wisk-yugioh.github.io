@@ -1,5 +1,24 @@
 # Changelog
 
+## Subcategory Filtering Rework
+
+- Added `subcategories: [goat]` or `subcategories: [advanced]` frontmatter to all 201 posts across 4 collections
+  - `_clanki/` (144 files): date ≥ 2018-09-25 → `goat`; earlier → `advanced`
+  - `_reportaze/` (49 files): 12 specific files → `goat` (GOAT All Day All Night, all Coverage–dd.mm.yyyy reports, Peti SloGoatsss coverage, Coverage–19.1.2019, Diaries of a Monarch Madman); rest → `advanced`
+  - `_articles/` (6 files): all → `goat`
+  - `_reports/` (2 files): all → `goat`
+- Updated all 4 section index pages (`clanki/`, `reportaze/`, `articles/`, `reports/`) with dynamic subcategory filter buttons
+  - Liquid collects unique subcategories from each collection and renders buttons automatically
+  - Default state: all posts hidden; clicking a button shows only that subcategory's posts
+  - Active button highlighted; clicking again deselects (hides all)
+  - Search box composes with subcategory filter (AND logic)
+  - Fully extensible: new subcategory in any post's frontmatter auto-creates a new button
+- Stripped standalone search JS from `_includes/search.html`; search logic now lives in each index page script (composing with subcategory filter)
+- Added `.subcat-filter` and `.subcat-btn` styles to `_sass/new-site.scss`
+- Added `scripts/add-subcategories.mjs` — idempotent batch script for frontmatter updates
+
+---
+
 ## Stages 1–4 ✅ COMPLETE
 
 ---

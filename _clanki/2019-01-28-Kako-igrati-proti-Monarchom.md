@@ -5,6 +5,7 @@ date: 2019-01-28
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 KAKO IGRATI PROTI MONARCHOM
 

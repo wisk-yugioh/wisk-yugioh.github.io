@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Simon Blažič"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 __Yu\-Gi\-Oh\! Žargon__

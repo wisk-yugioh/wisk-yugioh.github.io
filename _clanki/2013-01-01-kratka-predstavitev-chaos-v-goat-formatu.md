@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 KRATKA PREDSTAVITEV CHAOSA V GOAT FORMATU

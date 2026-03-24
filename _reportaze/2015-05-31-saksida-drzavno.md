@@ -5,6 +5,7 @@ date: 2015-05-31
 author: "Matija Saksida"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 Pozdravljeni 😊
 To bo moj prvi članek v katerikoli skupini. Zajel bom včerajšnje

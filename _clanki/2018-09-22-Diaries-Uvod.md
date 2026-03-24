@@ -5,6 +5,7 @@ date: 2018-09-22
 author: "Nik Vidmar"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 **DIARIES OF A MONARCH MADMAN**
 

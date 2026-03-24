@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Matija Saksida"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Je Yu\-Gi\-Oh\! Postal plitek?

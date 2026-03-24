@@ -5,6 +5,7 @@ date: 2017-08-26
 author: "Alen Bizjak"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 LLDS DD Vič 26\.08\.2017

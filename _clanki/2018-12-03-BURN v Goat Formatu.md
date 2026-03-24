@@ -5,6 +5,7 @@ date: 2018-12-03
 author: "Jaka Fortunat"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 Burn deck, verjetno eden prvih poimenovanih deckov in edini, ki skozi vsa leta obstoja Yu-Gi-Oh!a opozarja nase, tako v obliki Premier Event topov, kot tudi v obliki prisotnosti na lokalni ali regionalni ravni. Burn je tudi ena redkih deck strategij, ki ne uporablja specifično enega archetypa in še vedno ohranja le ime burn, česar za control in aggro strategije ne moremo reči, saj so ti opisi deckov izginili iz Yu-Gi-Oh! žargona že dobrih 10 let nazaj. Zgodovinsko se je tudi burn glede na prihajajoče edicije, meto, posamezne karte in spreminjajoča se pravila temu prilagajal, njegove variante so recimo Stall Burn, Switch Control Burn, Anti-Heal Burn, »Old school« Burn, Chain Burn in nenazadnje Trickstar. Z izjemo Trickstar decka so dosežki burn decka na najvišjih ravneh igre nekako najbolj konsistentni, saj se ponašajo s kontinuiranimi topi na vseh nivojih igre, zmagali so celo Dragon Duel svetovno prvenstvo 2017, včasih je celo veljalo nenapisano pravilo, da bo Chain Burn skoraj vedno zasedel 1 mesto top 32 cuta. Uvodni del bi želel zaključiti z dejstvom, da smo v Sloveniji imeli izredno malo stika s tem deckom, v razloge za to se ne bi poglabljal, bi pa omenil, da sem še vedno mnenja, da po vseh teh letih lahko dober Chain Burn igralec doseže lep rezultat, predvsem na nivoju igre, kot ga prakticiramo pri nas.
 

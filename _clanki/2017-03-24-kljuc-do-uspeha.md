@@ -5,6 +5,7 @@ date: 2017-03-24
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 KLJUČ DO USPEHA

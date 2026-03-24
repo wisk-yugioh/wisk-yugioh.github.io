@@ -5,6 +5,7 @@ date: 2019-03-22
 author: "Alen Bizjak"
 lang: en
 categories: [article]
+subcategories: [goat]
 ---
 # Tech Choices in Goat Control – Dekoichi
 

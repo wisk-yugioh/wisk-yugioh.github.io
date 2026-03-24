@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Andy Jamšek"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 OPIS KARTE: Neo Spacian Grand Mole

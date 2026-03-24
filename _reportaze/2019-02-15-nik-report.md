@@ -5,6 +5,7 @@ date: 2019-02-15
 author: "Nik Vidmar"
 lang: sl
 categories: [report]
+subcategories: [goat]
 ---
 Slogoatsss side event Vič 19.1.2019
 

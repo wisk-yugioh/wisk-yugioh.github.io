@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Mitja Kač"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Uradno smo vstopili v zadnji teden pred začetkom regionals sezone, ki se v naših koncih prične z mesecem septembrom\. Ker si nas je večina skozi poletje vzela dopust v upanju, da nas razveseli nova lista prepovedanih kart, a se ta še ni zgodila, bo za tiste ki začnemo sezono že ta vikend \(1\.9\) v Zagrebu na njihovem tradicionalnem Summer Cupu \(Regionals z večjimi nagradami, imajo Winter, Spring in Summer turnir\), in je pravi balzam za tekmovalno okolje\(vedno privabi 60 ali več ljudi\)\.

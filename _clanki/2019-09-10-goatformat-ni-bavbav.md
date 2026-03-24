@@ -5,6 +5,7 @@ date: 2019-09-10
 author: "Tine Lovišček"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 
 **GOAT FORMAT NI BAVBAV**

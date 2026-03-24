@@ -5,6 +5,7 @@ date: 2017-12-28
 author: "Alen Bizjak"
 lang: sl
 categories: [report]
+subcategories: [goat]
 ---
 
 GOAT ALL DAY ALL NIGHT – 28.12.2017

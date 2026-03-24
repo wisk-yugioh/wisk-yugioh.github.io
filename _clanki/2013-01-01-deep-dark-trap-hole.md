@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Žiga Tomšič"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Pozdrav igralci\! Sem Žiga "goyo guardian" Tomšič in kot večina igralcev bom poskusil narediti nekaj v dobro slovenske yugioh scene\. Nekaj, podobnemu card reviewu:

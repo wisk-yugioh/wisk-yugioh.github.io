@@ -5,6 +5,7 @@ date: 2015-06-14
 author: "Jernej Klemenčič"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 Bok!Ker
 je veliko povpraševanja po moji decklisti, ki je na hrvaškem

@@ -5,6 +5,7 @@ date: 2013-07-06
 author: "Jaka Fortunat"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 Pozdravljena
 obča slovenska Yu-Gi-Oh! publika! Sem Jaka ''Tempest'' Fortunat in

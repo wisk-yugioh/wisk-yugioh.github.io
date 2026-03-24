@@ -5,6 +5,7 @@ date: 2015-10-25
 author: "Mark Keš"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 Top 4 z (Resonator)
 Fire Fisti, 10 formatov pozneje.

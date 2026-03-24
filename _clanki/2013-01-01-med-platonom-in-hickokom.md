@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Urh Kovačič"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 __Med Platonom in Hickokom__

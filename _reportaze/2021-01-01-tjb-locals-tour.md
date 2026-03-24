@@ -5,6 +5,7 @@ date: 2021-01-01
 author: "Mitja Kač"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Zadnji vikend leta 2021 sem se odločil preživeti v toplejši klimi, zato sem se odpravil v goste k dobremu prijatelju Alenu v Pulo\. Žal ga je pokosila korona in sva si lahko samo pomahala skozi okno\.\.\. Recimo temu tako, da se je najin obračun na njegovem domačem terenu, odločil za zeleno mizo\.

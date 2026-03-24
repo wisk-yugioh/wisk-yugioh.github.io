@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Dejan Brodnjak"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Pozdravljeni\!

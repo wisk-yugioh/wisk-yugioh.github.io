@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 __Xyz Reborn__

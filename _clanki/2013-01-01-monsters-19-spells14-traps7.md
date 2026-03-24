@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Neznan"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Vse se je začelo že par mesecev pred turnirjem z objavo Mitje Kača, da išče še nekaj ljudi, da se zapolni kombi\. Sam se turnirja v tujini nisem udeležil že od Avstrijskega državca lani, YCSa/evropskega pa sploh že kaki 2 leti ne, ker smo lanski Rimini zadnjo minuto odpovedali zaradi jesenskega izpitnega roka in neresnosti\. Malo kolebam zaradi trenutnega stanja formata in denarnega vložka v vse staple in nekako obvezen engine, a se na koncu prepričam, da bo to najverjetneje en cenejših turnirjev letos kar se potnih stroškov tiče in da se je v 2 letih nabralo malo preveč playmatov in podobnega z regionalsov, in se udeležim, pa četudi ne 100% pripravljen\. Pišem Kaču in si rezerviram mesto \(ali pač?\)\.  

@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "SCF"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Uvodna Beseda  

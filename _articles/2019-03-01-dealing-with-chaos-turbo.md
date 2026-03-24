@@ -5,6 +5,7 @@ date: 2019-03-01
 author: "Alen Bizjak"
 lang: en
 categories: [article]
+subcategories: [goat]
 ---
 # Dealing with Chaos Turbo
 

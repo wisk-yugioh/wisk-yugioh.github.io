@@ -5,6 +5,7 @@ date: 2019-06-08
 author: "Luka Krašna"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 __PONOVNI TOP SLOVENSKEGA DRŽAVNEGA 2019 Z NE\-TOP\-META DECKOM__

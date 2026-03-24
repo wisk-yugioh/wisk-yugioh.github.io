@@ -5,6 +5,7 @@ date: 2019-09-22
 author: "Alen Bizjak"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 YCS GENT REPORT – 21.9.2019 – 22.9.2019

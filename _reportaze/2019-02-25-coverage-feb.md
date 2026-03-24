@@ -4,6 +4,7 @@ title: "Coverage – 23. 2. 2019"
 date: 2019-02-25
 lang: sl
 categories: [report]
+subcategories: [goat]
 ---
 
 

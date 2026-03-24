@@ -5,6 +5,7 @@ date: 2018-09-25
 author: "Jaka Fortunat"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 Pozdravljeni! Moje ime je Jaka Fortunat in bom za Goat blog napisal krajši članek o tem, zakaj igram Goate.
 

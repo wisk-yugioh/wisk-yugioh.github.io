@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Nace Slak"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Pozdravljeni\!

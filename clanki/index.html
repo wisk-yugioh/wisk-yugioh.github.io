@@ -3,11 +3,27 @@ layout: default
 title: Članki
 ---
 <p class="post-list-heading">Članki (slovensko)</p>
+
+{% assign clanki_sorted = site.clanki | sort: 'date' | reverse %}
+{% assign all_subcats = "" | split: "" %}
+{% for post in clanki_sorted %}
+  {% if post.subcategories %}
+    {% assign all_subcats = all_subcats | concat: post.subcategories %}
+  {% endif %}
+{% endfor %}
+{% assign unique_subcats = all_subcats | uniq | sort %}
+
+<div class="subcat-filter">
+  {% for subcat in unique_subcats %}
+  <button class="subcat-btn" data-subcat="{{ subcat }}">{{ subcat | capitalize }}</button>
+  {% endfor %}
+</div>
+
 {% include search.html %}
-<ul class="post-list">
-  {% assign clanki_sorted = site.clanki | sort: 'date' | reverse %}
+
+<ul class="post-list" id="post-list">
   {% for post in clanki_sorted %}
-  <li>
+  <li data-subcats="{{ post.subcategories | join: ' ' }}" style="display:none">
     <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
     <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
     {% if post.author %}
@@ -16,3 +32,43 @@ title: Članki
   </li>
   {% endfor %}
 </ul>
+
+<script>
+(function() {
+  var btns = document.querySelectorAll('.subcat-btn');
+  var items = document.querySelectorAll('#post-list li');
+  var activeSubcat = null;
+
+  function applyFilters() {
+    var searchInput = document.getElementById('post-search');
+    var q = searchInput ? searchInput.value.trim().toLowerCase() : '';
+    items.forEach(function(li) {
+      var subcats = (li.dataset.subcats || '').split(' ');
+      var subcatMatch = activeSubcat !== null && subcats.indexOf(activeSubcat) !== -1;
+      var title  = (li.querySelector('.post-link')     || {textContent:''}).textContent.toLowerCase();
+      var author = (li.querySelector('.post-category') || {textContent:''}).textContent.toLowerCase();
+      var textMatch = !q || title.indexOf(q) !== -1 || author.indexOf(q) !== -1;
+      li.style.display = (subcatMatch && textMatch) ? '' : 'none';
+    });
+  }
+
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      if (activeSubcat === this.dataset.subcat) {
+        activeSubcat = null;
+        btns.forEach(function(b) { b.classList.remove('active'); });
+      } else {
+        activeSubcat = this.dataset.subcat;
+        btns.forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+      }
+      applyFilters();
+    });
+  });
+
+  var searchInput = document.getElementById('post-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', applyFilters);
+  }
+})();
+</script>

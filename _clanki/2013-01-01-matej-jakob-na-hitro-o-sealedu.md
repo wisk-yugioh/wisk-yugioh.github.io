@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Blog vsebine zadnje čase ustvarjam samo jaz\. Igralci, to je idealna priložnost/možnost, da ste ustvarjalni in se predstavite javnosti\. Če vas skrbi, da vsebina ne bo dovolj strokovna…nič za to, berejo nas tudi mlajši in manj izkušeni\. Če vas morda skrbi slovnična nepravilnost…ja kaj naj rečem…saj berete moje prispevke, ki so tudi…niti\-ne\-najbolj\-pravilni\.

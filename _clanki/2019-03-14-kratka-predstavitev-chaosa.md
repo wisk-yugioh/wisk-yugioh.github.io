@@ -5,6 +5,7 @@ date: 2019-03-14
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 KRATKA PREDSTAVITEV CHAOSA V GOAT FORMATU
 

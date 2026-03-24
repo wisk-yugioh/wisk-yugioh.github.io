@@ -5,6 +5,7 @@ date: 2014-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Januarski format 2014, meta

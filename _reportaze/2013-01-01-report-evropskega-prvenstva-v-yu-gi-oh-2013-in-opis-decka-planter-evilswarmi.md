@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Jaka Fortunat"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Pozdravljena obča slovenska Yu\-Gi\-Oh\! publika\! Sem Jaka ''Tempest'' Fortunat in se vam javljam z nekakšnim coveragom evropskega prvenstva in predstavitvijo decka obenem\.

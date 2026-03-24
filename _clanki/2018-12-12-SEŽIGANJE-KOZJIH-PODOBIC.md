@@ -5,6 +5,7 @@ date: 2018-12-12
 author: "Tine Lovišček"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 
 **SEŽIGANJE KOZJIH PODOBIC**

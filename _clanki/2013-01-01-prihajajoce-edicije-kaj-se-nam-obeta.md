@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Nace Zavrtanik"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Yu\-Gi\-Oh\! je, kot vsi vemo, zelo fleksibilna igra, ki se neprestano prilagaja novostim tako na trgu kot na sami igralski sceni\. To je dejstvo in če želimo v igri biti kompetitivni, moramo to dejstvo sprejeti in se mu prilagoditi\. Kako pa? Preprosto, potrebno je spremljati prihajajoče izdaje YGO kart in se že vnaprej pripravljati na karte, ki imajo potencial zavladati metagamu\. Kaj so torej novosti?

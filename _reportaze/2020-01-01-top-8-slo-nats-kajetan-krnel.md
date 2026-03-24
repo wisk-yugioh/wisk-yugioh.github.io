@@ -5,6 +5,7 @@ date: 2020-01-01
 author: "Kajetan Krnel"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Top 8 Slo Nats – Kajetan Krnel

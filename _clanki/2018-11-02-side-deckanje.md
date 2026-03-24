@@ -5,6 +5,7 @@ date: 2018-11-02
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 SIDANJE V GOAT FORMATU
 

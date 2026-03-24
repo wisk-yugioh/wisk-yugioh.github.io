@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Jaka Fortunat"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 V Ljubljano sem prispel z avtobusom, kateri je štartal ob 4\.45, saj drugega ni bilo\. Bil sem nenaspan, ampak pripravljen doseči dober rezultat\. Nenaspanost ni bila na taki stopnji, da bi vplivala na kakovost mojih odločitev med igranjem\. Prispel sem na kraj dogajanja, kjer so se začeli zbirati znani obrazi in prijatelji, ki sem jih pridobil z igranjem tekom preteklih let\. Kot po navadi je bilo treba zbuditi Vida Grudna, saj je spet zaspal\. Posodil sem, kar sem imel zmenjeno za posojo, nekaj malega sem trejdal in prodal ter se prijavil\. Seveda sem se že dva meseca nazaj kvalificiral in si s tem prihranil 5€\. Deck sem si priredil na slovensko meto, v Main Decku sem kickal Maxx ''C''je in jih zamenjal z Effect Veilerji\. Thunder King Rai\-Oh je seveda ostal, tem trem Light pošastim se je pridružil še Black Luster Soldier \- Envoy of the Beginning\. To verzijo decka sem testal že pred odhodom na evropsko prvenstvo, v času iskanja builda, ki bi mi najbolj odgovarjal\. Takrat se to ni obneslo\. Za tokrat pa sem bil nekako zelo prepričan, da je to to\. Pogledal sem si kdo vse se je kvalificiral, preračunal število deckov, ki jih lahko pričakujem in ugotovil, da ne bo veliko Dragonov/Dragunity\-Dragonov\. V sredo sem opravil edino testiranje decka v Črni luknji\.

@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Tea"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Včasih se na turnirjih počutim zelo osamljena, ne zaradi tega, ker nimam družbe ampak zaradi tega, ker do sedaj nisem poznala nobenih punc, ki igrajo ali pa poznajo yugioh\. Že v osnovni šoli so me naše punce čudno gledale kadar sem se vsedla med sošolce in smo kar začeli igrati\. Yugioh je bila takrat igra bolj mišljena za fante kot pa za punce, čeprav so se našle kakšne izjeme, recimor jaz \. Igrala sem predvsem v šoli ali pa pred blokom, če nismo bli preveč zatopljeni v Beyblade dvoboje, če se še jih spomnite\.

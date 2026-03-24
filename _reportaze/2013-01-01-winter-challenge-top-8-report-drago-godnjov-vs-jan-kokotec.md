@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Neznan"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Winter Challenge Top 8 report, Drago Godnjov vs\. Jan Kokotec

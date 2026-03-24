@@ -5,6 +5,7 @@ date: 2018-11-22
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 **GOAT CONTROL VS CHAOS CONTROL**
 

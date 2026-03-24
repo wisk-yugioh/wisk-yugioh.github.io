@@ -5,6 +5,7 @@ date: 2015-06-12
 author: "Rožle Rostohar"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 Netdeck,
 yugioh meta, standard build vs tech choiceŽivijo,

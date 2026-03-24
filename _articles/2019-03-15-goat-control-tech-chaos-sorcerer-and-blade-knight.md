@@ -5,6 +5,7 @@ date: 2019-03-15
 author: "Alen Bizjak"
 lang: en
 categories: [article]
+subcategories: [goat]
 ---
 # Tech Choices in Goat Control? Chaos Sorcerer and Blade Knight
 

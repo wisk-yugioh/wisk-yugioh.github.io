@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Ne bom niti začenjal o tem kako mi ne uspe napisat članka\. Mi ne, zdaj mi je\.

@@ -5,6 +5,7 @@ date: 2014-07-04
 author: "Jaka Fortunat"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 Pozdravljeni!
 

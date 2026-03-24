@@ -4,6 +4,7 @@ title: "Coverage – 15. 12. 2018"
 date: 2018-12-22
 lang: sl
 categories: [report]
+subcategories: [goat]
 ---
 Četrti SloGoatsss turnir – 15. 12. 2018 – coverage
 

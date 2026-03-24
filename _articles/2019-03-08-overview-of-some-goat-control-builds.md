@@ -5,6 +5,7 @@ date: 2019-03-08
 author: "Alen Bizjak"
 lang: en
 categories: [article]
+subcategories: [goat]
 ---
 # OVERVIEW OF SOME GOAT CONTROL BUILDS
 

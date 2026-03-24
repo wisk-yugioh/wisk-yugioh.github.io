@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Vid Gruden"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Vod Gruden o OPENu

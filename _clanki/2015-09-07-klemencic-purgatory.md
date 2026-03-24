@@ -5,6 +5,7 @@ date: 2015-09-07
 author: "Jernej Klemenčič"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 Welcome
 to purgatory

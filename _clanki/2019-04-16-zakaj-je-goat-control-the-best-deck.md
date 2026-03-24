@@ -5,6 +5,7 @@ date: 2019-04-16
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 KRATEK ARGUMENT ZAKAJ JE GOAT CONTROL THE BEST DECK
 

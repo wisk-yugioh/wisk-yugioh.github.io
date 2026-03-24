@@ -5,6 +5,7 @@ date: 2015-09-01
 author: "Urh Kovačič"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 # »KATASTROFA«
 

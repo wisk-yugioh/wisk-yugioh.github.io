@@ -151,6 +151,33 @@ html.new-site {
     box-sizing: border-box;
   }
 
+  // ── Subcategory filter buttons ──────────────────────────
+  .subcat-filter {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .subcat-btn {
+    padding: 0.4rem 1.1rem;
+    border: 1px solid $dark-accent;
+    background: transparent;
+    color: $dark-accent;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-family: inherit;
+    transition: background 0.15s, color 0.15s;
+
+    &:hover,
+    &.active {
+      background: $dark-accent;
+      color: #000;
+    }
+  }
+
   // ── Search input ────────────────────────────────────────
   .post-search {
     display: block;

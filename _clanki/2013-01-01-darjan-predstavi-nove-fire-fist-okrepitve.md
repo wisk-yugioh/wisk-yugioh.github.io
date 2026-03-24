@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Darjan Žužul"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 Pozdravljeni\!

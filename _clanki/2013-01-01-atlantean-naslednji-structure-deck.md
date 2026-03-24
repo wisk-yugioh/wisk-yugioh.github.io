@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Jan Kokotec"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 
 __1\. Uvod__

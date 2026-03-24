@@ -5,6 +5,7 @@ date: 2018-10-13
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 
 POGOSTE NAPAKE

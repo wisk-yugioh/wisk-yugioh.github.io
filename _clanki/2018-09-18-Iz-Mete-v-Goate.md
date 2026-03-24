@@ -5,6 +5,7 @@ date: 2018-09-18
 author: "Alen Bizjak"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 Iz Mete v Goate
 

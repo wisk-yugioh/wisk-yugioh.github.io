@@ -4,6 +4,7 @@ title: "Coverage – 19. 1. 2019"
 date: 2019-01-20
 lang: sl
 categories: [report]
+subcategories: [goat]
 ---
 Peti SloGoatsss turnir - 19. 1. 2019 - coverage
 

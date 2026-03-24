@@ -5,6 +5,7 @@ date: 2015-06-30
 author: "Rožle Rostohar"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 Priprave
 na Evropsko prvenstvo

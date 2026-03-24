@@ -5,6 +5,7 @@ date: 2012-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 __Report Dražavno Prvenstvo 2012__

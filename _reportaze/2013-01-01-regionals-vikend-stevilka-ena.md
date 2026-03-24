@@ -5,6 +5,7 @@ date: 2013-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Čutim ga\. Zagon, moment \(momentum\)\. Sila je\. Ne bom se upiral\. Gremo delat\! Ta delodiš, ta zagon, je kot windupi\. Na navijanje\. Če se sprašujete kaj mi je in zakaj ravno danes, ne vem\. Ampak trenutek bom izkoristil\.

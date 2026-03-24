@@ -5,6 +5,7 @@ date: 2015-10-25
 author: "Gregor Skok"
 lang: sl
 categories: [report]
+subcategories: [advanced]
 ---
 
 Od casual igralca, do competitive igralca  

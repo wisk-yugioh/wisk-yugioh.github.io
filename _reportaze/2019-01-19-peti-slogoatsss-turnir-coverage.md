@@ -5,6 +5,7 @@ date: 2019-01-19
 author: "Jaka Fortunat"
 lang: sl
 categories: [report]
+subcategories: [goat]
 ---
 
 __Peti SloGoatsss turnir \- 19\. 1\. 2019 \- coverage__

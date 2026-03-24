@@ -5,6 +5,7 @@ date: 2014-06-03
 author: "Jaka Fortunat"
 lang: sl
 categories: [article]
+subcategories: [advanced]
 ---
 Bliža se nam vrhunec
 sezone 2013/2014, veliko je testanja, nihče nima časa spisati

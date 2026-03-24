@@ -5,6 +5,7 @@ date: 2018-10-10
 author: "Nik Vidmar"
 lang: sl
 categories: [article]
+subcategories: [goat]
 ---
 **DIARIES OF A MONARCH MADMAN:
 IN SEARCH OF SOLUTIONS**
