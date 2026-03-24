@@ -2,7 +2,7 @@
 layout: post
 title: "Pozdravljeni!"
 date: 2013-01-01
-author: "Neznan"
+author: "Darjan Žužul"
 lang: sl
 categories: [article]
 ---

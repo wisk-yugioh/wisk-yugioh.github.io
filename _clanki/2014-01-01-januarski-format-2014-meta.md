@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Januarski format 2014, meta"
-date: 2013-01-01
+date: 2014-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [article]

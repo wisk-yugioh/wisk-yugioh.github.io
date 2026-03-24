@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "PONOVNI TOP SLOVENSKEGA DRŽAVNEGA 2019 Z NE-TOP-META DECKOM"
-date: 2013-01-01
-author: "Neznan"
+date: 2019-06-08
+author: "Luka Krašna"
 lang: sl
 categories: [report]
 ---

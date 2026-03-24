@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Peti SloGoatsss turnir - coverage"
-date: 2013-01-01
+date: 2019-01-19
 author: "Jaka Fortunat"
 lang: sl
 categories: [report]

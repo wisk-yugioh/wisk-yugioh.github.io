@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Slogoatsss side event Vič 19.1.2019"
-date: 2013-01-01
-author: "Neznan"
+date: 2019-01-19
+author: "Nik Vidmar"
 lang: sl
 categories: [report]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Double elimination Masters 2012"
-date: 2013-01-01
+date: 2012-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [report]

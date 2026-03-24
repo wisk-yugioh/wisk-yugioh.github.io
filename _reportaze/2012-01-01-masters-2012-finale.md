@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Masters 2012 finale"
-date: 2013-01-01
+date: 2012-01-01
 author: "Matej Jakob"
 lang: sl
 categories: [report]

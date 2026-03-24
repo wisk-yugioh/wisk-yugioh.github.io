@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Pozdravljen igralec !"
+title: "Pozdravljen igralec!"
 date: 2013-01-01
-author: "Neznan"
+author: "Urh Kovačič"
 lang: sl
 categories: [article]
 ---

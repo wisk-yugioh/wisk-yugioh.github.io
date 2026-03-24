@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Top 8 Slo Nats – Kajetan Krnel"
-date: 2013-01-01
-author: "Neznan"
+title: "Top 8 Slo Nats"
+date: 2020-01-01
+author: "Kajetan Krnel"
 lang: sl
 categories: [report]
 ---

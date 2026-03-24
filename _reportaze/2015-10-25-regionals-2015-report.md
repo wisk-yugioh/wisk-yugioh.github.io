@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Regionals 2015 Report"
-date: 2013-01-01
+date: 2015-10-25
 author: "Gregor Skok"
 lang: sl
 categories: [report]
