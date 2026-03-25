@@ -3,6 +3,51 @@ layout: default
 title: Wisk Yu-Gi-Oh!
 ---
 <p class="hub-intro">Wisk Yu-Gi-Oh! — blog, articles and more.</p>
+
+{% comment %}
+  Spotlight row — Latest Article + Latest YouTube Video
+  Merge all collections, sort by date, pick the newest.
+{% endcomment %}
+{% assign all_posts = site.clanki
+  | concat: site.articles
+  | concat: site.reportaze
+  | concat: site.reports
+  | concat: site.objave
+  | concat: site.announcements
+  | sort: "date" %}
+{% assign latest_post = all_posts | last %}
+
+<div class="spotlight-row">
+
+  {% if latest_post %}
+  <a class="spotlight-card spotlight-card--article" href="{{ latest_post.url }}">
+    <span class="spotlight-label">Latest post</span>
+    <span class="spotlight-title">{{ latest_post.title }}</span>
+    <span class="spotlight-meta">
+      {{ latest_post.date | date: "%d %b %Y" }}
+      {% if latest_post.author %}&nbsp;· {{ latest_post.author }}{% endif %}
+    </span>
+    <span class="spotlight-cta">Read &rarr;</span>
+  </a>
+  {% endif %}
+
+  {% if site.data.latest_video.video_id %}
+  <a class="spotlight-card spotlight-card--video" href="{{ site.data.latest_video.url }}" target="_blank" rel="noopener">
+    <span class="spotlight-label">Latest video</span>
+    <img class="spotlight-thumb"
+         src="{{ site.data.latest_video.thumbnail }}"
+         alt="{{ site.data.latest_video.title }}"
+         loading="lazy">
+    <span class="spotlight-title">{{ site.data.latest_video.title }}</span>
+    <span class="spotlight-meta">
+      {{ site.data.latest_video.published | date: "%d %b %Y" }}
+      &nbsp;· {{ site.data.latest_video.channel }}
+    </span>
+    <span class="spotlight-cta">Watch &rarr;</span>
+  </a>
+  {% endif %}
+
+</div>
 <div class="hub-sections">
   {% for s in site.data.sections %}
   {% if s.divider %}
@@ -17,4 +62,3 @@ title: Wisk Yu-Gi-Oh!
   {% endif %}
   {% endfor %}
 </div>
-

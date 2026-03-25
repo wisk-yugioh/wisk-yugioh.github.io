@@ -470,7 +470,75 @@ html.new-site {
   .hub-intro {
     color: $dark-muted;
     font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  // ── Spotlight row (latest article + latest video) ────────
+  .spotlight-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
     margin-bottom: 2.5rem;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .spotlight-card {
+    background: $dark-surface;
+    border: 1px solid $dark-border;
+    border-radius: 6px;
+    padding: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    transition: border-color 0.15s;
+
+    &:hover {
+      border-color: $dark-accent;
+      text-decoration: none;
+    }
+
+    .spotlight-label {
+      font-size: 0.72rem;
+      font-family: $font-mono;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: $dark-accent;
+      margin-bottom: 0.25rem;
+    }
+
+    .spotlight-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: $dark-text;
+      line-height: 1.4;
+    }
+
+    .spotlight-meta {
+      font-size: 0.8rem;
+      color: $dark-muted;
+    }
+
+    .spotlight-cta {
+      margin-top: auto;
+      padding-top: 0.75rem;
+      font-size: 0.85rem;
+      color: $dark-accent;
+    }
+  }
+
+  .spotlight-card--video {
+    .spotlight-thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 0.35rem;
+      background: $dark-border;
+    }
   }
 
   .hub-sections {

@@ -219,9 +219,63 @@ Key variables:
 
 Hub grid: `repeat(3, 1fr)` → `1fr` at ≤768px. `.hub-divider` uses `grid-column: 1 / -1`.
 
+Spotlight row: `repeat(2, 1fr)` → `1fr` at ≤640px. Sits above the hub grid in `index.html`.
+
 ---
 
-## Layout
+## Homepage Spotlight — `index.html`
+
+Two spotlight cards appear above the hub section grid on the homepage.
+
+### Latest Article card
+
+Pure Liquid — no data file needed. Merges all 6 collections, sorts by `date`, takes the last (newest) entry:
+
+```liquid
+{% assign all_posts = site.clanki | concat: site.articles | ... | sort: "date" %}
+{% assign latest_post = all_posts | last %}
+```
+
+Displays title, date, author, and a "Read →" link. Wrapped in `.spotlight-card.spotlight-card--article`.
+
+### Latest Video card
+
+Rendered from `_data/latest_video.yml` (auto-updated by GitHub Actions). Displays thumbnail, title, channel, date, and a "Watch →" link. Wrapped in `.spotlight-card.spotlight-card--video`.
+
+### Data files
+
+| File | Purpose |
+|---|---|
+| `_data/youtube_channels.yml` | List of YouTube channels (handle + channel_id). Add entries here to include more channels. |
+| `_data/latest_video.yml` | Auto-generated — the single most-recent video across all configured channels. **Do not edit manually.** |
+
+`_data/youtube_channels.yml` format:
+
+```yaml
+- handle: siwski666
+  channel_id: UCAKUK9MYS4TfznStFvWmiIQ
+- handle: Tempest93
+  channel_id: UCLhKbVtM90B7th8jJSMlxpQ
+```
+
+### GitHub Actions workflow — `fetch-youtube.yml`
+
+`.github/workflows/fetch-youtube.yml` runs every 6 hours (and can be triggered manually from the Actions tab). It:
+
+1. Runs `scripts/fetch-youtube.js` — fetches YouTube RSS for each channel in `_data/youtube_channels.yml` (no API key required)
+2. Picks the most-recent video by `<published>` date
+3. Writes to `_data/latest_video.yml`
+4. Commits and pushes if the data changed → triggers a GitHub Pages rebuild
+
+To trigger manually: **Actions → Fetch latest YouTube video → Run workflow**.
+
+### SCSS classes
+
+`.spotlight-row` — two-column grid (`1fr 1fr`, collapses to `1fr` at ≤640px).  
+`.spotlight-card` — base card style (same surface/border/hover as `.hub-card`).  
+`.spotlight-card--video` — adds `.spotlight-thumb` (16:9 thumbnail image).
+
+---
 
 Fixed viewport: header and footer always visible; only `.site-main` scrolls.
 
