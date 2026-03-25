@@ -4,6 +4,8 @@
   url: /clanki/
 - title: Reportaže
   url: /reportaze/
+- title: Galerija
+  url: /gallery/
 - divider: true
 - title: Announcements
   url: /announcements/

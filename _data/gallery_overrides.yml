@@ -1,0 +1,23 @@
+# gallery_overrides.yml
+#
+# Maps image folder slugs to article slugs for articles that were renamed
+# after their images were exported.
+#
+# Format:
+#   image-folder-slug: correct-article-slug
+#
+# Run `node scripts/generate-gallery-index.mjs --audit` to see the current
+# match status and identify any new unmatched folders.
+
+# Confirmed overrides
+goat-all-day-all-night-28122017: goat-all-day-all-night
+welcome-to-purgatory: klemencic-purgatory
+
+# --- NEEDS MANUAL MAPPING ---
+# The following 3 image folders could not be automatically matched.
+# Uncomment the correct line (or add the correct slug) after identifying
+# which article each folder belongs to.
+
+# jutro: <correct-article-slug>
+# slogoatsss-2: <correct-article-slug>
+# slogoatsss-side-event-vic-1912019: <correct-article-slug>

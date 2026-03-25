@@ -1,0 +1,35 @@
+---
+layout: default
+title: Galerija
+lang: sl
+---
+<div class="gallery-page">
+  <h1>Galerija</h1>
+
+  {% if site.data.gallery_index and site.data.gallery_index.size > 0 %}
+  <div class="gallery-slideshow" id="gallery-slideshow">
+    <div class="gallery-image-wrap">
+      <button class="gallery-btn gallery-btn-prev" aria-label="Prejšnja slika">&#8592;</button>
+      <img class="gallery-img" src="" alt="" loading="lazy">
+      <button class="gallery-btn gallery-btn-next" aria-label="Naslednja slika">&#8594;</button>
+    </div>
+    <div class="gallery-info">
+      <div class="gallery-info-left">
+        <span class="gallery-counter"></span>
+        <span class="gallery-article-title"></span>
+      </div>
+      <a class="gallery-article-link" href="#" target="_blank" rel="noopener">Pojdi na članek &rarr;</a>
+    </div>
+  </div>
+
+  <script>
+    window.GALLERY_IMAGES = {{ site.data.gallery_index | jsonify }};
+  </script>
+  <script src="/assets/js/gallery.js"></script>
+
+  {% else %}
+  <div class="gallery-empty">
+    <p>Galerija je prazna. Zaženi <code>node scripts/generate-gallery-index.mjs</code> za generacijo indeksa.</p>
+  </div>
+  {% endif %}
+</div>
