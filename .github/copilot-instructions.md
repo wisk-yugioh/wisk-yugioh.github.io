@@ -24,6 +24,22 @@ Read `DOCUMENTATION.md` for the full architecture reference before starting work
 
 Session planning and todo tracking via the SQL `todos` table.
 
+## Commenting Rule
+
+**Everything that has even a slight chance of being non-obvious to a junior developer must be commented. No exceptions.**
+
+This includes — but is not limited to:
+
+- Any Liquid idiom that isn't plain `{{ variable }}` output (e.g. `"" | split: ""` array init, `forloop.index0` tricks, parameterised includes)
+- CSS-only interaction patterns (checkbox hack, sibling-combinator tricks, `overflow: hidden` scroll containment)
+- Any JS algorithm that isn't a trivial read/write (wrap-around arithmetic, compound filter conditions, URL hash as state)
+- Regex patterns — always add a plain-English explanation of what the pattern matches
+- Magic numbers or hardcoded values (dates, thresholds, IDs) — always explain what they represent
+- Any `|| fallback` or `?? fallback` that guards against a non-obvious edge case
+- Any HTML element that exists purely for scripting or CSS targeting (hidden inputs, `display:none` lists)
+
+**When in doubt, comment. Over-commenting is never a problem here.**
+
 ## Working Conventions
 
 - **Internal links**: relative paths only (`/clanki/2019/...`) — never full `https://wisk-yugioh.github.io/...` URLs
