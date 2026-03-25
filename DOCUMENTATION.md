@@ -293,3 +293,41 @@ All new sections use this layout unless explicitly decided otherwise.
 ## Google Analytics
 
 Add `google_analytics: G-XXXXXXX` to `_config.yml`. The include in `default.html` fires conditionally.
+
+---
+
+## Comments (Disqus)
+
+All article pages show a Disqus comment widget (embedded in `_layouts/post.html`). Visitors can comment using Google, Facebook, Twitter, Apple, or email.
+
+### One-time setup (do this once per site)
+
+1. Go to **https://disqus.com** → **Get Started** → **Sign up**
+2. After logging in, go to **https://disqus.com/profile/signup/intent/**
+3. Click **"I want to install Disqus on my site"**
+4. Fill in:
+   - **Website Name:** `Wisk Yu-Gi-Oh!`
+   - **Unique Disqus URL (shortname):** e.g. `wisk-yugioh` ← note this exactly
+   - **Category:** Entertainment
+5. Click **Create Site** → choose **Basic (Free)** → **Subscribe with Basic**
+6. On the platform screen, scroll down → **"I don't see my platform, install manually"**
+7. Click **Configure**, set **Website URL** to `https://wisk-yugioh.github.io`, then **Complete Setup**
+
+### Wire up the shortname
+
+Open `_layouts/post.html` and replace the placeholder on the `s.src` line:
+
+```js
+// before
+s.src = 'https://YOUR-DISQUS-SHORTNAME.disqus.com/embed.js';
+
+// after (example)
+s.src = 'https://wisk-yugioh.disqus.com/embed.js';
+```
+
+### Moderation
+
+Go to `https://disqus.com/home/forums/YOUR-SHORTNAME/settings/moderation/` to:
+- Enable **pre-moderation** (approve before publish)
+- Configure **email notifications** for new comments
+- Manage **blocklists**
