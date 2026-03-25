@@ -154,7 +154,56 @@ Post images go in `assets/images/posts/`.
 
 All styles in `_sass/new-site.scss`, scoped to `.new-site` (set on both `<html>` and `<body>` in `default.html`).
 
-Entry point: `assets/css/main.scss` → imports `new-site.scss`.
+Entry point: `assets/css/main.scss` → imports `new-site.scss` and `gallery.scss`.
+
+---
+
+## Gallery — `/gallery/`
+
+A client-side image slideshow showing all article images with a link back to the source article.
+
+### How it works
+
+1. `scripts/generate-gallery-index.mjs` scans `assets/images/posts/*/` and matches each folder slug to an article in one of the 6 collections (exact slug match). The result is written to `_data/gallery_index.json`.
+2. Jekyll injects `gallery_index.json` into the page as a JS variable (`window.GALLERY_IMAGES`).
+3. `assets/js/gallery.js` drives the slideshow: prev/next buttons, keyboard ← →, touch swipe, and a jump-to-number input.
+
+### Regenerating the index
+
+Run this whenever articles are added or images are updated:
+
+```bash
+node scripts/generate-gallery-index.mjs
+```
+
+Commit the updated `_data/gallery_index.json`.
+
+### Handling renamed articles
+
+If an article's filename slug no longer matches its image folder slug, add a mapping to `_data/gallery_overrides.yml`:
+
+```yaml
+old-image-folder-slug: current-article-slug
+```
+
+Run with `--audit` to identify unmatched folders:
+
+```bash
+node scripts/generate-gallery-index.mjs --audit
+```
+
+### Files
+
+| File | Purpose |
+|---|---|
+| `scripts/generate-gallery-index.mjs` | Build script — generates the image index |
+| `_data/gallery_index.json` | Generated image list (commit this) |
+| `_data/gallery_overrides.yml` | Manual slug overrides for renamed articles |
+| `gallery/index.html` | The `/gallery/` page |
+| `assets/js/gallery.js` | Slideshow JS (navigation, jump input) |
+| `_sass/gallery.scss` | Gallery-specific styles |
+
+---
 
 Key variables:
 

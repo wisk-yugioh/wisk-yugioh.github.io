@@ -4,10 +4,19 @@
 
 ## Docs-First Rule
 
-When making any architecture change, update **both** `.github/copilot-instructions.md` and `DOCUMENTATION.md` in the same task — never after the fact.
+When making any architecture change, update **both** `.github/copilot-instructions.md` and `DOCUMENTATION.md` **in the same task — never after the fact, never when reminded.**
 
 - Rule or workflow change → update this file
 - Architecture or codebase fact → update `DOCUMENTATION.md`
+
+This applies to **every** change that introduces or modifies:
+- A new page, route, or navigation entry
+- A new script, build step, or workflow
+- A new data file or data convention
+- A new SCSS file or significant style component
+- Any working convention the next AI session needs to know
+
+**Do not consider a task complete until both doc files are updated.**
 
 ## Session Start
 
@@ -22,3 +31,4 @@ Session planning and todo tracking via the SQL `todos` table.
 - **Nav links**: never hardcode in layouts — always add entries to `_data/navigation.yml`
 - **`future: true`** in `_config.yml` — some posts carry future dates; do not remove this setting
 - **`not_published/`**: excluded from build; source `.docx` files live here — do not move or rename them
+- **Gallery index**: after adding articles or images, regenerate `_data/gallery_index.json` with `node scripts/generate-gallery-index.mjs` and commit the result. If the article slug was changed after image export, add an override to `_data/gallery_overrides.yml`.
