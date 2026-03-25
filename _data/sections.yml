@@ -15,23 +15,3 @@
   desc: Turnirske reportaže in coveragi.
   count_label: objav
   cta: Preberi
-
-- divider: true
-
-- key: announcements
-  title: Announcements
-  desc: News and announcements in English.
-  count_label: posts
-  cta: Read
-
-- key: articles
-  title: Articles
-  desc: Articles and guides in English.
-  count_label: articles
-  cta: Read
-
-- key: reports
-  title: Reports
-  desc: Tournament reports in English.
-  count_label: reports
-  cta: Read

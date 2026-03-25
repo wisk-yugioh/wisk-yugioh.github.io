@@ -40,7 +40,7 @@ A `divider: true` entry renders a full-width horizontal rule instead of a card:
 - divider: true
 ```
 
-Current order: objave → clanki → reportaze → `[divider]` → announcements → articles → reports.
+Current order: objave → clanki → reportaze.
 
 ---
 
