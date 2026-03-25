@@ -86,7 +86,7 @@ function buildArticleLookup() {
       const content = fs.readFileSync(filePath, 'utf8');
       const fm = parseFrontMatter(content);
       const title = fm.title || slug;
-      const url = `${urlPrefix}/${year}/${month}/${day}/${slug}/`;
+      const url = `${urlPrefix}/${year}/${month}/${day}/${slug}`;
       lookup[slug] = { title, url };
     }
   }
