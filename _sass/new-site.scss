@@ -469,12 +469,6 @@ html.new-site {
   }
 
   // ── Hub page (section cards) ────────────────────────────
-  .hub-intro {
-    color: $dark-muted;
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-  }
-
   // ── Spotlight row (latest article + latest video) ────────
   .spotlight-row {
     display: grid;
@@ -540,68 +534,6 @@ html.new-site {
       margin-bottom: 0.35rem;
       background: $dark-border;
     }
-  }
-
-  .hub-sections {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 1rem;
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .hub-card {
-    background: $dark-surface;
-    border: 1px solid $dark-border;
-    border-radius: 6px;
-    padding: 1.75rem 2rem;
-    text-decoration: none;
-    display: block;
-    transition: border-color 0.15s;
-
-    &:hover {
-      border-color: $dark-accent;
-      text-decoration: none;
-    }
-
-    .hub-card-title {
-      display: block;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: $dark-text;
-      margin: 0 0 0.6rem;
-    }
-
-    .hub-card-desc {
-      display: block;
-      font-size: 0.875rem;
-      color: $dark-muted;
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    .hub-card-count {
-      font-size: 0.78rem;
-      color: $dark-muted;
-      margin-bottom: 0.5rem;
-    }
-
-    .hub-card-arrow {
-      display: inline-block;
-      margin-top: 1.25rem;
-      font-size: 0.85rem;
-      color: $dark-accent;
-    }
-  }
-
-  .hub-divider {
-    grid-column: 1 / -1;
-    border: none;
-    border-top: 1px solid $dark-border;
-    margin: 0.5rem 0;
   }
 
   // ── Footer ──────────────────────────────────────────────

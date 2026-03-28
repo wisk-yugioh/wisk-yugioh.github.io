@@ -2,7 +2,7 @@
 
 ## Site Structure
 
-Single layout (`default.html`). Nav from `_data/navigation.yml`. Hub from `_data/sections.yml`.
+Single layout (`default.html`). Nav from `_data/navigation.yml`.
 
 ### Collections
 
@@ -19,28 +19,6 @@ The site has 6 content sections backed by Jekyll collections, in two language gr
 
 **Flat** (objave, announcements): no `subcategories` needed — posts show as a plain searchable list.  
 **Filtered** (clanki, reportaze, articles, reports): posts require `subcategories: [goat]`, `[advanced]`, or `[goat, advanced]` — the index renders subcategory filter buttons.
-
----
-
-## Hub — `_data/sections.yml`
-
-`index.html` loops over this file to render cards. Each entry:
-
-```yaml
-- key: clanki           # Jekyll collection name (site.clanki)
-  title: Članki
-  desc: Članki slovenske Yu-Gi-Oh! skupnosti.
-  count_label: objav    # appears after the post count ("144 objav")
-  cta: Preberi          # call-to-action before the →
-```
-
-A `divider: true` entry renders a full-width horizontal rule instead of a card:
-
-```yaml
-- divider: true
-```
-
-Current order: objave → clanki → reportaze.
 
 ---
 
@@ -76,7 +54,7 @@ All index pages use the shared include:
 
 ## Adding a New Section
 
-5 steps. **Update `DOCUMENTATION.md` and `copilot-instructions.md` when done.**
+4 steps. **Update `DOCUMENTATION.md` and `copilot-instructions.md` when done.**
 
 1. **`_config.yml`** — add collection + defaults:
    ```yaml
@@ -106,8 +84,6 @@ All index pages use the shared include:
    ```
 
 4. **Nav** — add entry to `_data/navigation.yml` (with optional `flag:` and `divider:` for grouping)
-
-5. **Hub card** — add entry to `_data/sections.yml` (place a `divider: true` to maintain SLO/EN grouping)
 
 ---
 
@@ -217,15 +193,13 @@ Key variables:
 | `$dark-accent` | `#f97316` |
 | `$content-width` | `720px` |
 
-Hub grid: `repeat(3, 1fr)` → `1fr` at ≤768px. `.hub-divider` uses `grid-column: 1 / -1`.
-
-Spotlight row: `repeat(2, 1fr)` → `1fr` at ≤640px. Sits above the hub grid in `index.html`.
+Spotlight row: `repeat(2, 1fr)` → `1fr` at ≤640px. Sits at the top of `index.html`.
 
 ---
 
 ## Homepage Spotlight — `index.html`
 
-Two spotlight cards appear above the hub section grid on the homepage.
+Two spotlight cards appear on the homepage.
 
 ### Latest Article card
 
