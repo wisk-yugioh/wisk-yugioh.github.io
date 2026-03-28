@@ -153,6 +153,19 @@ html.new-site {
     box-sizing: border-box;
   }
 
+  // Homepage variant — fills remaining viewport height and centers cards
+  // both horizontally and vertically (spotlight row is the only content).
+  .site-main--home {
+    display: flex;
+    align-items: center;     // vertical centering within the flex-1 space
+    justify-content: center; // horizontal centering of the inner wrapper
+
+    .site-main-inner {
+      max-width: 1200px; // wide enough for 3 full-sized cards
+      padding: 2rem 1.5rem;
+    }
+  }
+
   .site-main-inner {
     max-width: $content-width;
     margin: 0 auto;
@@ -473,7 +486,6 @@ html.new-site {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin-bottom: 2.5rem;
 
     @media (max-width: 640px) {
       grid-template-columns: 1fr;
