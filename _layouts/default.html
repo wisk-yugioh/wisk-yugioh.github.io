@@ -39,7 +39,25 @@
 
     <footer class="site-footer">
       {% for link in site.data.social %}
-      <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+      <a href="{{ link.url }}"
+         {% unless link.url contains 'mailto' %}target="_blank" rel="noopener"{% endunless %}
+         class="footer-social-link"
+         aria-label="{{ link.title }}">
+        {% if link.title == "YouTube" %}
+        {% comment %} YouTube play-button logo SVG {% endcomment %}
+        <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.54 3.6 12 3.6 12 3.6s-7.54 0-9.38.46A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.46 20.4 12 20.4 12 20.4s7.54 0 9.38-.46a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z"/>
+        </svg>
+        {% elsif link.title == "Gmail" %}
+        {% comment %} Gmail envelope-M logo SVG {% endcomment %}
+        <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2-8 5-8-5h16zm0 12H4V9l8 5 8-5v9z"/>
+        </svg>
+        {% else %}
+        {{ link.title }}
+        {% endif %}
+        <span class="footer-social-label">{{ link.title }}</span>
+      </a>
       {% endfor %}
     </footer>
 
