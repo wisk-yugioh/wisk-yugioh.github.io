@@ -155,13 +155,20 @@ html.new-site {
 
   // Homepage variant — fills remaining viewport height and centers cards
   // both horizontally and vertically (spotlight row is the only content).
+  //
+  // NOTE: We do NOT use align-items: center here. That would split overflow
+  // equally above and below — on mobile (cards stacked, taller than viewport)
+  // the top of card 1 ends up at a negative y-position that can't be scrolled
+  // to. Instead we use margin: auto on the inner wrapper: auto margins center
+  // the child when it fits, and collapse to 0 when it overflows so the child
+  // starts at the top and normal scrolling takes over.
   .site-main--home {
     display: flex;
-    align-items: center;     // vertical centering within the flex-1 space
-    justify-content: center; // horizontal centering of the inner wrapper
+    justify-content: center; // horizontal centering
 
     .site-main-inner {
-      max-width: 1200px; // wide enough for 3 full-sized cards
+      margin: auto;        // vertical + horizontal centering via auto margins (overflow-safe)
+      max-width: 1200px;   // wide enough for 3 full-sized cards
       padding: 2rem 1.5rem;
     }
   }
