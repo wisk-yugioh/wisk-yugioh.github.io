@@ -8,6 +8,8 @@ description: "We've gathered over 190 posts — articles, tournament reports, gu
 
 After years of writing, competing and documenting, we've built a permanent home for the Slovenian Yu-Gi-Oh! community.
 
+![Yami Yugi holding cards in front of a grid of classic Yu-Gi-Oh! cards](/assets/images/posts/wisk-yugioh-site-launch/yu-gi-oh-4082583608.jpg)
+
 **Wisk Yu-Gi-Oh!** brings together the full archive of our community's writing — from the earliest tournament records in 2010 all the way to modern Goat Format strategy guides.
 
 ---

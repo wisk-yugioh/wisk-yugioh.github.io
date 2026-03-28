@@ -8,6 +8,8 @@ description: "Uradno odpiramo nov dom slovenske Yu-Gi-Oh! skupnosti: arhiv več 
 
 Po dolgih letih pisanja, dokumentiranja in ljubezni do Yu-Gi-Oh! igre smo zbrali vse skupaj na enem mestu.
 
+![Yami Yugi drži karte pred mrežo klasičnih Yu-Gi-Oh! kart](/assets/images/posts/wisk-yugioh-site-launch/yu-gi-oh-4082583608.jpg)
+
 **Wisk Yu-Gi-Oh!** je nova spletna stran slovenske skupnosti, ki združuje celoten arhiv naše vsebine — od prvih zapisov turnirjev leta 2010 pa vse do danes.
 
 ---
