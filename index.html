@@ -33,25 +33,20 @@ home: true
 {% assign daily_post = spotlight_pool | slice: spotlight_index %}
 
 {% comment %}
-  Look up the first image for the selected post via gallery_index.json.
+  Image lookup for both article cards via gallery_index.json.
   gallery_index entries have folderSlug == Jekyll post.slug (filename without date/extension).
   `where` returns an array; grab element [0] — nil-safe if no images exist for this post.
 {% endcomment %}
+{% assign latest_image_match = site.data.gallery_index | where: "folderSlug", latest_post.slug %}
+{% assign latest_image = latest_image_match[0].src %}
+
 {% assign daily_image_match = site.data.gallery_index | where: "folderSlug", daily_post.slug %}
 {% assign daily_image = daily_image_match[0].src %}
 
 <div class="spotlight-row">
 
   {% if latest_post %}
-  <a class="spotlight-card spotlight-card--article" href="{{ latest_post.url }}">
-    <span class="spotlight-label">Latest post</span>
-    <span class="spotlight-title">{{ latest_post.title }}</span>
-    <span class="spotlight-meta">
-      {{ latest_post.date | date: "%d %b %Y" }}
-      {% if latest_post.author %}&nbsp;· {{ latest_post.author }}{% endif %}
-    </span>
-    <span class="spotlight-cta">Read &rarr;</span>
-  </a>
+  {% include spotlight-article-card.html label="Latest post" post=latest_post image=latest_image cta="Read &rarr;" %}
   {% endif %}
 
   {% if site.data.latest_video.video_id %}
@@ -71,22 +66,7 @@ home: true
   {% endif %}
 
   {% if daily_post %}
-  <a class="spotlight-card spotlight-card--daily" href="{{ daily_post.url }}">
-    <span class="spotlight-label">Daily spotlight</span>
-    {% if daily_image %}
-    <!-- Show the first article image as a preview thumbnail if one exists -->
-    <img class="spotlight-thumb"
-         src="{{ daily_image }}"
-         alt="{{ daily_post.title }}"
-         loading="lazy">
-    {% endif %}
-    <span class="spotlight-title">{{ daily_post.title }}</span>
-    <span class="spotlight-meta">
-      {{ daily_post.date | date: "%d %b %Y" }}
-      {% if daily_post.author %}&nbsp;· {{ daily_post.author }}{% endif %}
-    </span>
-    <span class="spotlight-cta">Read &rarr;</span>
-  </a>
+  {% include spotlight-article-card.html label="Daily spotlight" post=daily_post image=daily_image cta="Read &rarr;" %}
   {% endif %}
 
 </div>

@@ -508,6 +508,27 @@ html.new-site {
       text-decoration: none;
     }
 
+    // Shared thumbnail — used by all 3 card types (article, video, daily spotlight)
+    .spotlight-thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 0.35rem;
+      background: $dark-border;
+    }
+
+    // Placeholder shown when a post has no associated image in gallery_index.json.
+    // Rendered as a <span> (not <img>) so it fills the same 16:9 space with text.
+    .spotlight-thumb--placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      color: $dark-muted;
+      font-style: italic;
+    }
+
     .spotlight-label {
       font-size: 0.72rem;
       text-transform: uppercase;
@@ -536,29 +557,10 @@ html.new-site {
     }
   }
 
-  .spotlight-card--video {
-    .spotlight-thumb {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      border-radius: 4px;
-      margin-bottom: 0.35rem;
-      background: $dark-border;
-    }
-  }
-
-  // Daily spotlight card — same thumbnail style as --video;
-  // thumbnail is only rendered when an image exists for the post.
-  .spotlight-card--daily {
-    .spotlight-thumb {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      border-radius: 4px;
-      margin-bottom: 0.35rem;
-      background: $dark-border;
-    }
-  }
+  // Card-type modifiers — kept for future per-type overrides; no unique rules needed currently.
+  .spotlight-card--article {}
+  .spotlight-card--video {}
+  .spotlight-card--daily {}
 
   // ── Footer ──────────────────────────────────────────────
   .site-footer {

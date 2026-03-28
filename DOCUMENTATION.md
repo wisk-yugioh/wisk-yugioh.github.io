@@ -201,16 +201,35 @@ Spotlight row: `repeat(3, 1fr)` → `1fr` at ≤640px. Sits at the top of `index
 
 Three spotlight cards appear on the homepage.
 
+### Shared article card template — `_includes/spotlight-article-card.html`
+
+Both the Latest Post and Daily Spotlight cards use the same parameterised include, so their HTML is identical. Parameters:
+
+| Param | Description |
+|---|---|
+| `label` | Small orange header text (e.g. `"Latest post"`) |
+| `post` | Jekyll post/document object |
+| `image` | Resolved image src string, or empty/nil if none |
+| `cta` | Link text (e.g. `"Read →"`) |
+
+Card structure (same for all 3 card types):
+1. `spotlight-label` — small orange caps text
+2. `spotlight-thumb` — 16:9 `<img>` if an image exists; otherwise a `<span class="spotlight-thumb spotlight-thumb--placeholder">No image available</span>`
+3. `spotlight-title` — article/video title (below the image)
+4. `spotlight-meta` — date + author or channel
+5. `spotlight-cta` — call-to-action link text
+
 ### Latest Article card
 
-Pure Liquid — no data file needed. Merges all 6 collections, sorts by `date`, takes the last (newest) entry:
+Merges all 6 collections, sorts by `date`, takes the last (newest) entry:
 
 ```liquid
 {% assign all_posts = site.clanki | concat: site.articles | ... | sort: "date" %}
 {% assign latest_post = all_posts | last %}
+{% assign latest_image_match = site.data.gallery_index | where: "folderSlug", latest_post.slug %}
+{% assign latest_image = latest_image_match[0].src %}
+{% include spotlight-article-card.html label="Latest post" post=latest_post image=latest_image cta="Read →" %}
 ```
-
-Displays title, date, author, and a "Read →" link. Wrapped in `.spotlight-card.spotlight-card--article`.
 
 ### Latest Video card
 
@@ -224,16 +243,12 @@ Picks one article per day from `clanki + reportaze + articles + reports` (exclud
 {% assign spotlight_pool = site.clanki | concat: site.reportaze | concat: site.articles | concat: site.reports | sort: "date" %}
 {% assign spotlight_index = site.time | date: "%j" | plus: 0 | modulo: spotlight_pool.size %}
 {% assign daily_post = spotlight_pool | slice: spotlight_index %}
-```
-
-Image lookup uses `_data/gallery_index.json` (the same file the gallery page uses). Matches on `folderSlug == post.slug`:
-
-```liquid
 {% assign daily_image_match = site.data.gallery_index | where: "folderSlug", daily_post.slug %}
 {% assign daily_image = daily_image_match[0].src %}
+{% include spotlight-article-card.html label="Daily spotlight" post=daily_post image=daily_image cta="Read →" %}
 ```
 
-If no image exists for the post, the card renders without a thumbnail. Wrapped in `.spotlight-card.spotlight-card--daily`.
+If no image exists for the post, the shared include renders a placeholder span.
 
 ### Data files
 
@@ -241,7 +256,7 @@ If no image exists for the post, the card renders without a thumbnail. Wrapped i
 |---|---|
 | `_data/youtube_channels.yml` | List of YouTube channels (handle + channel_id). Add entries here to include more channels. |
 | `_data/latest_video.yml` | Auto-generated — the single most-recent video across all configured channels. **Do not edit manually.** |
-| `_data/gallery_index.json` | Generated image list used for daily spotlight image lookup. Regenerate with `node scripts/generate-gallery-index.mjs`. |
+| `_data/gallery_index.json` | Generated image list used for article image lookups. Regenerate with `node scripts/generate-gallery-index.mjs`. |
 
 `_data/youtube_channels.yml` format:
 
@@ -266,9 +281,8 @@ To trigger manually: **Actions → Fetch latest YouTube video → Run workflow**
 ### SCSS classes
 
 `.spotlight-row` — three-column grid (`repeat(3, 1fr)`, collapses to `1fr` at ≤640px).  
-`.spotlight-card` — base card style.  
-`.spotlight-card--video` — adds `.spotlight-thumb` (16:9 thumbnail image).  
-`.spotlight-card--daily` — adds `.spotlight-thumb` (same 16:9 thumbnail, only rendered when an image exists).
+`.spotlight-card` — base card style; includes shared `.spotlight-thumb` (16:9, `object-fit: cover`) and `.spotlight-thumb--placeholder` (same dimensions, centred muted text).  
+`.spotlight-card--article`, `.spotlight-card--video`, `.spotlight-card--daily` — type modifiers; currently no unique rules, kept for future per-type overrides.
 
 ---
 

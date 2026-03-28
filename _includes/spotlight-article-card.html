@@ -1,0 +1,33 @@
+{% comment %}
+  Reusable spotlight card for article-type entries (Latest Post, Daily Spotlight).
+  Both cards are structurally identical — only the data passed in differs.
+
+  Parameters (all required unless noted):
+    include.label  — small orange header text, e.g. "Latest post"
+    include.post   — the Jekyll post/document object
+    include.image  — resolved image src string, or nil/empty if no image exists
+    include.cta    — call-to-action link text, e.g. "Read →"
+{% endcomment %}
+<a class="spotlight-card spotlight-card--article" href="{{ include.post.url }}">
+  <span class="spotlight-label">{{ include.label }}</span>
+
+  {% if include.image %}
+    <!-- Article has an associated image in gallery_index — show it as a 16:9 thumbnail -->
+    <img class="spotlight-thumb"
+         src="{{ include.image }}"
+         alt="{{ include.post.title }}"
+         loading="lazy">
+  {% else %}
+    <!-- No image found for this post — show a styled placeholder that fills the same 16:9 space -->
+    <span class="spotlight-thumb spotlight-thumb--placeholder">No image available</span>
+  {% endif %}
+
+  <span class="spotlight-title">{{ include.post.title }}</span>
+
+  <span class="spotlight-meta">
+    {{ include.post.date | date: "%d %b %Y" }}
+    {% if include.post.author %}&nbsp;· {{ include.post.author }}{% endif %}
+  </span>
+
+  <span class="spotlight-cta">{{ include.cta }}</span>
+</a>
