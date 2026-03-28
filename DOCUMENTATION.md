@@ -193,13 +193,13 @@ Key variables:
 | `$dark-accent` | `#f97316` |
 | `$content-width` | `720px` |
 
-Spotlight row: `repeat(2, 1fr)` → `1fr` at ≤640px. Sits at the top of `index.html`.
+Spotlight row: `repeat(3, 1fr)` → `1fr` at ≤640px. Sits at the top of `index.html`.
 
 ---
 
 ## Homepage Spotlight — `index.html`
 
-Two spotlight cards appear on the homepage.
+Three spotlight cards appear on the homepage.
 
 ### Latest Article card
 
@@ -216,12 +216,32 @@ Displays title, date, author, and a "Read →" link. Wrapped in `.spotlight-card
 
 Rendered from `_data/latest_video.yml` (auto-updated by GitHub Actions). Displays thumbnail, title, channel, date, and a "Watch →" link. Wrapped in `.spotlight-card.spotlight-card--video`.
 
+### Daily Spotlight card
+
+Picks one article per day from `clanki + reportaze + articles + reports` (excludes objave/announcements). Selection is deterministic: `day_of_year % pool_size`. The pool is sorted by date before slicing, so the cycle is stable and reproducible.
+
+```liquid
+{% assign spotlight_pool = site.clanki | concat: site.reportaze | concat: site.articles | concat: site.reports | sort: "date" %}
+{% assign spotlight_index = site.time | date: "%j" | plus: 0 | modulo: spotlight_pool.size %}
+{% assign daily_post = spotlight_pool | slice: spotlight_index %}
+```
+
+Image lookup uses `_data/gallery_index.json` (the same file the gallery page uses). Matches on `folderSlug == post.slug`:
+
+```liquid
+{% assign daily_image_match = site.data.gallery_index | where: "folderSlug", daily_post.slug %}
+{% assign daily_image = daily_image_match[0].src %}
+```
+
+If no image exists for the post, the card renders without a thumbnail. Wrapped in `.spotlight-card.spotlight-card--daily`.
+
 ### Data files
 
 | File | Purpose |
 |---|---|
 | `_data/youtube_channels.yml` | List of YouTube channels (handle + channel_id). Add entries here to include more channels. |
 | `_data/latest_video.yml` | Auto-generated — the single most-recent video across all configured channels. **Do not edit manually.** |
+| `_data/gallery_index.json` | Generated image list used for daily spotlight image lookup. Regenerate with `node scripts/generate-gallery-index.mjs`. |
 
 `_data/youtube_channels.yml` format:
 
@@ -245,9 +265,10 @@ To trigger manually: **Actions → Fetch latest YouTube video → Run workflow**
 
 ### SCSS classes
 
-`.spotlight-row` — two-column grid (`1fr 1fr`, collapses to `1fr` at ≤640px).  
-`.spotlight-card` — base card style (same surface/border/hover as `.hub-card`).  
-`.spotlight-card--video` — adds `.spotlight-thumb` (16:9 thumbnail image).
+`.spotlight-row` — three-column grid (`repeat(3, 1fr)`, collapses to `1fr` at ≤640px).  
+`.spotlight-card` — base card style.  
+`.spotlight-card--video` — adds `.spotlight-thumb` (16:9 thumbnail image).  
+`.spotlight-card--daily` — adds `.spotlight-thumb` (same 16:9 thumbnail, only rendered when an image exists).
 
 ---
 

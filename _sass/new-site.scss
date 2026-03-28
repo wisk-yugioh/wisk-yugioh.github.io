@@ -468,11 +468,10 @@ html.new-site {
     }
   }
 
-  // ── Hub page (section cards) ────────────────────────────
-  // ── Spotlight row (latest article + latest video) ────────
+  // ── Spotlight row (latest article + latest video + daily spotlight) ──
   .spotlight-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-bottom: 2.5rem;
 
@@ -526,6 +525,19 @@ html.new-site {
   }
 
   .spotlight-card--video {
+    .spotlight-thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 0.35rem;
+      background: $dark-border;
+    }
+  }
+
+  // Daily spotlight card — same thumbnail style as --video;
+  // thumbnail is only rendered when an image exists for the post.
+  .spotlight-card--daily {
     .spotlight-thumb {
       width: 100%;
       aspect-ratio: 16 / 9;

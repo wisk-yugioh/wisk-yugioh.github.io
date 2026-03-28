@@ -3,7 +3,7 @@ layout: default
 title: Wisk Yu-Gi-Oh!
 ---
 {% comment %}
-  Spotlight row — Latest Article + Latest YouTube Video
+  Spotlight row — Latest Article + Latest YouTube Video + Daily Spotlight
   Merge all collections, sort by date, pick the newest.
 {% endcomment %}
 {% assign all_posts = site.clanki
@@ -14,6 +14,30 @@ title: Wisk Yu-Gi-Oh!
   | concat: site.announcements
   | sort: "date" %}
 {% assign latest_post = all_posts | last %}
+
+{% comment %}
+  Daily spotlight — picks 1 post per day from clanki + reportaze + articles + reports.
+  Excludes objave and announcements (those are news/notices, not articles).
+  Seed: day-of-year (1–366) modulo pool size → same pick all day, different each day.
+  Sorts by date for a stable, deterministic order before slicing.
+{% endcomment %}
+{% assign spotlight_pool = site.clanki
+  | concat: site.reportaze
+  | concat: site.articles
+  | concat: site.reports
+  | sort: "date" %}
+{% assign spotlight_count = spotlight_pool | size %}
+{% assign spotlight_day   = site.time | date: "%j" | plus: 0 %}
+{% assign spotlight_index = spotlight_day | modulo: spotlight_count %}
+{% assign daily_post = spotlight_pool | slice: spotlight_index %}
+
+{% comment %}
+  Look up the first image for the selected post via gallery_index.json.
+  gallery_index entries have folderSlug == Jekyll post.slug (filename without date/extension).
+  `where` returns an array; grab element [0] — nil-safe if no images exist for this post.
+{% endcomment %}
+{% assign daily_image_match = site.data.gallery_index | where: "folderSlug", daily_post.slug %}
+{% assign daily_image = daily_image_match[0].src %}
 
 <div class="spotlight-row">
 
@@ -45,4 +69,24 @@ title: Wisk Yu-Gi-Oh!
   </a>
   {% endif %}
 
+  {% if daily_post %}
+  <a class="spotlight-card spotlight-card--daily" href="{{ daily_post.url }}">
+    <span class="spotlight-label">Daily spotlight</span>
+    {% if daily_image %}
+    <!-- Show the first article image as a preview thumbnail if one exists -->
+    <img class="spotlight-thumb"
+         src="{{ daily_image }}"
+         alt="{{ daily_post.title }}"
+         loading="lazy">
+    {% endif %}
+    <span class="spotlight-title">{{ daily_post.title }}</span>
+    <span class="spotlight-meta">
+      {{ daily_post.date | date: "%d %b %Y" }}
+      {% if daily_post.author %}&nbsp;· {{ daily_post.author }}{% endif %}
+    </span>
+    <span class="spotlight-cta">Read &rarr;</span>
+  </a>
+  {% endif %}
+
 </div>
+
