@@ -21,6 +21,12 @@ home: true
   Excludes objave and announcements (those are news/notices, not articles).
   Seed: day-of-year (1–366) modulo pool size → same pick all day, different each day.
   Sorts by date for a stable, deterministic order before slicing.
+
+  NOTE: We use a `for` loop with limit/offset instead of the `slice` filter.
+  `slice` receives `spotlight_index` which is produced by chained arithmetic filters
+  and can be stored as a Liquid float. Array#slice(float) returns nil in some
+  Jekyll/Liquid versions, which breaks the card entirely. The `for` loop is
+  Liquid's native, integer-safe way to pick one element by position.
 {% endcomment %}
 {% assign spotlight_pool = site.clanki
   | concat: site.reportaze
@@ -30,7 +36,9 @@ home: true
 {% assign spotlight_count = spotlight_pool | size %}
 {% assign spotlight_day   = site.time | date: "%j" | plus: 0 %}
 {% assign spotlight_index = spotlight_day | modulo: spotlight_count %}
-{% assign daily_post = spotlight_pool | slice: spotlight_index %}
+{% for _p in spotlight_pool limit:1 offset:spotlight_index %}
+  {% assign daily_post = _p %}
+{% endfor %}
 
 {% comment %}
   Image lookup for both article cards via gallery_index.json.
