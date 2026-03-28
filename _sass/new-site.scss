@@ -10,7 +10,8 @@ $dark-accent:   #f97316;
 $dark-accent-h: #ea6c0a;
 $dark-link:     #fb923c;
 
-$font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+// Inter loaded via Google Fonts in default.html; Helvetica Neue / Arial as fallback
+$font-sans: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
 $font-mono: 'Courier New', monospace;
 $content-width: 720px;
 
@@ -27,6 +28,8 @@ html.new-site {
   font-family: $font-sans;
   font-size: 1rem;
   line-height: 1.6;
+  // Inter uses optical-size features; enable font features for sharper rendering
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -34,9 +37,30 @@ html.new-site {
   flex-direction: column;
   overflow: hidden;
 
+  // ── Reading progress bar (post pages only) ──────────────
+  // Fixed at very top of viewport; width is driven by reading-progress.js.
+  // z-index sits above the header (z-index: 100) so it's always visible.
+  .reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    // Orange gradient matching the accent colour scheme
+    background: linear-gradient(90deg, $dark-accent, #fbbf24);
+    z-index: 200;
+    // Smooth the bar as scroll events fire
+    transition: width 0.1s linear;
+    pointer-events: none; // never intercept clicks
+  }
+
   // ── Header ──────────────────────────────────────────────
   .site-header {
     background-color: $dark-surface;
+    // 3px gradient top stripe + standard bottom border.
+    // `border-image` replaces the solid top border with a gradient.
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, $dark-accent, #fbbf24 60%, $dark-accent-h) 1;
     border-bottom: 1px solid $dark-border;
     padding: 0 2rem;
     display: flex;
@@ -45,15 +69,28 @@ html.new-site {
     height: 3.5rem;
     flex-shrink: 0;
     position: relative;
+    z-index: 100; // stay above page content when scrolling
 
     .site-title {
       font-size: 1.2rem;
       font-weight: 700;
-      color: $dark-accent;
       text-decoration: none;
       letter-spacing: 0.02em;
+      // Gradient text: clips the background to the text shape.
+      // The fallback color ($dark-accent) shows on browsers that don't support background-clip: text.
+      color: $dark-accent;
+      background: linear-gradient(135deg, $dark-accent 0%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
 
-      &:hover { color: $dark-accent-h; text-decoration: none; }
+      // On hover, reverse the gradient direction for a subtle flash effect
+      &:hover {
+        background: linear-gradient(135deg, #fbbf24 0%, $dark-accent 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-decoration: none;
+      }
     }
 
     nav a {
@@ -62,8 +99,29 @@ html.new-site {
       font-size: 0.9rem;
       margin-left: 1.5rem;
       transition: color 0.15s;
+      position: relative; // needed for the ::after underline pseudo-element
 
-      &:hover { color: $dark-text; text-decoration: none; }
+      // Animated underline: a 2px accent-coloured line that scales from 0→1 on hover.
+      // Uses scaleX so the animation originates from the left edge (transform-origin: left).
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $dark-accent;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+      }
+
+      &:hover {
+        color: $dark-text;
+        text-decoration: none;
+
+        &::after { transform: scaleX(1); }
+      }
     }
 
     .nav-divider {
@@ -94,7 +152,7 @@ html.new-site {
       width: 100%;
       background-color: $dark-muted;
       border-radius: 2px;
-      transition: all 0.2s;
+      transition: all 0.25s ease;
     }
   }
 
@@ -151,6 +209,8 @@ html.new-site {
     overflow-y: auto;
     width: 100%;
     box-sizing: border-box;
+    // Smooth scroll so anchor jumps and JS-driven scrolls animate
+    scroll-behavior: smooth;
   }
 
   // Homepage variant — fills remaining viewport height and centers cards
@@ -180,6 +240,15 @@ html.new-site {
     box-sizing: border-box;
   }
 
+  // ── Global focus-visible style ───────────────────────────
+  // Replaces the browser default (which varies per browser) with a consistent
+  // accent-colour outline. Only shown for keyboard navigation (not mouse clicks).
+  *:focus-visible {
+    outline: 2px solid $dark-accent;
+    outline-offset: 3px;
+    border-radius: 2px; // slightly rounded outline looks cleaner
+  }
+
   // ── Subcategory filter buttons ──────────────────────────
   .subcat-filter {
     display: flex;
@@ -194,16 +263,20 @@ html.new-site {
     background: transparent;
     color: $dark-accent;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 0.9rem;
+    // Fully rounded pills for a modern, badge-like appearance
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
     text-transform: capitalize;
     font-family: inherit;
-    transition: background 0.15s, color 0.15s;
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s;
 
     &:hover,
     &.active {
       background: $dark-accent;
       color: #000;
+      // Subtle glow matching the accent colour
+      box-shadow: 0 0 0 3px rgba($dark-accent, 0.2);
     }
   }
 
@@ -217,13 +290,27 @@ html.new-site {
     border-radius: 6px;
     color: $dark-text;
     font-size: 0.95rem;
-    padding: 0.55rem 0.9rem;
+    // Extra left padding to make room for the inline SVG magnifying-glass icon
+    padding: 0.55rem 0.9rem 0.55rem 2.4rem;
     margin-bottom: 1.5rem;
     outline: none;
-    transition: border-color 0.15s;
+    transition: border-color 0.2s, box-shadow 0.2s;
+
+    // Magnifying glass icon: inline SVG encoded as a data URI, coloured $dark-muted (#9ca3af).
+    // Using currentColor inside SVG is not reliable via background-image, so the hex is hardcoded.
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    // Vertically centre the 16px icon within the input
+    background-position: 0.7rem center;
+    background-size: 1rem 1rem;
 
     &::placeholder { color: $dark-muted; }
-    &:focus { border-color: $dark-accent; }
+
+    &:focus {
+      border-color: $dark-accent;
+      // Soft glow matching accent colour at low opacity
+      box-shadow: 0 0 0 3px rgba($dark-accent, 0.15);
+    }
   }
 
   // ── Post list (index page) ───────────────────────────────
@@ -247,10 +334,22 @@ html.new-site {
       display: flex;
       align-items: baseline;
       gap: 1.25rem;
-      padding: 0.65rem 0;
+      // Slightly increased padding + negative horizontal margin + matching padding for the
+      // hover highlight to extend edge-to-edge within the content column
+      padding: 0.75rem 0.5rem;
+      margin: 0 -0.5rem;
       border-bottom: 1px solid $dark-border;
+      border-left: 3px solid transparent; // invisible accent bar; becomes visible on hover
+      border-radius: 0 4px 4px 0;
+      transition: background-color 0.15s, border-left-color 0.15s;
 
       &:last-child { border-bottom: none; }
+
+      // Row highlight + left accent bar on hover
+      &:hover {
+        background-color: rgba($dark-surface, 0.8);
+        border-left-color: $dark-accent;
+      }
     }
 
     .post-meta {
@@ -265,6 +364,7 @@ html.new-site {
       text-decoration: none;
       font-size: 1rem;
       line-height: 1.4;
+      font-weight: 500;
 
       &:hover { color: $dark-accent; text-decoration: none; }
     }
@@ -307,7 +407,9 @@ html.new-site {
 
     h1 {
       font-size: 2rem;
+      font-weight: 700;
       line-height: 1.25;
+      letter-spacing: -0.02em; // tight tracking on large headings looks more editorial
       margin: 0 0 0.75rem;
     }
 
@@ -322,12 +424,26 @@ html.new-site {
     }
   }
 
+  // Post hero: full-bleed — extends to edges of the content column.
+  // Negative horizontal margins cancel the column padding so the image spans the full width.
+  .post-hero {
+    display: block;
+    width: calc(100% + 3rem); // cancel the 1.5rem padding on each side
+    max-width: calc(100% + 3rem);
+    margin: 1rem -1.5rem;
+    max-height: 400px;
+    object-fit: cover;
+    // No border-radius — full-bleed images look more impactful without rounded corners
+    border-radius: 0;
+  }
+
   .post-content {
     color: $dark-text;
 
     h1, h2, h3, h4 {
       margin-top: 2rem;
       margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
     }
 
     h2 { font-size: 1.5rem; border-bottom: 1px solid $dark-border; padding-bottom: 0.4rem; }
@@ -335,7 +451,7 @@ html.new-site {
 
     p {
       font-size: 1rem;
-      line-height: 1.75;
+      line-height: 1.8; // slightly more generous line-height for readability
       margin-bottom: 1.25rem;
     }
 
@@ -388,6 +504,7 @@ html.new-site {
     }
   }
 
+  // ── Post prev/next navigation ────────────────────────────
   .post-nav {
     margin-top: 3rem;
     padding-top: 1.5rem;
@@ -396,19 +513,36 @@ html.new-site {
     .post-nav-links {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      gap: 1rem;
+      align-items: stretch;
+      gap: 0.75rem;
     }
 
-    .post-nav-prev { flex: 1; text-align: left; }
+    // Each navigation block is styled as a mini-card with a border that lights up on hover
+    .post-nav-prev,
+    .post-nav-center,
+    .post-nav-next {
+      background: $dark-surface;
+      border: 1px solid $dark-border;
+      border-radius: 6px;
+      padding: 0.65rem 1rem;
+      transition: border-color 0.2s, background-color 0.15s;
+
+      &:hover {
+        border-color: $dark-accent;
+        background-color: rgba($dark-accent, 0.05);
+      }
+    }
+
+    .post-nav-prev  { flex: 1; text-align: left; }
     .post-nav-center { flex: 0 0 auto; text-align: center; }
-    .post-nav-next { flex: 1; text-align: right; }
+    .post-nav-next  { flex: 1; text-align: right; }
 
     a {
       color: $dark-link;
       text-decoration: none;
       font-size: 0.9rem;
       line-height: 1.4;
+      font-weight: 500;
       display: inline-block;
       &:hover { color: $dark-accent; }
     }
@@ -459,14 +593,6 @@ html.new-site {
     }
   }
 
-  .post-hero {
-    width: 100%;
-    max-height: 360px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin: 1rem 0;
-  }
-
   // ── Deck list (Yu-Gi-Oh card lists) ─────────────────────
   .deck-list {
     columns: 2;
@@ -502,16 +628,21 @@ html.new-site {
   .spotlight-card {
     background: $dark-surface;
     border: 1px solid $dark-border;
-    border-radius: 6px;
+    border-radius: 8px; // slightly more rounded for a modern card feel
     padding: 1.5rem;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    transition: border-color 0.15s;
+    // Combine border-color, transform, and box-shadow in one transition
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
       border-color: $dark-accent;
+      // Lift the card slightly off the page
+      transform: translateY(-4px);
+      // Soft orange glow beneath the card — gives depth without being garish
+      box-shadow: 0 8px 24px rgba($dark-accent, 0.18);
       text-decoration: none;
     }
 
@@ -538,10 +669,14 @@ html.new-site {
 
     .spotlight-label {
       font-size: 0.72rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
       color: $dark-accent;
       margin-bottom: 0.25rem;
+      // Left accent bar on the label for a editorial magazine feel
+      padding-left: 0.5rem;
+      border-left: 2px solid $dark-accent;
     }
 
     .spotlight-title {
@@ -560,6 +695,7 @@ html.new-site {
       margin-top: auto;
       padding-top: 0.75rem;
       font-size: 0.85rem;
+      font-weight: 600;
       color: $dark-accent;
     }
   }
@@ -597,5 +733,12 @@ html.new-site {
     .post-list .post-category { display: none; }
     .post-nav-links { flex-direction: column; gap: 0.5rem; }
     .post-nav-next { text-align: left; }
+    // On small screens the full-bleed hero uses the narrower column padding
+    .post-hero {
+      width: calc(100% + 2rem);
+      max-width: calc(100% + 2rem);
+      margin: 1rem -1rem;
+    }
   }
 }
+

@@ -192,6 +192,22 @@ Key variables:
 | `$dark-muted` | `#9ca3af` |
 | `$dark-accent` | `#f97316` |
 | `$content-width` | `720px` |
+| `$font-sans` | `'Inter', 'Helvetica Neue', 'Arial', sans-serif` |
+
+Inter is loaded from Google Fonts via `<link>` preconnect tags in `default.html`.
+
+Notable UI classes / patterns:
+
+| Class | Description |
+|---|---|
+| `.reading-progress` | Fixed 3px orange gradient bar at viewport top; driven by `assets/js/reading-progress.js` on post pages |
+| `.subcat-btn` | Pill-shaped filter buttons (`border-radius: 999px`) |
+| `.post-list li` | Row hover: subtle background tint + 3px left accent bar |
+| `.spotlight-card:hover` | Lift (`translateY(-4px)`) + soft orange `box-shadow` glow |
+| `.post-hero` | Full-bleed hero image (negative horizontal margins, no border-radius) |
+| `.post-nav-prev/center/next` | Card-style mini-blocks with border that highlights on hover |
+| `.post-search` | Inline SVG magnifying-glass icon via `background-image` + extra left padding |
+| `*:focus-visible` | Global accent-colour outline for keyboard navigation |
 
 Spotlight row: `repeat(3, 1fr)` → `1fr` at ≤640px. Sits at the top of `index.html`.
 

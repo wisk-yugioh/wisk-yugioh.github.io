@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<!-- Reading progress bar: fixed at top of viewport, filled by scroll position via reading-progress.js -->
+<div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
 {% if page.lang == "en" %}
   {% assign t_related = "Related posts" %}
   {% assign t_prev = "Previous" %}
@@ -74,6 +76,8 @@ layout: default
     </script>
     <noscript>Please enable JavaScript to view the comments.</noscript>
   </section>
+  <!-- Reading progress bar script — post pages only -->
+  <script src="/assets/js/reading-progress.js"></script>
   <nav class="post-nav">
     {% assign col_size = col_sorted | size %}
     {% for p in col_sorted %}
