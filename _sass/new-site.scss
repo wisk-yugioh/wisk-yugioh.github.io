@@ -365,6 +365,10 @@ html.new-site {
       font-size: 1rem;
       line-height: 1.4;
       font-weight: 500;
+      // min-width: 0 is required for a flex child to shrink below its content width.
+      // Without this, a long title would overflow its column rather than wrapping.
+      min-width: 0;
+      overflow-wrap: break-word; // break extremely long words (e.g. URLs) if necessary
 
       &:hover { color: $dark-accent; text-decoration: none; }
     }
@@ -755,7 +759,12 @@ html.new-site {
     .mobile-nav a { padding: 0.85rem 1rem; }
     .site-main-inner { padding: 1.5rem 1rem 3rem; }
     .post-header h1 { font-size: 1.5rem; }
-    .post-list li { flex-wrap: wrap; gap: 0.4rem; }
+    // On mobile: keep the two-column flex layout (date | title) — do NOT use flex-wrap.
+    // flex-wrap: wrap would let the title drop below the date onto a new row.
+    // Instead, the date stays pinned left (flex-shrink: 0 + white-space: nowrap already set)
+    // and the title fills the remaining width, wrapping within its own column if needed
+    // (enabled by min-width: 0 on .post-link above).
+    .post-list li { gap: 0.75rem; }
     .post-list .post-category { display: none; }
     .post-nav-links { flex-direction: column; gap: 0.5rem; }
     .post-nav-next { text-align: left; }
