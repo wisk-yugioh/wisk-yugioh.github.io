@@ -253,26 +253,33 @@ Rendered from `_data/latest_video.yml` (auto-updated by GitHub Actions). Display
 
 ### Daily Spotlight card
 
-Picks one article per day from `clanki + reportaze + articles + reports` (excludes objave/announcements). Selection is deterministic: `day_of_year % pool_size`. The pool is sorted by date before slicing, so the cycle is stable and reproducible.
+Picks one article per day from `clanki + reportaze + articles + reports` (excludes objave/announcements). Selection is **client-side**: Jekyll injects the full pool as `window.SPOTLIGHT_POOL` at build time; `assets/js/daily-spotlight.js` computes the UTC day-of-year at runtime and picks `pool[dayOfYear % pool.length]`.
+
+Using the client's real UTC clock (instead of `site.time`, the build timestamp) means the spotlight rotates correctly every day regardless of how often the site is rebuilt.
 
 ```liquid
+{% comment %} Build-time: inject sorted pool as JSON {% endcomment %}
 {% assign spotlight_pool = site.clanki | concat: site.reportaze | concat: site.articles | concat: site.reports | sort: "date" %}
-{% assign spotlight_index = site.time | date: "%j" | plus: 0 | modulo: spotlight_pool.size %}
-{% assign daily_post = spotlight_pool | slice: spotlight_index %}
-{% assign daily_image_match = site.data.gallery_index | where: "folderSlug", daily_post.slug %}
-{% assign daily_image = daily_image_match[0].src %}
-{% include spotlight-article-card.html label="Daily spotlight" post=daily_post image=daily_image cta="Read →" %}
+window.SPOTLIGHT_POOL = [ ... ]; // per-post: url, title, date, author, image
 ```
 
-If no image exists for the post, the shared include renders a placeholder span.
+```js
+// Runtime (daily-spotlight.js):
+var dayOfYear = /* UTC day 1–366 */;
+var post = pool[dayOfYear % pool.length];
+// injects <a class="spotlight-card spotlight-card--daily"> into #daily-spotlight placeholder
+```
 
-### Data files
+The pool is sorted by date at build time for a stable, reproducible cycle. The `#daily-spotlight` placeholder `<div>` in `index.html` is replaced with the rendered card by the script.
+
+### Data / JS files
 
 | File | Purpose |
 |---|---|
 | `_data/youtube_channels.yml` | List of YouTube channels (handle + channel_id). Add entries here to include more channels. |
 | `_data/latest_video.yml` | Auto-generated — the single most-recent video across all configured channels. **Do not edit manually.** |
 | `_data/gallery_index.json` | Generated image list used for article image lookups. Regenerate with `node scripts/generate-gallery-index.mjs`. |
+| `assets/js/daily-spotlight.js` | Client-side script — reads `window.SPOTLIGHT_POOL`, computes UTC day-of-year, injects the daily spotlight card into `#daily-spotlight`. |
 
 `_data/youtube_channels.yml` format:
 

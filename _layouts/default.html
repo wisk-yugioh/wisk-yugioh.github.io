@@ -64,5 +64,16 @@
     {% if site.google_analytics %}
     {% include analytics.html %}
     {% endif %}
+
+    {% comment %}
+      Load the daily spotlight script only on the homepage (page.home is set in index.html frontmatter).
+      The script reads window.SPOTLIGHT_POOL (injected inline in index.html) and picks
+      today's article client-side, replacing the #daily-spotlight placeholder div.
+      Placed at end of <body> so the inline pool script and the placeholder div are
+      already in the DOM when this runs.
+    {% endcomment %}
+    {% if page.home %}
+    <script src="/assets/js/daily-spotlight.js"></script>
+    {% endif %}
   </body>
 </html>

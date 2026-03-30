@@ -17,39 +17,50 @@ home: true
 {% assign latest_post = all_posts | last %}
 
 {% comment %}
-  Daily spotlight — picks 1 post per day from clanki + reportaze + articles + reports.
-  Excludes objave and announcements (those are news/notices, not articles).
-  Seed: day-of-year (1–366) modulo pool size → same pick all day, different each day.
-  Sorts by date for a stable, deterministic order before slicing.
+  Daily spotlight pool — clanki + reportaze + articles + reports, sorted by date.
+  Excludes objave/announcements (news/notices, not articles).
+  Sorted by date for a stable, reproducible cycle order.
 
-  NOTE: We use a `for` loop with limit/offset instead of the `slice` filter.
-  `slice` receives `spotlight_index` which is produced by chained arithmetic filters
-  and can be stored as a Liquid float. Array#slice(float) returns nil in some
-  Jekyll/Liquid versions, which breaks the card entirely. The `for` loop is
-  Liquid's native, integer-safe way to pick one element by position.
+  NOTE: The actual day-based selection now happens client-side in daily-spotlight.js.
+  We inject window.SPOTLIGHT_POOL below so JS can pick today's article using the
+  visitor's real UTC date — not site.time (build timestamp), which would freeze the
+  selection until the next site rebuild.
 {% endcomment %}
 {% assign spotlight_pool = site.clanki
   | concat: site.reportaze
   | concat: site.articles
   | concat: site.reports
   | sort: "date" %}
-{% assign spotlight_count = spotlight_pool | size %}
-{% assign spotlight_day   = site.time | date: "%j" | plus: 0 %}
-{% assign spotlight_index = spotlight_day | modulo: spotlight_count %}
-{% for _p in spotlight_pool limit:1 offset:spotlight_index %}
-  {% assign daily_post = _p %}
-{% endfor %}
 
 {% comment %}
-  Image lookup for both article cards via gallery_index.json.
+  Image lookup for the Latest Post card via gallery_index.json.
   gallery_index entries have folderSlug == Jekyll post.slug (filename without date/extension).
   `where` returns an array; grab element [0] — nil-safe if no images exist for this post.
 {% endcomment %}
 {% assign latest_image_match = site.data.gallery_index | where: "folderSlug", latest_post.slug %}
 {% assign latest_image = latest_image_match[0].src %}
 
-{% assign daily_image_match = site.data.gallery_index | where: "folderSlug", daily_post.slug %}
-{% assign daily_image = daily_image_match[0].src %}
+{% comment %}
+  Inject the full spotlight pool as a JS variable.
+  Each entry: url, title, date (pre-formatted), author, image (src string or "").
+  Image lookup is done per-post inside the loop using the same gallery_index data.
+  daily-spotlight.js reads this array and picks today's article at runtime.
+{% endcomment %}
+<script>
+window.SPOTLIGHT_POOL = [
+  {% for p in spotlight_pool %}
+    {% assign _img_match = site.data.gallery_index | where: "folderSlug", p.slug %}
+    {% assign _img_src   = _img_match[0].src | default: "" %}
+    {
+      "url":    {{ p.url               | jsonify }},
+      "title":  {{ p.title             | jsonify }},
+      "date":   {{ p.date | date: "%d %b %Y" | jsonify }},
+      "author": {{ p.author            | jsonify }},
+      "image":  {{ _img_src            | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+</script>
 
 <div class="spotlight-row">
 
@@ -73,9 +84,11 @@ home: true
   </a>
   {% endif %}
 
-  {% if daily_post %}
-  {% include spotlight-article-card.html label="Daily spotlight" post=daily_post image=daily_image cta="Read &rarr;" %}
-  {% endif %}
+  {% comment %}
+    Daily spotlight placeholder — daily-spotlight.js replaces this div at runtime
+    with the correct article for today's UTC date.
+  {% endcomment %}
+  <div id="daily-spotlight"></div>
 
 </div>
 
