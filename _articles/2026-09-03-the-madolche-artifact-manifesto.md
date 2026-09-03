@@ -47,7 +47,9 @@ The fundamental idea is that we are taking the supplementary engine \+ more Trap
 
 That distinction is the entire point\.
 
-The real appeal of Artifacts is that they cover one of Madolche's biggest problems: forcing Anjelly through opposing backrow, naturally, while doing their own thing__\.__ Traditional Madolche builds are effectively forced to play Forbidden Lance for this purpose \- a card that does nothing when there is no Madolche engine to protect\. In the Artifact build, Ignition and Double Cyclone fill much of the same role, but proactively and independently: they clear the cards threatening Anjelly while simultaneously advancing the Artifact engine\. Unlike Lance, they remain useful without a Madolche monster in sight\. On the other side of the same Artifact coin, of course, they offer disruption and protection also during opponent's turn\.
+The real appeal of Artifacts is that they cover one of Madolche's biggest problems: forcing Anjelly through opposing backrow, naturally, while doing their own thing\.
+
+Traditional Madolche builds are effectively forced to play Forbidden Lance for this purpose \- a card that does nothing when there is no Madolche engine to protect\. In the Artifact build, Ignition and Double Cyclone fill much of the same role, but proactively and independently: they clear the cards threatening Anjelly while simultaneously advancing the Artifact engine\. Unlike Lance, they remain useful without a Madolche monster in sight\. On the other side of the same Artifact coin, of course, they offer disruption and protection also during opponent's turn\.
 
 And the overlap goes both ways\. Instant Fusion, Madolche's usual extender, works well alongside Artifacts for the price of one Extra Deck slot, while Call of the Haunted, traditionally an Artifact blowup card, becomes a genuine Madolche extender once monsters have accumulated in the Graveyard\.
 
