@@ -18,7 +18,7 @@ The site has 6 content sections backed by Jekyll collections, in two language gr
 | Reports | `/reports/` | `_reports/` | `site.reports` | filtered |
 
 **Flat** (objave, announcements): no `subcategories` needed — posts show as a plain searchable list.  
-**Filtered** (clanki, reportaze, articles, reports): posts require `subcategories: [goat]`, `[advanced]`, or `[goat, advanced]` — the index renders subcategory filter buttons.
+**Filtered** (clanki, reportaze, articles, reports): posts require `subcategories: [goat]`, `[advanced]`, `[HAT]`, or combinations of these values — the index renders subcategory filter buttons dynamically.
 
 ---
 
@@ -114,7 +114,7 @@ date: YYYY-MM-DD
 author: "Author Name"         # required — shown on index and post page
 description: "One sentence."  # recommended — SEO meta description
 subcategories: [goat]         # required for filtered sections; omit for flat sections
-                              # valid values: goat | advanced | [goat, advanced]
+                              # valid values: goat | advanced | HAT | combinations
 image: /assets/images/posts/filename.jpg  # optional — hero image + OG image
 lang: sl                      # set automatically by defaults; override only if needed
 ---
