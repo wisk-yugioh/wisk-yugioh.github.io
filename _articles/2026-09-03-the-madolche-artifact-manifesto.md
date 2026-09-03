@@ -54,7 +54,7 @@ And the overlap goes both ways\. Instant Fusion, Madolche's usual extender, work
 Having explained what is in my opinion the biggest strength of the variant, let us now look into some other particular advantages offered exclusively by this variation\.
 
 - Obviously and very notably, the Artifact version is not auto\-losing Game One to floodgates \(Skill Drain, Necrovalley…\), due to having access to S/T spot removal as part of supplementary engine\. Nor is it forced to Side \(or Main\) MST\.
-- Another obvious consequence of the above, and simply due to nature of Artifacts, is that traditionally horrible matchup \- Spellbook \- is UNSPEAKABLY improved\.
+- Another obvious consequence of the above, and simply due to nature of Artifacts, is that traditionally horrible matchup \- Spellbook \- is UNSPEAKABLY improved. Most combo matchups are also improved.\.
 - The famous Artifact FTK is present is this variation, adding a chunk of winrate\. Stated less dramatically, Artifacts can win games of their own, even with a complete lack of Madolche engine\. No other supplementary engine can do this\.
 - The Artifacts themselves can be additional fuel for Hoot effect\.
 - The Artifacts offer a handy turn\-off button for Acid Golem, which can be somehow awkward to turn off in other variants\.
