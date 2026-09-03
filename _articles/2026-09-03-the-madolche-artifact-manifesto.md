@@ -6,6 +6,7 @@ author: "Wisk"
 lang: en
 categories: [article]
 subcategories: [HAT]
+image: /assets/images/posts/the-madolche-artifact-manifesto/madolche-manifesto.jpg
 ---
 
 # The Madolche Artifact Manifesto
