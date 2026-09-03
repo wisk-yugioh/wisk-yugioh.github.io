@@ -27,7 +27,7 @@ The idea is understandable: if the deck is inconsistent, play more Madolche card
 
 The problem with this approach is that we are not actually increasing the number of starters, we are just hoping that the larger engine in combination with Madolche S/T support can stall or otherwise float into starters trough Madolche Ticket\.
 
-1. __Maximise non\-engine in the form of protection or a supplementary engine\.__
+2. __Maximise non\-engine in the form of protection or a supplementary engine\.__
 
 In this approach, the remaining deck space is filled with extra traps and/or extenders and/or protection\. The problem is that traps are normally positively traded with opposing deck only when our engine is also battling against opposing engine, while no engine and traps vs opposing engine is usually downhill battle\. In other words, more traps will be very good when we already have our engine, but when we don't, we are still likely to lose, albeit we can survive for a turn or two more than we would otherwise\. Protection doesn't work when  we don't have anything to protect, and likewise extenders don't have anything to extend\.
 
