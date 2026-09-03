@@ -11,7 +11,6 @@ image: /assets/images/posts/the-madolche-artifact-manifesto/madolche-manifesto.j
 
 # The Madolche Artifact Manifesto
 
-![Madolche - Yu-Gi-Oh! - Image by Pixiv Id 43347 #1810087 - Zerochan ...](/assets/images/posts/the-madolche-artifact-manifesto/madolche-manifesto.jpg)
 
 Madolche has always had 2 very serious problems\.
 
