@@ -115,7 +115,7 @@ author: "Author Name"         # required — shown on index and post page
 description: "One sentence."  # recommended — SEO meta description
 subcategories: [goat]         # required for filtered sections; omit for flat sections
                               # valid values: goat | advanced | HAT | combinations
-image: /assets/images/posts/filename.jpg  # optional — hero image + OG image
+image: /assets/images/posts/filename.jpg  # required for image-bearing articles — hero + social preview
 lang: sl                      # set automatically by defaults; override only if needed
 ---
 ```
@@ -124,11 +124,15 @@ lang: sl                      # set automatically by defaults; override only if 
 
 Post images go in `assets/images/posts/`.
 
+For image-bearing articles, choose a representative asset for frontmatter `image`. `_layouts/post.html` renders it as the hero, while `{% seo %}` in `_layouts/default.html` supplies its social-preview metadata. An inline Markdown image or a gallery entry alone does not supply the article's preview image. Remove the duplicate body insertion of the selected hero, but preserve other body images. Articles without images need no `image` field.
+
 ---
 
 ## Publishing an Article
 
-Use the `deploy-article` skill in `.github/skills/deploy-article/SKILL.md` for the publishing checklist. In brief: preserve source documents in `not_published/`, publish Markdown into `_clanki/` or `_articles/` according to language, use the article's publication date and the filtered section's subcategory, and regenerate `_data/gallery_index.json` whenever post images are added or updated. Verify the result with `bundle exec jekyll build` when Ruby and Bundler are available.
+Use the `deploy-article` skill in `.github/skills/deploy-article/SKILL.md` for the publishing checklist. In brief: preserve source documents in `not_published/`, publish Markdown into `_clanki/` or `_articles/` according to language, use the article's publication date and the filtered section's subcategory, and regenerate `_data/gallery_index.json` after adding articles or updating images.
+
+Verify the result with `bundle exec jekyll build`. For image-bearing articles, inspect the generated HTML for one occurrence of the selected hero and correct absolute asset URLs in both `og:image` and `twitter:image`. If Ruby or Bundler are unavailable, explicitly report that rendered metadata could not be verified. Social platforms may cache an old preview after deployment; cached results alone do not indicate that the corrected metadata is wrong.
 
 ---
 

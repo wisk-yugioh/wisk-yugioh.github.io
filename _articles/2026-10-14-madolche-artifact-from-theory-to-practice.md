@@ -5,11 +5,10 @@ date: 2026-10-14
 author: "Wisk"
 lang: en
 subcategories: [HAT]
+image: /assets/images/posts/madolche-artifact-from-theory-to-practice/image-1.png
 ---
 
 # Madolche Artifact - From Theory to Practice
-
-![Madolche Artifact decklist](/assets/images/posts/madolche-artifact-from-theory-to-practice/image-1.png)
 
 As many people have pointed out, I in fact DID NOT invent the »Madolche Artifact« deck\. It was tried and played before\. However, I was not aware of those past lists and attempts, so that is why my »Madolche Artifact Manifesto« does not reference any of the existing lists and ideas\. The list we built \(by »we« I mean me, Brandis and Benis\) on the basis of the theory presented in the article is also not influenced by any existing lists\.
 
