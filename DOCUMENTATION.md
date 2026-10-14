@@ -126,6 +126,12 @@ Post images go in `assets/images/posts/`.
 
 ---
 
+## Publishing an Article
+
+Use the `deploy-article` skill in `.github/skills/deploy-article/SKILL.md` for the publishing checklist. In brief: preserve source documents in `not_published/`, publish Markdown into `_clanki/` or `_articles/` according to language, use the article's publication date and the filtered section's subcategory, and regenerate `_data/gallery_index.json` whenever post images are added or updated. Verify the result with `bundle exec jekyll build` when Ruby and Bundler are available.
+
+---
+
 ## SCSS
 
 All styles in `_sass/new-site.scss`, scoped to `.new-site` (set on both `<html>` and `<body>` in `default.html`).
